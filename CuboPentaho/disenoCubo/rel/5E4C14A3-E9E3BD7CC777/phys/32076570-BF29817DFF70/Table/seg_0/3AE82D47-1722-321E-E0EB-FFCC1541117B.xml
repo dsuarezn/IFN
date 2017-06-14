@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_TABLAS_TIPO_AUDITORIA" directorySegmentName="seg_0" id="3AE82D47-1722-321E-E0EB-FFCC1541117B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>3E48E386-25C0-F1B3-46F2-EE06203B5612</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6596175D-74BA-BCC4-FC1C-8D5EF60F83B2</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TATAU_TIPO_AUDITORIA" id="15C5ACCE-9318-6B56-670A-A731E66077ED">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TATAU_TAAU_ID" id="2E08E205-3350-C7BD-8FE3-8F0AF08ED866">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TATAU_TIMESTAMP" id="3EDB68E1-FD79-E91E-FA6D-B3C3624DE3DA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TATAU_FECHA_HASTA" id="468A5611-CAD0-2774-B5EE-8EFC01BE93BA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TATAU_USR_ID" id="5E7E3157-6854-C1DF-A3CA-4BCFCDDC95C9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TATAU_FECHA_DESDE" id="93361BE8-C22F-BC1E-0962-99CD212362C5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TATAU_ID" id="ECD5BB99-53F3-ADD0-2EB2-4BA93B7D82C1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IFN_TABLAS_TIPO_AUDITORIA_PK" id="1E560076-54E5-E535-36A9-C3FD191E4228">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>3E48E386-25C0-F1B3-46F2-EE06203B5612</schemaObject>
+<segment>E0F734DF-F388-32B1-6188-725BDBC7E430</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_TABLAS_TIPO_AUDITORIA_FK1" id="BEE3CE6B-C3E7-CCCD-15F4-A13AB9CCF58E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_TABLAS_TIPO_AUDITORIA_PK" id="7A395A08-6F1D-3B58-0665-412F16E64FFB">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<segment>E0F734DF-F388-32B1-6188-725BDBC7E430</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+<existingIndex>1E560076-54E5-E535-36A9-C3FD191E4228</existingIndex>
+<indexSegment>E0F734DF-F388-32B1-6188-725BDBC7E430</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_FORMA_FUSTE" directorySegmentName="seg_1" id="F94A57C2-465C-D8C0-A2E4-364D9BEBC837">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:57:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_FORMA_FUSTE" id="10D21C74-366E-95B4-78D0-6CB6510C65FC">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:57:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_FORMA_FUSTE" id="19DC4E5A-41D5-8C7F-9F3E-4D9CC6184B5C">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:57:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESC_FORMA_FUSTE" id="3A3AC190-6DA7-F4D4-B45F-E7ED6703405E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:57:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_FORMA_FUSTE_PK" id="95590ED7-2D55-F230-966E-F17E64FFC480">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:57:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

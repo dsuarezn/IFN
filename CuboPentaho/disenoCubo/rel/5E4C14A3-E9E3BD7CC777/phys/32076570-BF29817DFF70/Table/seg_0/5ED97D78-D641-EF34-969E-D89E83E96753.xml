@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_PENDIENES_SPF" directorySegmentName="seg_0" id="5ED97D78-D641-EF34-969E-D89E83E96753">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>3E48E386-25C0-F1B3-46F2-EE06203B5612</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6596175D-74BA-BCC4-FC1C-8D5EF60F83B2</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PENDIENTE1" id="06498AFA-36B3-8A7B-9FED-B288F01FB7D8">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE4" id="156C29C3-2296-366A-9936-231167164A0B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE5" id="4396A5CC-FD4C-FA69-418B-9F71CB4C4FBE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE2" id="68F4479F-8482-8226-0E94-1DDA404B6370">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="6B51A186-6045-FDA1-53DF-475B37441629">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PENDIENTE" id="7DF24667-3767-056A-E761-C38E581B68DA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE7" id="835AAA0B-595B-AADA-37F6-9826410711F7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE6" id="8B64EE2C-A91D-A63F-2C3E-1420620A8A13">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE3" id="B055D68B-6032-A7C0-660D-40B6D52C0D96">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="C8617779-9E32-89E2-F9F3-A5EA5E7C5DE4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USARIO_MODIFICACION" id="E2CD890D-2D0D-BB5D-1323-D782F1050A01">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MODIFICACION" id="F02249F4-73BB-59EF-A1D0-E82C6A4AB0A9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBP_ID_SUBPARCELA" id="FBA93D45-3035-3D84-024C-D688DA4F7DA3">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENDIENTE8" id="FD2BD29E-3478-93FE-E390-88931F048302">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

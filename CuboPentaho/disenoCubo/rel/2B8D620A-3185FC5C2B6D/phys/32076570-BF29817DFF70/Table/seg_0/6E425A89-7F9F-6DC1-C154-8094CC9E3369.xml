@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_SUBPARCELAS" directorySegmentName="seg_0" id="6E425A89-7F9F-6DC1-C154-8094CC9E3369">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:28:17 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LONGITUD_DECIMAL" id="2078D5F0-6EE8-85CC-11BA-BD2B78008BF9">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 16:31:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONGLOMERADO_ID" id="293DA69E-679A-2CE9-680E-DDC5AB26FAF2">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:53:27 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SUBPARCELA" id="3CA6FB09-4566-D44B-F286-CD32ACD3D09B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADOS_LONGITUD" id="42B2B614-068D-EF1E-750F-73CB6263CA8C">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUD_D_STR" id="5F084439-39BE-7825-CED0-77AFBA7C36D6">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:49:39 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUD" id="6184F9A9-4BF1-CC51-22BB-669C51F072D1">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MINUTOS_LATITUD" id="6486C008-1B41-E363-2ADF-B5D4553A241E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDOS_LONGITUD" id="678795C2-FCBD-FC36-30B4-48C5C2574CA9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADOS_LATITUD" id="7FBA4D62-0BAE-DEF8-09D4-493675F93188">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUD_D_STR" id="935898EC-17DB-7DF0-E743-60418989A463">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:49:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUD_STR" id="983E1D4E-825B-108E-072A-29BF586B8F4F">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_SUBPARCELA" id="9ED90292-4869-49C8-3B66-89C0F4A91EC9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MINUTOS_LONGITUD" id="B37A0183-0DFB-12D8-43ED-395E6BF86CAA">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDOS_LATITUD" id="BF45E709-8C75-6B89-A622-BC9B4BDBD767">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBSERVACIONES" id="D19DA079-65FB-23C7-EF35-1948B9D13C15">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUD_DECIMAL" id="D8D92AA8-24F7-4375-CCBD-AB1E6B82E550">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 16:31:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUD_STR" id="EDAE5947-4926-9F11-69D1-CF46896C303B">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUD" id="F52F38E1-3EFF-A946-2356-FDA9E670359B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTABLECIO" id="F6C25ED2-F114-E290-845C-68291CC0A411">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_SUBP_DIM_CONG_FK" id="4A3D8DE7-2602-B912-F397-DF60E8111944">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:53:27 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_SUBPARCELAS_PK" id="11438D91-E348-3376-ABDD-52EAA74A2A5E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:32:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,269 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC751B17-8A9D-9759-B1C5-C3DCD2FDF29B" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_ENVIO_MUESTRAS_LABORATORIO">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>estructrura para almacenar las muestras enviadas a laboratorio de detritos, suelos y botanicas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ENVIO_MUESTRAS" id="4D59CF8A-2949-8953-B760-875EA5127A64">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>ID_ENVIO_MUESTRAS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PAQUETE" id="F20EF8A5-F88B-D01E-BCCE-97BE65C79084">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>NUMERO_PAQUETE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>Numero de paquete de envio al herbario</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUESTRAS_CONGLOMERADO_SPF" id="1F00AC32-16BF-2588-F222-CF2E82A4B8B0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>MUESTRAS_CONGLOMERADO_SPF</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>contiene muestras conglomerado y subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_PIEZAS" id="C470756D-3FBD-39C6-134D-C22718FCC32B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>CANTIDAD_PIEZAS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>cantidad de ejemplares en paquete</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_COLLECCION" id="ECD0AD15-0259-80DE-C80E-D6ED83627370">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>FECHA_COLLECCION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha de coleccion o rango</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ENVIO" id="8DF252A4-2569-31B5-679A-19A6B0FF1B66">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>FECHA_ENVIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha de envio del paquete al herbario</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_RECIBO" id="31B9F08A-94E6-16D5-E2BD-03A1DDCB36BB">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>FECHA_RECIBO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha de recibo del paquete en el herbario</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="38A2D0D7-E524-A577-87B0-A082960C17DD">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>usuario creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="5ED54309-52B2-6463-1D2F-90BA30F63A9A">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_MODIFICACION" id="FACB303D-FEFE-F30B-AE3D-0B956494652E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>USUARIO_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>usuario de modificacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MODIFICACIONM" id="CAFE9706-5A6B-12B4-2638-892E9988CBE3">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>FECHA_MODIFICACIONM</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha modificacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_MUESTRA" id="2390D3A5-351C-93FD-6636-448A57727F45">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>TIPO_MUESTRA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CONGLOMERADO" id="E0869708-52B7-8769-AB75-634CD09C2CFF">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>ID_CONGLOMERADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_BRIG_CONG_ID" id="0D2D3AFC-72EB-65BC-67C3-FA615777ABA5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-19 00:54:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="709812BD-8300-3016-9A5E-326479B140DC" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02B1AE67-7C27-1167-E57C-AD7D52BB0D21" name="IFN_ENVIO_MUESTRAS_LABORA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_ENVIO_MUESTRAS_LABORA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D59CF8A-2949-8953-B760-875EA5127A64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36273ACD-2E9D-8EBA-69DD-5B8FB5D49E3B" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_ENVIO_MUESTRAS_LABORA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_ENVIO_MUESTRAS_LABORA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D59CF8A-2949-8953-B760-875EA5127A64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4965FA6-0458-8A31-DD0D-7635C0F28234" name="IFN_ENVMTRS_LAB_BRIG_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-19 00:54:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D2D3AFC-72EB-65BC-67C3-FA615777ABA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

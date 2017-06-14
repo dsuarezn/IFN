@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_LABORATORIO_DETRITOS" directorySegmentName="seg_0" id="8751FD19-2ED8-B5E3-FD8B-269A33F4729B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>3E48E386-25C0-F1B3-46F2-EE06203B5612</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6596175D-74BA-BCC4-FC1C-8D5EF60F83B2</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUMERO_PIEZA" id="6B6C03EE-F31A-CFF7-7C25-DD9F862B82A6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESO_SECO" id="6BB115C0-8402-0368-A47E-6F024A5B5C91">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CONGLOMERADO" id="A6E023C8-DCB8-49CD-CCAB-B3E1FF776AE5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_LABORATORIO_DETRITOS" id="C67325D5-F0D0-6410-5ABE-AC380CDD9FAE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

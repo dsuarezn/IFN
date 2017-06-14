@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_PUNTOS_REFERENCIA_UBIC" directorySegmentName="seg_0" id="E5F38E29-2268-A9F1-A1D0-07A2D067C455">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>3E48E386-25C0-F1B3-46F2-EE06203B5612</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6596175D-74BA-BCC4-FC1C-8D5EF60F83B2</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_PUNTO_REFERENCIA" id="1DAAF634-C765-0CED-F781-9D70694155D5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBIC_ID_UBICACION" id="3449EDF3-B338-BC49-7272-DB419E82BA89">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDOS_LATITUD" id="43658861-69BF-7CEF-F427-532A40D2A9B3">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADOS_LATITUD" id="5BA046E4-2D27-16D0-1A7C-4D2A4B9D3E90">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="82DBD18D-040D-02F2-A23C-ABE6895413A6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="8B68812E-8D9A-46AA-C9F1-5DF106F57F12">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUD" id="9308122A-5C85-A875-8787-4277A2C7A631">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADOS_LONGITUD" id="B487EB79-BC42-C598-C1D4-2352238CBE1B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="B59F7BD7-B96E-AFA8-3BBB-AF68F6E42C49">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MINUTOS_LONGITUD" id="B80B4C73-EEB8-4563-DA55-F1D25046F35E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_MODIFICACION" id="CD6D5159-087C-EBDE-3201-D9BC4D1B8395">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MODIFICACION" id="D83B20C5-9248-392C-1787-71D29325B395">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDOS_LONGITUD" id="E18BFE27-F5F9-6C7B-15A6-9828A1E3B561">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MINUTOS_LATIDUD" id="F0F68707-2271-4CD4-37A6-157841E8FF00">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUD" id="FCC4FFC4-74F4-8379-956B-39B9287F2634">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IFN_PUNTOS_REFERENCIA_UBI_PK" id="6CAAC425-1BEA-6D85-A25D-2C5C6115CCC9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>3E48E386-25C0-F1B3-46F2-EE06203B5612</schemaObject>
+<segment>E0F734DF-F388-32B1-6188-725BDBC7E430</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_PUNTOS_REFERENCIA_UBIC_FK" id="2AC5FFCF-0665-91A3-6117-0FC9081E3070">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_PUNTOS_REFERENCIA_UBI_PK" id="3E4212C4-5C9C-2681-FEA4-19D73AC05C87">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<segment>E0F734DF-F388-32B1-6188-725BDBC7E430</segment>
+<tableSpace>23A7666B-255B-EDE8-9B57-201EAD136BD1</tableSpace>
+<existingIndex>6CAAC425-1BEA-6D85-A25D-2C5C6115CCC9</existingIndex>
+<indexSegment>E0F734DF-F388-32B1-6188-725BDBC7E430</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

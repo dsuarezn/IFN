@@ -1,0 +1,447 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E95FB508-C575-A49E-1736-0B637ABA1A63" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_INDIVIDUOS_PAPE">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_INDIVIDUOS_PAPE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<commentInRDBMS>Tabla para almacenar los medidas de los individuos de las parcelas pemanetes</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_INDIVIDUOS_PAPE" id="D9DBB5BB-E4BD-AF0F-D247-F71CCAE3918D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>ID_INDIVIDUOS_PAPE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Identificador unico del Registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEF6864A-745F-53C0-D65D-4D3D220DB426" referredColumn="75F1A7F9-A8F5-E99D-09C9-64F734DD48D2"/>
+</associations>
+</Column>
+<Column name="PAPE_ID_PARCELA" id="DA56A488-F846-2DA2-5584-CB9BFF3AC8F4">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>PAPE_ID_PARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador unico de la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORMA_FUSTE" id="295AFF45-F41F-8D2B-8941-E18E3F0545B9">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>FORMA_FUSTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>forma del fuste del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_FUSTE" id="82521030-1EA0-369D-63BC-D9AE76C9CC0B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>TIPO_FUSTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>tipo de fute del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DANO" id="2E68C206-42BE-256E-DBA6-B3DDA5F54C64">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>DANO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>tipo de daño que presenta el individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIE" id="4EDE87EC-9688-0763-7CC2-EA204F78EB41">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>ESPECIE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Especie del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_CIENTIFICO" id="DA919220-C18D-6BF8-C0A6-23E4262AA731">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>NOMBRE_CIENTIFICO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Nombre cinentifico del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_COMUN" id="652CCAAA-D634-2139-0ABE-28A05E67D925">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>NOMBRE_COMUN</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Nombre comun del Individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLECCION" id="19A6393F-3909-4344-4C89-B278575C1E3E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>COLECCION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>se realiza coleccion si o no</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_COLECCION" id="928733CB-C802-9E16-2FC0-BEBABE7BD8FC">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>NUMERO_COLECCION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>numero de la colleccion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAP" id="ADD729F9-54AA-0F2C-D85B-81506E82A7F0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>DAP</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>DAP</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POM" id="DA9D0A84-7717-36E7-2FCF-66AC83E38F35">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>POM</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>POM</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="XM" id="7B762618-D680-B647-85AD-B012D14A762C">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>XM</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>xm</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YM" id="1E7637DD-6891-5C55-D501-E262C153BD2D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>YM</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>ym</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISTANCIA" id="53EB0FDE-730F-B2A0-848E-C6D21CC51D75">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>DISTANCIA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>altura distancia</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BASE" id="82DD809C-00D0-0AB7-81C7-24DE5B0A347B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>BASE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>altura base</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUSTE" id="825834DD-9207-FD38-858F-763766449AD0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>FUSTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>altura fuste</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="3FECBFC5-97D6-F6AB-A4BF-57C2627D72FF">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>TOTAL</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>altura total</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES" id="D818F22D-632B-4D16-336E-45E091201D19">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>OBSERVACIONES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>observaciones</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="9EA08374-1A00-8CFC-15DA-F0771EA2601F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>usuario de creacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="04704F2D-8B76-3F11-3D8C-3AA3D96B3F29">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>fecha de creacin del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_MODIFICACION" id="6B726308-CDFB-6478-A9FA-833939547A67">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>USUARIO_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>usuario_modificacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MODIFICACION" id="991B84BF-7007-5B79-7E55-1D1D12B0069B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>FECHA_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>fecha_modificacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUADRANTE" id="66D7DA70-8A41-80C5-4256-5DC7BACD7BB2">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>CUADRANTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Numero del cuadrante se la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUB_CUADRANTE" id="3A126616-D9CB-DC93-0FE5-A9E308BB2373">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>SUB_CUADRANTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Nuemro del subcuadrante en la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="627D6DFB-2FAE-26F5-7A7B-4CA96FF61C46" name="IFN_INDIVIDUOS_PARCELAS_PE_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_INDIVIDUOS_PARCELAS_PE_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9DBB5BB-E4BD-AF0F-D247-F71CCAE3918D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79B99EEF-63F1-C194-EAE9-28B021F8538A" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_INDIVIDUOS_PARCELAS_PE_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_INDIVIDUOS_PARCELAS_PE_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9DBB5BB-E4BD-AF0F-D247-F71CCAE3918D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D87C479-415A-FBD8-96AE-F7FE26A08CE9" name="IFN_INDIVIDUOS_PARCELAS_P_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9DBB5BB-E4BD-AF0F-D247-F71CCAE3918D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

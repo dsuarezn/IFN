@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_TIEMPO" directorySegmentName="seg_0" id="45CB649A-AFC8-EF2F-D397-2EC22809D07B">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TRIMESTRE" id="152F1846-45F3-FA8F-2FB6-F1B313A01391">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIAANIO" id="18BD6FB4-02E4-63D9-264B-7FF093227485">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIAMES" id="1951B31F-9484-E867-6FA9-A5A227E3C460">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEMANAANIO" id="1B88B527-9EEE-93C1-3D78-0319EFF76E04">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_DATE" id="2138A42A-F9F1-BA4C-5599-099443C1771E">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 20:20:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHAINICIOSEMANA" id="254193B8-150F-26AF-EABA-E8F9D9FDD67D">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEMESTRE" id="58FB77A9-4FA4-A24C-F1DF-3E9F28A81296">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIAANTERIOR" id="5C777F01-290C-1703-9625-13C041A4205A">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_TRIMESTRE" id="64EF7F09-94F3-F29F-9451-40DDFB41F196">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MES" id="73345897-B05D-7E99-1BFC-E579B8A00BEB">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIASIGUIENTE" id="76BD6A9E-5578-970E-7C41-1F9592E706FE">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MESANIO" id="80AD7680-D4A1-CF86-CDF5-5E52A61A694E">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIA" id="8C4B354D-7183-7070-48F6-37F7B9358D86">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANIO" id="B49A7039-25D2-5F00-D3EA-DD8E04203F69">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_STR" id="B7C62DE0-5BCC-DD7B-1B86-ABBB6BADBB27">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIASEMANA" id="BE6432E5-5332-EE67-69E5-08DA7413695A">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATEKEY" id="C9992E5F-42ED-08CF-4920-E37A75AA3B6E">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHAFINSEMANA" id="CCA9697F-3283-C298-D049-34E018B61D17">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_TIEMPO_PK" id="5068BC9F-3077-9D08-B1DA-E7C42A1B1D2B">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

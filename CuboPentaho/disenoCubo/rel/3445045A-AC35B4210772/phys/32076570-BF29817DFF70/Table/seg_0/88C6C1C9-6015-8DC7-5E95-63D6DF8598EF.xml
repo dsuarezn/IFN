@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_MEDIO_ACCESO" directorySegmentName="seg_0" id="88C6C1C9-6015-8DC7-5E95-63D6DF8598EF">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C5EA866F-4720-6BA9-F1A1-C73B6C08E3AE</segment>
+<tableSpace>6C4F7933-A76E-9867-74D7-1B1B69E4EB41</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIEMPO_ACCESO" id="2609878A-E53E-0FF8-B491-C2F94DA93516">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="29FC2051-8DB8-00F4-5E85-E6BBB36B4AFD">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="2FB246B3-2051-DE6E-3180-25099DD735F2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBIC_ID_UBICACION" id="4F4053A0-1D1D-F73C-CF68-9064CB9AC73E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MODIFICACION" id="58A5161D-7D0B-2338-289F-66BEC4E4EDE8">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_MODIFICACION" id="AA1BF785-FC44-A868-6CC1-DE4E602B554C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_MEDIO" id="CD03584F-9141-E992-AD77-7770A77BA9AF">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_ACCESO" id="CD1A49CF-F6A1-D229-C52B-FD3A7BDBADCF">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DISTANCIA" id="CEE9A5E4-A868-65A0-1DF2-55DFE0EF55CB">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_MEDIO_ACCESO_PK" id="3022B26C-EB29-9CE8-0B7E-B1BB66DFFAC5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:42 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF</schemaObject>
+<segment>71CCE2C1-BF6F-98E0-FB95-01E7F454917D</segment>
+<tableSpace>6C4F7933-A76E-9867-74D7-1B1B69E4EB41</tableSpace>
+<indexSegment>71CCE2C1-BF6F-98E0-FB95-01E7F454917D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

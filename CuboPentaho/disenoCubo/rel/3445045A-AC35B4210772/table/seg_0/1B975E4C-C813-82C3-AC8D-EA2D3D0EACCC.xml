@@ -1,0 +1,326 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B975E4C-C813-82C3-AC8D-EA2D3D0EACCC" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_PARCELAS_PERMANENTES">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PARCELAS_PERMANENTES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>estructura con la informacion basica de las parcelas permanentes</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PARCELA" id="5953D9F4-1288-03AB-C598-EB3D33796EB7">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>ID_PARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro, identificador unico por subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PARCELA" id="CF66D8A4-9F42-C720-F41E-6DFDA6AD01A8">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>CODIGO_PARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>codigo dado a la parcela permananete en el marco del IFN</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD" id="B76D1CFC-F243-B485-511F-D4052CDD28E6">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>LATITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADOS_LATITUD" id="6B45A4B2-BA99-E118-203B-AE70D928C284">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>GRADOS_LATITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas  grados latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINUTOS_LATITUD" id="A1117843-C5C1-7701-0B16-D9728D4D9C38">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>MINUTOS_LATITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas minutos latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDOS_LATITUD" id="41568F25-1D46-0B28-8101-2665966D9248">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>SEGUNDOS_LATITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas segundos latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD" id="09AA588B-D5D9-B83D-DC48-C7EC0A956141">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>LONGITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADOS_LONGITUD" id="C4865168-AB88-5C68-7F94-2946F4C2E7A5">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>GRADOS_LONGITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas grados longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINUTOS_LONGITUD" id="3DCAE6E5-8F62-67DC-D2F8-73BB251D048A">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>MINUTOS_LONGITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas minutos longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDOS_LONGITUD" id="AE2D29E5-291E-BC71-EF97-27F9998D68B9">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>SEGUNDOS_LONGITUD</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>coordenadas  segundos longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES" id="4AEB20D4-B906-6236-0D95-E5A0879D7B07">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>OBSERVACIONES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>observaciones generales a la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="8217CB2F-846F-55C5-163A-75DBE177BBC7">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>usuario creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="F1D787CD-F3A7-4068-BB3B-26B89A128FBD">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_MODIFICACION" id="16F0360A-E4AB-C905-8921-84DF0DB157DC">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>USUARIO_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>usuario modificacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MODIFICACION" id="976D0055-2270-CF4B-4A72-B03C53A48023">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>FECHA_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha modificacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO" id="D080833E-FFF5-77DA-5C93-8E6B3B02825C">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>DEPARTAMENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>Departamento de ubicacion de la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUNICIPIO" id="55201791-A696-B8DF-FD6B-0F384EF0DC73">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>MUNICIPIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>Municipio de Ubicacion de la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAR" id="103FE6C6-891B-7049-C8AF-D8A8FDD56A16">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>CAR</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>Corporacion Autonoma Regional</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUTO" id="CD139D59-9D62-3CE9-8BF5-C2884045D31C">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_PARCELAS_PERMANENTES</sourceObjSchema>
+<sourceObjName>INSTITUTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>Instituto que realiza el operativo en la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3ABCEF1-2447-A805-E360-1C6A63C901E4" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_PARCELAS_PERMANENTES_PK">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>SYS_C007895</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5953D9F4-1288-03AB-C598-EB3D33796EB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

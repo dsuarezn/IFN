@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_OPERATIVO" directorySegmentName="seg_0" id="20AE1BFA-18D4-EC62-8A40-906017ECBE94">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43B73241-D97E-3939-631B-87A8F5A5CC38</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECHA_CREACION" id="2FC30A7E-F299-88C5-F421-AAEC1C932BE7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="407A1DB0-86A9-26DE-A301-77C1490B7FCC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BRCO_ID_BRIGADA_CONG" id="6E79D60F-3E1F-CFF4-F1BD-E99C763D65C6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMERO_DIA" id="D3DAB0B5-BF1D-9B7C-FEA8-F06AD14133F6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_MODIFICACION" id="D43F93AF-C09D-FB2C-ABC1-4427FFC170D3">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_OPERATIVO" id="D7CC6F4D-0791-BA6A-E65E-72AFFD98AA23">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLIMA" id="D7EF2D0D-821B-4632-1415-5BDB06DF54AE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBSERVACIONES" id="D8973E6F-588B-F6D1-FB48-4E1995D8755B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MODIFICACION" id="EB8D1E33-D948-944C-2F6F-52AA59078F7F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INCIDENTES" id="F21C936D-A486-217F-B0AF-CB73B52395D8">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOVEDADES_PERSONAL" id="F46089B5-2689-BA17-64F3-0F9B528CF626">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IFN_OPERATIVO_PK" id="EB974F58-C48C-4EB1-935C-D658C595C7BA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<segment>A324842D-3666-8E5F-09BE-41A79DD0CC64</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_OPERATIVO_IFN_BRIG_FK1" id="1E5D86A5-04BB-74AC-194F-D75708076AFE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_OPERATIVO_PK" id="C6A04A2A-7B27-204F-1FA4-B38CA4C4A454">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<segment>A324842D-3666-8E5F-09BE-41A79DD0CC64</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<existingIndex>EB974F58-C48C-4EB1-935C-D658C595C7BA</existingIndex>
+<indexSegment>A324842D-3666-8E5F-09BE-41A79DD0CC64</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

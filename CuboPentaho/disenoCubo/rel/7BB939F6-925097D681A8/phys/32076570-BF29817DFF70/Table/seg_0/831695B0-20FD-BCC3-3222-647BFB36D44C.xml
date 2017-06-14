@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_DIVISION_POLITICA" directorySegmentName="seg_0" id="831695B0-20FD-BCC3-3222-647BFB36D44C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43B73241-D97E-3939-631B-87A8F5A5CC38</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_MUNICIPIO" id="0A4AAD9E-A0EA-3023-44A7-9D9905FA63FF">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTAMENTO" id="536525C5-FA35-481D-E248-ED12A6615BC1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAR" id="7143BC37-B270-1D2D-2640-89ADE5CFE0D6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUNICIPIO" id="827FE5AD-C4B8-4FE4-63C7-AF1B37ABF45B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_DEPARTAMENTO" id="9EE82EAF-DEAF-0FF2-7609-914F38D196F4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION" id="B9365D75-51FA-8B32-6481-6863B9734C68">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

@@ -1,0 +1,2 @@
+f3_spf1_perturbaciones_cobertura_id_;tipo_perturbacion;tipo_perturbacion_code_id_;severidad_perturbacion;severidad_perturbacion_code_id_;tipo_cobertura;tipo_cobertura_code_id_;porcentaje;f3_spf1_perturbaciones_cobertura_observaciones;codigo_conglomerado;anio_ejecucion;anioVigencia;codigo_subparcela;ID_CONGLOMERADO_SEQ;ID_BRIG_CONG;ID_SUBPARCELA
+97000179;SP;162;NP;168;BI;217;100;no;139332;2016;2016;1;;;

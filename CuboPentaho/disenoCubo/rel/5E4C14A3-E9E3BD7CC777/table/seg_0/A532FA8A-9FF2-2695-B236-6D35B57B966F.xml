@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A532FA8A-9FF2-2695-B236-6D35B57B966F" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_COBERTURA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_COBERTURA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:45 UTC</createdTime>
+<commentInRDBMS>Estructura que permite identificar el tipo de cobertura de las subparcelas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COBERTURA" id="AC8C47B6-AF96-9C63-7BF0-DEF6067F7951">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>ID_COBERTURA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>identificador unico de la estructura de coberturas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBP_ID_SUBPARCELA" id="7808AE2D-7DDF-E091-751F-7F265D21CF27">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>SUBP_ID_SUBPARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>identificador unico de la supparcelas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7C78244-854B-7846-C695-82DECF3012FA" referredColumn="0B4F6278-11B9-6F1E-9D5D-CCB65CAC2DD3"/>
+</associations>
+</Column>
+<Column name="TIPO_COBERTURA" id="04419BB1-4CF4-451C-3036-A51E8DFBC80F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>TIPO_COBERTURA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>campo para almacenar el tipo de cobertura de la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORCENTAJE" id="209D9619-5684-F2E5-1718-7C92A76615B6">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>PORCENTAJE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>campo para almacenar el porcentaje del tipo de cobertura</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="16B2CEDB-8071-DAB0-7D7D-56688B064A17">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>usuario de creacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="BED2A9AE-6E3A-A6B3-A7A1-B304B90B95D8">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha de creacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_MODIFICACION" id="86EA2B2C-C127-2E0D-F046-889D11454AA2">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>USUARIO_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>usuario de modificacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MODIFICACION" id="525F4065-2388-AFDC-25D9-3BFCB5A6B683">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
+<sourceObjName>FECHA_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>fecha de modificacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="78FEB4C3-49B8-123F-EF64-4848E834CCE2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:10:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8ED82CD1-C469-6B7A-A848-451DEAD102B9" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A0E06A0-AEEB-F8C2-0B47-B0511789DA79" name="IFN_COBERTURA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_COBERTURA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC8C47B6-AF96-9C63-7BF0-DEF6067F7951"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8152269-1E37-61AC-6FB2-79E0F3C85135" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_COBERTURA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_COBERTURA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC8C47B6-AF96-9C63-7BF0-DEF6067F7951"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A01D01A-3C50-1F4C-8517-878D154BCD39" name="IFN_COBERTURA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7808AE2D-7DDF-E091-751F-7F265D21CF27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F68981F-710F-1019-C27F-0F65B291F908" name="IFN_COBER_IFN_BRIG_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:10:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78FEB4C3-49B8-123F-EF64-4848E834CCE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

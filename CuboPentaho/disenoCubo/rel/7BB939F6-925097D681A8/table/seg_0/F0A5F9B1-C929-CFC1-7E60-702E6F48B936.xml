@@ -1,0 +1,260 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0A5F9B1-C929-CFC1-7E60-702E6F48B936" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_COLECCION_BOTANICA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_COLECCION_BOTANICA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<commentInRDBMS>Estructrura para almacenar las colecciones botanicas que se recojen en las subparcelas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COLECCION" id="3526F52D-F0AE-0B28-AC95-B917E5AFC8D0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>ID_COLECCION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBP_ID_SUBPARCELA" id="4A25B750-39BA-441B-4D8C-7E25F470AE39">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>SUBP_ID_SUBPARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador unico de la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27885E53-0C38-E45C-1876-53E028AFC905" referredColumn="4EFFDFEB-2A13-942F-094E-FE520DCC7421"/>
+</associations>
+</Column>
+<Column name="TIPO" id="43A257B3-E69C-0A8F-28C7-5B2848E3D6DC">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>campo para almacenar el tipo de tamaño del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_ID" id="0313153D-ABF7-2EEB-DAA3-24AC15834062">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>NUMERO_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>numero de identificacion del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_COMUN" id="2C2E26DD-9D5D-43B3-D8C6-7BB66702680C">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>NOMBRE_COMUN</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>nombre comun del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DETERMINACION" id="8E8520C3-BC7B-B427-7A7C-32A9870C690D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>DETERMINACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>campo para almacenar si la determinacion es en campo o por igualacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="724F274C-13CD-2264-122F-F86CFB7CB036">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>OBSERVACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>observacion realizada al individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_COLECTOR" id="DD7F2ABD-DFD4-166D-6FF0-5D1E4DBEECEE">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>NUMERO_COLECTOR</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Numero del colector</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLECTADA" id="0C3E8891-772F-E6A6-84A3-276B742CD5F3">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>COLECTADA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>si la recoleccion fue o no realizada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="805C54BE-67CE-CA82-B77B-E25E4FE03771">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>usuario creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="84640BCB-9B23-3B3C-D23C-D82E0BDB5A93">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>fecha creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_MODIFICACION" id="BE09033D-46DA-0D0D-E188-CA38AFC2E211">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>USUARIO_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>usuario modificacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MODIFICACION" id="723D25AD-5B40-DA1C-1EAC-0A1575F93498">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_COLECCION_BOTANICA</sourceObjSchema>
+<sourceObjName>FECHA_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>fecha modificacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1CFB85C-ADB1-3063-97B5-8E3AD4138BAC" name="IFN_COLECCION_BOTANICA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_COLECCION_BOTANICA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3526F52D-F0AE-0B28-AC95-B917E5AFC8D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF910EAC-944C-93C0-DC7E-71F3E8DBB6AE" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_COLECCION_BOTANICA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_COLECCION_BOTANICA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3526F52D-F0AE-0B28-AC95-B917E5AFC8D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DB35E8B-9D9E-AEEE-E30A-C48D99D5BE67" name="IFN_COLECCION_BOTANICA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A25B750-39BA-441B-4D8C-7E25F470AE39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

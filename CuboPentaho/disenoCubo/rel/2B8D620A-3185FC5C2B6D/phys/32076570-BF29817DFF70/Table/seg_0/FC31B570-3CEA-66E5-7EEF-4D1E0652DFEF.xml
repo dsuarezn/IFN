@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_NO_PUNTO_REF" directorySegmentName="seg_0" id="FC31B570-3CEA-66E5-7EEF-4D1E0652DFEF">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:30:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_NUMERO_PUNTO_REF" id="3C3DE628-5AB8-425A-B31C-B78D94179646">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:31:57 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMERO_PUNTO_REF" id="C9B9F949-0A42-97CD-FBAA-BD5BC3983DE2">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:31:57 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_NO_PUNTO_REF_PK" id="6DFC1BB9-D72F-F62E-FA2A-EE6F1FFE6683">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:32:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

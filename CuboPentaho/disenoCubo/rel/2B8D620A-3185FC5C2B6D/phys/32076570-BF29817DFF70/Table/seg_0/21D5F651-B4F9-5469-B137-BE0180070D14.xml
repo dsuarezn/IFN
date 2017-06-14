@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_DANOS" directorySegmentName="seg_0" id="21D5F651-B4F9-5469-B137-BE0180070D14">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:46:31 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_DANO" id="1DC8F82A-0F89-FE3F-42A1-4246BD50EDD2">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:46:31 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_DANO" id="3E4FFDB7-616F-5773-1189-F33F1A51F867">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:46:31 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESC_DANO" id="A47073E9-C473-4BEF-5E79-DA048F2E65CD">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:46:31 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_DANO_ID" id="F0E28BD5-F81D-0927-7745-7726085194F7">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:46:31 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

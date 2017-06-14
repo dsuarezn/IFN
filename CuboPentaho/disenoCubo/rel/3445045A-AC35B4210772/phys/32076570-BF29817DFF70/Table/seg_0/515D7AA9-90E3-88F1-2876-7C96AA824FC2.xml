@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_ENVIO_MUESTRAS_LABORATORIO" directorySegmentName="seg_0" id="515D7AA9-90E3-88F1-2876-7C96AA824FC2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C5EA866F-4720-6BA9-F1A1-C73B6C08E3AE</segment>
+<tableSpace>6C4F7933-A76E-9867-74D7-1B1B69E4EB41</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USUARIO_CREACION" id="08763E4D-8ECA-6B5B-5DD6-51F9EE12512C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_ENVIO" id="0AE4BF44-0A92-C50B-85DD-02F2FCE192C4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CONGLOMERADO" id="261A79D7-BC4A-DB80-4EF7-827DBB26CD45">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_MODIFICACION" id="405C4068-A8E0-CBCF-57A2-B6F78104513A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MODIFICACIONM" id="5A671F08-0F3D-C61F-2F31-1C8A8B3B1A9E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CANTIDAD_PIEZAS" id="674136D8-A1C0-6EBA-9480-98EEB7BB7947">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_COLLECCION" id="7A5B5EDD-1562-4713-2FAE-9866FE55F54E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMERO_PAQUETE" id="940207C4-C86A-6B65-59FF-31B1DA30F287">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="97552848-4D25-B78D-3EE0-2C37DB70598C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_RECIBO" id="B13B9793-F9BF-1847-8FA8-27B610BF0833">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUESTRAS_CONGLOMERADO_SPF" id="B47DB200-8E2B-BB20-45C5-BFBD3AA70A48">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENVIO_MUESTRAS" id="E3E840A1-45A1-547D-7EDA-117545CEDDF6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_MUESTRA" id="F7FEA557-64AE-319A-3168-B6D5F00D7B43">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_ENVIO_MUESTRAS_LABORATORIO_PK" id="B7F3723F-77DA-3226-AF22-E8237D061714">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF</schemaObject>
+<segment>71CCE2C1-BF6F-98E0-FB95-01E7F454917D</segment>
+<tableSpace>6C4F7933-A76E-9867-74D7-1B1B69E4EB41</tableSpace>
+<indexSegment>71CCE2C1-BF6F-98E0-FB95-01E7F454917D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

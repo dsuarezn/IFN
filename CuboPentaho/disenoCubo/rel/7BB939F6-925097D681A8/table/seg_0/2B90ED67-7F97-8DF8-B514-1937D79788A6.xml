@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B90ED67-7F97-8DF8-B514-1937D79788A6" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_OBSERVACIONES">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_OBSERVACIONES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<commentInRDBMS>estructura con las observaciones generales a cada uno de los formularios de recoleccion de datos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OBSERVACION" id="E714A42A-BFCA-AE90-1756-9101E194E4CB">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>ID_OBSERVACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BRCO_ID_BRIGADA_CONGLOMERADO" id="159ADEDD-3832-E0A1-3DCA-6F35CDA06C15">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>BRCO_ID_BRIGADA_CONGLOMERADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificdor unico de la brigada y el conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16DB9ED5-197F-8665-6CD4-0FD614B2AAC0" referredColumn="BA67B95C-545D-E9A9-906F-1A088E474932"/>
+</associations>
+</Column>
+<Column name="FORMULARIO" id="C94151F6-0ECC-8FD6-B6E5-D49FB6C1D1C7">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>FORMULARIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador del formulario sobre el cual es la observacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DILIGENCIADO" id="CAA87E70-32AF-3BDA-22EA-A5F3E4249FA3">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>DILIGENCIADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>nombre de la persona que dilegencio la observacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="4BC8E03C-5EA7-DA98-368D-AD5F9128CDBF">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>OBSERVACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>observacion realizada en el  formulario identificado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C2C1B88-8949-B42B-0269-E46A17BB2DDB" name="IFN_OBSERVACIONES_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_OBSERVACIONES_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E714A42A-BFCA-AE90-1756-9101E194E4CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B8670B5-BC1A-FDA2-6DE3-8E50EB715E82" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_OBSERVACIONES_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_OBSERVACIONES_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E714A42A-BFCA-AE90-1756-9101E194E4CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="257F07CB-547B-8D0A-BCFF-CCC595DCD3B7" name="IFN_OBSERVACIONES_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="159ADEDD-3832-E0A1-3DCA-6F35CDA06C15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

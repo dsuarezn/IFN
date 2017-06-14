@@ -1,0 +1,205 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDD8BC88-90F6-FE55-FB86-0B7DEAEB9566" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_PERTURBACIION">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PERTURBACIION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>Estructura para almacenar las perturbaciones presentadas en en la subparcelas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERTURBACION" id="41835F6C-AA9B-3FF9-DE81-960BB05319C2">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>ID_PERTURBACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBP_ID_SUBPARCELA" id="4B40C933-4CE2-5266-2CB7-F0B733E65346">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>SUBP_ID_SUBPARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>identificador unico de la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D554D6A2-58EA-98CC-FD9D-702E94CB4DF1" referredColumn="0B4F6278-11B9-6F1E-9D5D-CCB65CAC2DD3"/>
+</associations>
+</Column>
+<Column name="TIPO_PERTURBACION" id="F826FCD3-41E7-964C-4BA2-A6526A8BF914">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>TIPO_PERTURBACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>tipo de perturbacion que se presenta en la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEVERIDAD_PERTURBACION" id="05075394-3AD5-E877-4D80-AD276B3331FE">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>SEVERIDAD_PERTURBACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>tipo de severidad de la perturbacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="0EE11459-657E-B7FB-2E35-7EF5C292CA94">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>usuario creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="86749508-A8B0-2DB1-B1EC-F9B3D521C206">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>fecha creacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_MODIFICACION" id="17E4AF84-C994-68DB-711D-E52147E520A1">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>USUARIO_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>usuario modificacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MODIFICACION" id="E89F63F0-11A3-BA1F-EE37-A07141348808">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
+<sourceObjName>FECHA_MODIFICACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>fecha modificacion registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="E7449A2F-2110-0E26-66FF-5207092710B0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:08:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="781019AD-E080-1AEE-DBB7-0115D51C53F7" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB1B1270-E7E1-104A-AC86-8D4729E2574D" name="IFN_PERTURBACIION_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PERTURBACIION_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41835F6C-AA9B-3FF9-DE81-960BB05319C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C33E89E2-41AA-9DBB-3832-E58FF3F8A98B" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_PERTURBACIION_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PERTURBACIION_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41835F6C-AA9B-3FF9-DE81-960BB05319C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B09EE1E-821A-2540-6BE5-DBBC6A537CEA" name="IFN_PERTURBACIION_IFN_SUB_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B40C933-4CE2-5266-2CB7-F0B733E65346"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C9B7C5D-D252-12FF-C672-0ECCA3949502" name="IFN_PERT_BRIG_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:08:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7449A2F-2110-0E26-66FF-5207092710B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

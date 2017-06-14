@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_TABLAS_AUDITORIA" directorySegmentName="seg_0" id="E277F8FA-8FF5-B401-8370-4FAACB307E34">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C5EA866F-4720-6BA9-F1A1-C73B6C08E3AE</segment>
+<tableSpace>6C4F7933-A76E-9867-74D7-1B1B69E4EB41</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TAAU_ID" id="324780AF-CBAA-9B7B-7161-89FDC127BF11">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAAU_NOMBRE_TABLA" id="36F3A75E-0C01-1ACC-3445-7F95047B08A7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAAU_USR_ID" id="625FC117-0453-3C87-DCA5-B02AA6C1240F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAAU_OWNER" id="7E281131-025D-1302-7090-E924DF2E4474">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAAU_TIMESTAMP" id="D644BB9A-58CD-FA47-3452-F9625C456A2A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_TABLAS_AUDITORIA_PK" id="19820594-4775-140B-D758-6147F14B47A2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:42 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF</schemaObject>
+<segment>71CCE2C1-BF6F-98E0-FB95-01E7F454917D</segment>
+<tableSpace>6C4F7933-A76E-9867-74D7-1B1B69E4EB41</tableSpace>
+<indexSegment>71CCE2C1-BF6F-98E0-FB95-01E7F454917D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

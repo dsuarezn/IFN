@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="IFN" directorySegmentName="seg_0" id="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-22 18:15:51 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>schema_2</ordsAlias>
+</SchemaObject>

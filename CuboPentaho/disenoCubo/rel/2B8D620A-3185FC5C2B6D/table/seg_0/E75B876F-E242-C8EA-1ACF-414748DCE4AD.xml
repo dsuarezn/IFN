@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E75B876F-E242-C8EA-1ACF-414748DCE4AD" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="FACT_RENDIMIENTO">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_RENDIMIENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 17:05:57 UTC</createdTime>
+<commentInRDBMS>Estructura para almacenar los rendimientos del operativo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_rendimiento</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RENDIMIENTO" id="C495D36B-9026-7815-7C9E-58CDD083B3D9">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
+<sourceObjName>ID_RENDIMIENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 17:05:57 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_RENDIMIENTO" id="705CC4B7-57FF-CC87-4B30-1917F7D098DA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
+<sourceObjName>TIPO_RENDIMIENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 17:05:57 UTC</createdTime>
+<commentInRDBMS>tipo de rendimiento que se reporta</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 BYTE</dataTypeSize>
+<ownDataTypeParameters>70 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RENDIMIENTO" id="72214215-5C34-A49B-7C1E-FF6C47A2BF4A">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
+<sourceObjName>RENDIMIENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 17:05:57 UTC</createdTime>
+<commentInRDBMS>valor o medida del tipo de rendimiento</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA_RENDIMIENTO" id="ADE2D357-CA23-D2E9-9FAF-EA70CF2C5332">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
+<sourceObjName>DIA_RENDIMIENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 17:05:57 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_BRIGADA_ID" id="0E19ACC3-8D1B-AA38-1E5F-9B299A8FC751">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 20:27:37 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A4D16DA-9116-4FF7-1F04-04AF82AE6E6B" referredColumn="95057CD8-F89B-0540-BF1E-39EF3CA39002"/>
+</associations>
+</Column>
+<Column name="DIM_CONGLOMERADO_ID" id="8D7EB465-F544-A85B-44D0-CF386457E44C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 20:28:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5342DFC0-D54B-F278-CCBD-5C2E52E6B6C2" referredColumn="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</associations>
+</Column>
+<Column name="DIM_DIVISION_POLITICA_ID" id="386195D3-5792-1FE9-E366-0F448A11DE62">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 05:41:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D1A5A8E-2337-172D-0720-F7C324687A31" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BF25DF8-A277-FDE4-5E2B-848B2C7C5C48" name="FACT_RENDIMIENTO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 04:40:30 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C495D36B-9026-7815-7C9E-58CDD083B3D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0FF0069-DE48-FF83-76B1-17A82C995EE1" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="FACT_RENDIMIENTO_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_RENDIMIENTO_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 17:05:57 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C495D36B-9026-7815-7C9E-58CDD083B3D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81F4989E-5452-D0C2-A6D9-07F30DCF3E14" name="DIM_REND_DIM_BRIGADA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 20:27:37 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E19ACC3-8D1B-AA38-1E5F-9B299A8FC751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EB152F5-7397-3F2B-1FA9-F5F5DFFFBA88" name="DIM_REND_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 20:28:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D7EB465-F544-A85B-44D0-CF386457E44C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09445281-79A9-A0E4-AE2E-3C474BDB766D" name="FACT_REND_DIM_DIVIPOLA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 05:41:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="386195D3-5792-1FE9-E366-0F448A11DE62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

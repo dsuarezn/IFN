@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA360687-180C-34E3-0B7D-E23D9CD5D7F1" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_DIVISION_POLITICA">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<commentInRDBMS>Estructura principal que permite almacenar la informacion basica de los conglomerados</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_conglomeradov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DIVIPOLA" id="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS" id="205D3A9E-094B-A2AA-CA89-C68DBF86CDA6">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-01 20:51:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_DEPARTAMENTO" id="0EE25E6E-2D99-3179-6D1E-BDCF3C2287E6">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:52:19 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO" id="173C0F43-DDF2-C775-C7EE-A892318007E2">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<commentInRDBMS>departamento de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MUNICIPIO" id="D2BB41AC-AA50-3669-31DD-01A0B80C63F6">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:53:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUNICIPIO" id="5F819614-41C1-3B33-7698-7957F8DEFA72">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<commentInRDBMS>municipio de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION" id="A257E4C4-135A-12D2-71FD-6A81C6492E3A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAR" id="BE4E2557-6B0D-1B77-705A-D8CAD447EA05">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D6C8725-60A1-6A0B-DA05-3CFC26C78576" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="DIM_DIVISPOLITK_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

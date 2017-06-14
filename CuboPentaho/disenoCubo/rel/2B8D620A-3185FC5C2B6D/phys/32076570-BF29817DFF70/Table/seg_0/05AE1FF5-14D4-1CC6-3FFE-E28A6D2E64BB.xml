@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_CONDICION_IND" directorySegmentName="seg_0" id="05AE1FF5-14D4-1CC6-3FFE-E28A6D2E64BB">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:11:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CODE_CONDICION_IND" id="361C6C84-ABF2-C977-1599-6149AA7744E9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-30 17:24:54 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CONDICION_IND" id="7BC53B94-A80B-FD0C-68AE-C40E4852C582">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:11:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESC_CONDICION_IND" id="88401A3C-EF5E-AA19-5065-3340BA8CE177">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:11:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_CONDICIONID" id="18AB4F44-AFD9-198A-1B5E-E874F23CD45A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:11:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

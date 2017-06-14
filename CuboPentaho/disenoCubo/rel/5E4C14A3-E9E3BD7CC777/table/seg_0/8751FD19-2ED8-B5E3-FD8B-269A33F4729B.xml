@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8751FD19-2ED8-B5E3-FD8B-269A33F4729B" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_LABORATORIO_DETRITOS">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_LABORATORIO_DETRITOS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>estructura para almacenar el resultado del laboratorio de las muestras de detritos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LABORATORIO_DETRITOS" id="C67325D5-F0D0-6410-5ABE-AC380CDD9FAE">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_DETRITOS</sourceObjSchema>
+<sourceObjName>ID_LABORATORIO_DETRITOS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PIEZA" id="6B6C03EE-F31A-CFF7-7C25-DD9F862B82A6">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_DETRITOS</sourceObjSchema>
+<sourceObjName>NUMERO_PIEZA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>numero de la pieza enviada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO_SECO" id="6BB115C0-8402-0368-A47E-6F024A5B5C91">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_DETRITOS</sourceObjSchema>
+<sourceObjName>PESO_SECO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>peso de la muestra enviada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CONGLOMERADO" id="FA59CDDC-8FA5-B8EA-2050-30A121BEBFA3">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:59:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC3F9672-4E34-CF1A-BD76-FF88E2D60C9B" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
+</associations>
+</Column>
+<Column name="IFN_BRIGADA_CONGLOMERADO_ID" id="B17C7989-2A56-E876-2AE3-97F62965CDE0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 05:00:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCA8972-3936-0399-67CD-9F9CF0D3E4E5" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="132CE20F-0208-75E3-345A-DFDDADFEEE30" name="IFN_LAB_DET_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:59:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA59CDDC-8FA5-B8EA-2050-30A121BEBFA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF8422C1-68C2-0160-A07C-0021A8025BB4" name="IFN_LAB_DET_BRIG_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 05:00:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B17C7989-2A56-E876-2AE3-97F62965CDE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

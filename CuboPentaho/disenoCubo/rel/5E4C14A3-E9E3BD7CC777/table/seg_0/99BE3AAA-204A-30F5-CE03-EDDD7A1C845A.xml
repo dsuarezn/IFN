@@ -1,0 +1,488 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99BE3AAA-204A-30F5-CE03-EDDD7A1C845A" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_LABORATORIO_HERBARIO">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_LABORATORIO_HERBARIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>estructura para almacenar el resultado del laboratorio de las muestras botanica</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LABORATORIO_HERBARIO" id="746D97DB-0369-0D27-F4DF-039EA32BE62F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_HERBARIO</sourceObjSchema>
+<sourceObjName>ID_LABORATORIO_HERBARIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_ID" id="D66BFB84-6979-E3EC-B019-210CB720373F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_HERBARIO</sourceObjSchema>
+<sourceObjName>NUMERO_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>numero de identificacion del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MUESTRA" id="D20EAC07-22F4-0852-0F6F-DDEB4DAD6343">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-16 17:40:02 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILIA" id="7789F5A1-75D5-4B75-C213-6D15F336D45F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_HERBARIO</sourceObjSchema>
+<sourceObjName>FAMILIA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>familia del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO" id="DA69D413-ABC7-FE60-6018-4BBC37FE7282">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_HERBARIO</sourceObjSchema>
+<sourceObjName>GENERO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>genero del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIE" id="9B8597C5-F246-878A-4076-4D33347552E0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_HERBARIO</sourceObjSchema>
+<sourceObjName>ESPECIE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>especie del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPB_ID_SUBPARCELA" id="D21D1DFB-06EE-BB33-4C7A-2E1500AAE8B6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:51:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA5A4B20-8425-B8C1-8020-E347E2F1910C" referredColumn="0B4F6278-11B9-6F1E-9D5D-CCB65CAC2DD3"/>
+</associations>
+</Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="FF7514A7-DE2B-8847-AAAE-5511AF68A481">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:55:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CD3C4E9-DF12-6F56-8D81-2EEB278CE3A4" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+<Column name="FAMILIA_DET_1" id="14BAE56E-9274-F1B2-C21A-21DF1D491DDC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO_DET_1" id="2AD46871-5202-1F02-1B0D-C13E2C741F88">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIE_DET_1" id="D1B1F4C0-8705-00E7-5FD2-27C81DE60962">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOR_DET_1" id="C7AFA32E-520D-6B9F-12D9-7CBFFAD904EA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DETERMINADOR_1" id="13016FE8-DF27-BE78-96A9-F281D1B3B832">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DET_1" id="4A74E09B-4EE6-C86C-2480-410B1739E32D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILIA_DET_2" id="54B1D856-5C49-299E-0E18-7AB8B0DD083B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO_DET_2" id="1D323B66-5CD8-2F85-E41F-C9A2AA59537A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIE_DET_2" id="9239E3DA-C618-36E2-E05A-063F0FEB3C4D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOR_DET_2" id="A8B29823-E0AF-C727-7B48-C1C26B61031E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DETERMINADOR_2" id="4B51D0DF-8676-F8A3-B1F1-DAB05887A29D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DET_2" id="2541EE15-57E4-7C15-1DC5-F84516B4BB68">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 20:18:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILIA_NOLISTA" id="330F5D7A-6306-FAB0-F256-3EEDA9A46B66">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO_NOLISTA" id="961FF5E8-9CC4-B0CD-83C6-5EAA885A40E1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIE_NOLISTA" id="596D21AE-9503-206F-FA7D-BC1D2B837C58">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILIADET1_NOLISTA" id="180B9C60-FEEF-87E0-9796-7E4C0336FADC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERODET1_NOLISTA" id="4093146B-3858-2BFD-8C35-6B3CD747A667">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIEDET1_NOLISTA" id="01C53463-21F2-B591-F3DD-7F5078469DFA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTORDET1_NOLISTA" id="11EFD7BA-E23A-7615-9D7C-D814F24D2CFC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 BYTE</dataTypeSize>
+<ownDataTypeParameters>70 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILIADET2_NOLISTA" id="FA893B32-6F0A-A146-8E28-C63C270A847B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERODET2_NOLISTA" id="D8C4FA28-846C-2846-66BA-5174D35593FC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIEDET2_NOLISTA" id="0CBC4FC5-6217-07C0-272D-456332A6938B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTORDET2_NOLISTA" id="AB149A67-4631-CEAD-634D-28C218572574">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-11 18:35:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 BYTE</dataTypeSize>
+<ownDataTypeParameters>70 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUESTRAID" id="52D46736-AAD7-AC0B-FD18-83C3CF7ABF72">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-26 20:14:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_PPERMANENTES_PARCELA_ID" id="2E319279-C7AE-C4F6-A888-D10471EC6CD9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-26 21:20:58 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05FF29BA-E1DC-6FFC-0E78-84B710588235" referredColumn="FB1FB579-3089-9E34-2144-FC347741871D"/>
+</associations>
+</Column>
+<Column name="PLACA_NO" id="344C1222-5EC7-33A7-1C57-1CC92E0F6CAE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-31 23:16:33 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3775EED-7AF0-D263-4445-646E54723C0B" name="IFN_LABORATORIO_HERBARIO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-26 21:20:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="746D97DB-0369-0D27-F4DF-039EA32BE62F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41DE0ECE-A72B-9A2C-1865-5C5A6E150EC1" name="IFN_LAB_HER_IFN_SUBP_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:51:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D21D1DFB-06EE-BB33-4C7A-2E1500AAE8B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26348A24-DA61-98F7-EC6D-79A8005C70BA" name="IFN_LAB_HERB_BRIG_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:55:55 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF7514A7-DE2B-8847-AAAE-5511AF68A481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B296DA9-388A-FF91-5307-34B1E7F5F147" name="IFN_LAB_HERB_IFN_PARCE_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-26 21:20:58 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E319279-C7AE-C4F6-A888-D10471EC6CD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

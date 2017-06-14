@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_DIVISION_POLITICA" directorySegmentName="seg_1" id="CA360687-180C-34E3-0B7D-E23D9CD5D7F1">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPARTAMENTO_ID" id="0EE25E6E-2D99-3179-6D1E-BDCF3C2287E6">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTAMENTO" id="173C0F43-DDF2-C775-C7EE-A892318007E2">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAIS" id="205D3A9E-094B-A2AA-CA89-C68DBF86CDA6">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUNICIPIO" id="5F819614-41C1-3B33-7698-7957F8DEFA72">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION" id="A257E4C4-135A-12D2-71FD-6A81C6492E3A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DIVIPOLA" id="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAR" id="BE4E2557-6B0D-1B77-705A-D8CAD447EA05">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUNICIPIO_ID" id="D2BB41AC-AA50-3669-31DD-01A0B80C63F6">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_DIVISPOLITK_PK" id="4D6C8725-60A1-6A0B-DA05-3CFC26C78576">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:19:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>E7E47D68-C6A0-9904-E18A-D1B6D65006C4</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

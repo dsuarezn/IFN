@@ -1,0 +1,485 @@
+<Schema name="EsquemaINF">
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Subparcelas">
+    <Hierarchy name="Subparcela" visible="true" hasAll="true" primaryKey="ID_SUBPARCELA">
+      <Table name="DIM_SUBPARCELAS" schema="IFN">
+      </Table>
+      <Level name="Codigo Subparcela" visible="true" column="ID_SUBPARCELA" nameColumn="CODIGO_SUBPARCELA" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Latitud" visible="true" column="LATITUD_STR" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Longitud" visible="true" column="LONGITUD_STR" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Division Politica">
+    <Hierarchy name="default" visible="true" hasAll="true" allMemberName="All divipolas" primaryKey="ID_DIVIPOLA">
+      <Table name="DIM_DIVISION_POLITICA" schema="IFN">
+      </Table>
+      <Level name="Pais" visible="true" column="PAIS" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Region" visible="true" column="REGION" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[Region]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+      <Level name="Departamento" visible="true" column="DEPARTAMENTO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[Departamento]]>
+          </Annotation>
+          <Annotation name="Geo.RequiredParents">
+            <![CDATA[Region]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+      <Level name="Municipio" visible="true" column="MUNICIPIO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[Municipio]]>
+          </Annotation>
+          <Annotation name="Geo.RequiredParents">
+            <![CDATA[Region, Departamento]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+      <Level name="Car" visible="true" column="CAR" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[Car]]>
+          </Annotation>
+          <Annotation name="Geo.RequiredParents">
+            <![CDATA[Departamento, Municipio, Car]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Conglomerado">
+    <Hierarchy name="default" visible="true" hasAll="true" primaryKey="ID_CONGLOMERADO">
+      <Table name="DIM_CONGLOMERADO" schema="IFN">
+      </Table>
+      <Level name="Id conglomerado" visible="true" column="ID_CONGLOMERADO" nameColumn="CODIGO_CONGLOMERADO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" captionColumn="CODIGO_CONGLOMERADO">
+      </Level>
+      <Level name="Vereda" visible="true" table="DIM_CONGLOMERADO" column="VEREDA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Corregimiento" visible="true" table="DIM_CONGLOMERADO" column="CORREGIMIENTO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Inspecci&#243;n Policia" visible="true" table="DIM_CONGLOMERADO" column="INSPECCION_POLICIA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Caserio" visible="true" table="DIM_CONGLOMERADO" column="CASERIO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Rancheria" visible="true" table="DIM_CONGLOMERADO" column="RANCHERIA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Resguardo" visible="true" table="DIM_CONGLOMERADO" column="RESGUARDO_INDIGENA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="Resguardo Indigena">
+      </Level>
+      <Level name="Consejo" visible="true" table="DIM_CONGLOMERADO" column="CONSEJO_COMUNITARIO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="Consejo comunitario">
+      </Level>
+      <Level name="Otro" visible="true" table="DIM_CONGLOMERADO" column="OTRO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Bridaga">
+    <Hierarchy name="Jefe" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Jefe" visible="true" column="JEFE" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Tecnico" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Tecnico" visible="true" column="TENICO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Botanico" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Botanico" visible="true" column="BOTANICO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Gestor 1" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Gestor 1" visible="true" column="GESTOR1" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Gestor 2" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Gestor 2" visible="true" column="GESTO2" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Gestor 3" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Gestor 3" visible="true" column="GESTOR3" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Gestor 4" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Gestor 4" visible="true" column="GESTOR4" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Brigada Completa" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Brigada Completa" visible="true" column="BRIGADA_COMPLETA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Vigencia">
+    <Hierarchy name="vigencia" visible="true" hasAll="true" allMemberName="All vigencias" primaryKey="ID_VIGENCIA">
+      <Table name="DIM_VIGENCIAS" schema="IFN">
+      </Table>
+      <Level name="A&#241;o vigencia" visible="true" table="DIM_VIGENCIAS" column="VIGENCIA" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Fecha inicio" visible="true" table="DIM_VIGENCIAS" column="FECHA_INICIO" type="Date" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Fecha fin" visible="true" column="FECHA_FIN" type="Date" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Tipo Brigada" visible="true" hasAll="true" primaryKey="ID_VIGENCIA">
+      <Table name="DIM_VIGENCIAS" schema="IFN">
+      </Table>
+      <Level name="Tipo brigada" visible="true" column="TIPO_BRIGADA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Colores">
+    <Hierarchy name="defalult" visible="true" hasAll="true" primaryKey="ID_COLOR">
+      <Table name="DIM_COLORES" schema="IFN">
+      </Table>
+      <Level name="Color" visible="true" table="DIM_COLORES" column="ID_COLOR" nameColumn="DESCRIPCION" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Property name="Codigo_1" column="CODIGO_HEXA_1" type="String" description="Codigo Hexadecimal Color">
+        </Property>
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Taxonomia">
+    <Hierarchy name="default" visible="true" hasAll="true" primaryKey="ID_TAXONOMIA">
+      <Table name="DIM_TAXONOMIA" schema="IFN">
+      </Table>
+      <Level name="Familia" visible="true" column="FAMILIA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Genero" visible="true" column="GENERO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Especie" visible="true" column="ESPECIE" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Coleccion">
+    <Hierarchy name="default" visible="true" hasAll="true" primaryKey="ID_COLECCION">
+      <Table name="FACT_COLECCION_BOTANICA" schema="IFN" alias="">
+      </Table>
+      <Level name="Nombre comun" visible="true" column="NOMBRE_COMUN" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Numero colector" visible="true" column="NUMERO_COLECTOR" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Familia" visible="true" hasAll="true">
+      <Table name="FACT_COLECCION_BOTANICA" schema="IFN" alias="">
+      </Table>
+      <Level name="Familia" visible="true" column="FAMILIA" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Suelos" caption="Suelos" visible="true" cache="true" enabled="true">
+    <Table name="FACT_SUELOS" schema="IFN">
+    </Table>
+    <DimensionUsage source="Division Politica" name="Division politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Colores" name="Color" visible="true" foreignKey="DIM_COLORES_ID_COLOR" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Subparcelas" name="Subparcela" visible="true" foreignKey="DIM_SUBPARCELAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Conglomerado" name="Conglomerados" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Colectado">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Fertilidad" visible="true" column="DIM_FERTILIDAD" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Carbono" visible="true" column="DIM_CARBONO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Densidad" visible="true" column="DIM_DENSIDAD" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Avg - Raices" column="RAICES" datatype="Numeric" formatString="#.##" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Rocas" column="ROCAS" datatype="Numeric" formatString="#.##" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Peso fresco" column="PESO_FRESCO" datatype="Numeric" formatString="#.##" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Count - Divipola" column="DIM_DIVISION_POLITICA_ID" datatype="String" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Count - ConglomeradoConMuestra" column="DIM_CONGLOMERADO_ID" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Count - SubparcelaConMuestra" column="DIM_SUBPARCELAS_ID" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Count - Suelos" column="ID_SUELOS" aggregator="distinct-count" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Individuos" caption="Individuos" visible="true" cache="true" enabled="true">
+    <Table name="FACT_INDIVIDUOS" schema="IFN">
+    </Table>
+    <DimensionUsage source="Conglomerado" name="Conglomerado" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Subparcelas" name="Subparcelas" visible="true" foreignKey="DIM_SUBPARCELAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Division Politica" name="Division politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Vigencia" name="Vigencia" visible="true" foreignKey="DIM_VIGENCIAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Individuo o fuste">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Individuo_o_fuste" visible="true" column="DIM_IND_O_FUSTE" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Equipo distancia">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Equipo distancia" visible="true" column="DIM_EQUIPO_DISTANCIA" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Equipo altura">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Equipo altura" visible="true" column="DIM_EQUIPO_ALTURA" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Danos">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Danos" visible="true" column="DIM_DANOS" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="Da&#241;os">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Forma fuste">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Forma_fuste" visible="true" column="DIM_FORMA_FUSTE" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo fuste">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo fuste" visible="true" column="DIM_TIPO_FUSTE" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Condicion individuo">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Condicion" visible="true" column="DIM_CONDICION_IND" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="Condici&#243;n individuo">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo individuo">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo individuo" visible="true" column="DIM_TIPO_INDIVIDUO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Coleccion" name="Coleccion" visible="true" foreignKey="ID_INDIVIDUOS">
+    </DimensionUsage>
+    <Measure name="Avg - Altura fuste" column="ALTURA_FUSTE" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Altura total" column="ALTURA_TOTAL" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Azimuth" column="AZIMUT" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Dap1" column="DAP1" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Dap2" column="DAP2" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Distancia" column="DISTANCIA" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Numero de golpes" column="NUMERO_GOLPES" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Penetracion" column="PENETRACION" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Avg - Pom" column="POM" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Count - Individuos" column="ID_INDIVIDUOS" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Count - SubparcelaConIndividuos" column="DIM_SUBPARCELAS_ID" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Min - Altura fuste" column="ALTURA_FUSTE" aggregator="min" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Coleccion botanica" caption="Colecci&#243;n Botanica" visible="true" cache="true" enabled="true">
+    <Table name="FACT_COLECCION_BOTANICA" schema="IFN">
+    </Table>
+    <DimensionUsage source="Division Politica" name="Division politica" caption="Divisi&#243;n politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Conglomerado" name="Conglomerados" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Subparcelas" name="Subparcelas" visible="true" foreignKey="DIM_SUBPARCELAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Vigencia" name="Vigencia" visible="true" foreignKey="DIM_VIGENCIAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Taxonomia" name="Taxonomia" visible="true" foreignKey="DIM_TAXONOMIA_ID" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Colectada">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Colectada" visible="true" column="DIM_COLECTADA" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo individuo">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo individuo" visible="true" column="DIM_TIPO_INDIVIDUO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Count - colecciones" column="ID_COLECCION" aggregator="distinct-count" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Coberturas" visible="true" cache="true" enabled="true">
+    <Table name="FACT_COBERTURAS_PERTURBACIONES" schema="IFN">
+    </Table>
+    <DimensionUsage source="Division Politica" name="Division politica" caption="Divisi&#243;n politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Conglomerado" name="Conglomerados" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Subparcelas" name="Subparcelas" visible="true" foreignKey="DIM_SUBPARCELAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Vigencia" name="Vigencia" visible="true" foreignKey="DIM_VIGENCIAS_ID" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo coberturas">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo cobertura" visible="true" column="DIM_TIPO_COBERTURAS" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo perturbacion" caption="Tipo perturbaci&#243;n">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo perturbacion" visible="true" column="DIM_TIPO_PERTURBACION" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="Tipo perturbaci&#243;n">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Severidad perturbacion" caption="Severidad perturbaci&#243;n">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Severidad perturbacion" visible="true" column="DIM_SEVERIDAD_PERTURBACION" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="Severidad perturbaci&#243;n">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Avg - Porcentaje" column="PORCENTAJE" formatString="#" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Count - coberturas" column="ID_COBERTURA" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Max - Porcentaje" column="PORCENTAJE" formatString="#" aggregator="max" visible="true">
+    </Measure>
+    <Measure name="Min - Porcentaje" column="PORCENTAJE" formatString="#" aggregator="min" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Detritos" visible="true" cache="true" enabled="true">
+    <Table name="FACT_DETRITOS" schema="IFN">
+    </Table>
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Division Politica" name="Division politica" caption="Divisi&#243;n politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Conglomerado" name="Conglomerados" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo detrito">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo detrito" visible="true" column="TIPO_DETRITO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Transecto">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Transecto" visible="true" column="TRANSECTO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Seccion">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Seccion" visible="true" column="SECCION" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="Secci&#243;n">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Pieza">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Pieza" visible="true" column="PIEZA" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Distancia seccion" column="DISTANCIA_SECCION" aggregator="avg" caption="Distancia secci&#243;n" visible="true">
+    </Measure>
+    <Measure name="Diametro1" column="DIAMETRO1" aggregator="avg" caption="Diametro 1" visible="true">
+    </Measure>
+    <Measure name="Diametro2" column="DIAMETRO2" aggregator="avg" caption="Diametro2" visible="true">
+    </Measure>
+    <Measure name="Azimuth" column="AZIMUT" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Inclinacion" column="INCLINACION" aggregator="avg" caption="Inclunaci&#243;n" visible="true">
+    </Measure>
+    <Measure name="Penetracion" column="PENETRACION" aggregator="avg" caption="Penetraci&#243;n" visible="true">
+    </Measure>
+    <Measure name="Numero golpes" column="NUMERO_GOLPES" aggregator="avg" caption="N&#250;mero Golpes" visible="true">
+    </Measure>
+    <Measure name="Peso rodaja" column="PESO_RODAJA" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Espesor1" column="ESPESOR1" aggregator="avg" caption="Espesor 1" visible="true">
+    </Measure>
+    <Measure name="Espesor2" column="ESPESOR2" aggregator="avg" caption="Espesor 2" visible="true">
+    </Measure>
+    <Measure name="Espesor3" column="ESPESOR3" aggregator="avg" caption="Espesor 3" visible="true">
+    </Measure>
+    <Measure name="Espesor4" column="ESPESOR4" aggregator="avg" caption="Espesor 4" visible="true">
+    </Measure>
+    <Measure name="Peso fresco" column="PESO_FRESCO" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Count - Detritos" column="ID_DETRITO" aggregator="distinct-count" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Rendimientos" visible="true" cache="true" enabled="true">
+    <Table name="FACT_RENDIMIENTO" schema="IFN">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Tipo rendimiento">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Tipo rendimiento" visible="true" column="TIPO_RENDIMIENTO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Dia rendimiento">
+      <Hierarchy name="default" visible="true" hasAll="true">
+        <Level name="Dia rendimiento" visible="true" column="DIA_RENDIMIENTO" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="D&#237;a rendimiento">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Division Politica" name="Division Politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Conglomerado" name="Conglomerado" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Rendimiento" column="RENDIMIENTO" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Count - rendimientos" column="RENDIMIENTO" aggregator="distinct-count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

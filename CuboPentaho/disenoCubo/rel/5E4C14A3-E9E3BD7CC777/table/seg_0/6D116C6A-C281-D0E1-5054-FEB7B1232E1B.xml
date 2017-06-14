@@ -1,0 +1,289 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D116C6A-C281-D0E1-5054-FEB7B1232E1B" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_LABORATORIO_SUELOS">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_LABORATORIO_SUELOS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<commentInRDBMS>estructura para almacenar el resultado del laboratorio de las muestras de suelos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LABORATORIO_SUELOS" id="B3B3C70B-E33F-53BB-7938-0D915277DCAE">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>ID_LABORATORIO_SUELOS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEXTURA" id="36850B6C-6F48-0FDB-0D2F-4571A7E2167F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>TEXTURA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>textura de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIA_ORGANICA" id="2111064C-606F-C8CC-DD80-29AFDAC713BE">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>MATERIA_ORGANICA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>materia organica de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FOSFORO" id="B8C71DF1-726E-A85A-DC3D-593D1FA81901">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>FOSFORO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>fosforo de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POTASIO" id="AF67BC55-848C-D8E4-1EA9-FD8986C2CEB8">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>POTASIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>potasio de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PH" id="2DAA6AFD-A561-FE3F-9C82-6DD192AB3D4B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>PH</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>ph de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALCIO" id="456A8F30-B816-F181-4F8B-872F8FA8832C">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>CALCIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>calcio de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAGNESIO" id="AD60AEA6-1085-0F4D-6308-BE841E270D5F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>MAGNESIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>magnesio de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SODIO" id="CEB1A192-86FF-C181-722B-4861ADDFB7BD">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>SODIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>sodio de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALUMINO_INTERCAMBIABLE" id="485FF3E5-13AF-9842-AABA-6ED044B89B1A">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>ALUMINO_INTERCAMBIABLE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>aluminio de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CICE" id="628187BA-F952-66B1-48EE-A15FC6864739">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>CICE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>cice de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARBONO_ORGANICO" id="5C6D3A21-D890-94FC-064A-00FC3181EDEA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>CARBONO_ORGANICO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>carbono organico de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO_SECO" id="D76298B5-C746-78F3-94AC-1C9976144485">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>PESO_SECO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>peso seco de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOLUMEN_CILINDRICO" id="1C403347-B95B-664C-5024-11109B72B9F6">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_LABORATORIO_SUELOS</sourceObjSchema>
+<sourceObjName>VOLUMEN_CILINDRICO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>volumen cilindrico de la muestra de suelo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPB_ID_SUBPARCELA" id="A37AF57E-5444-1C5D-B449-1E4ED591DC26">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:38:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBD63E01-B67A-9A3C-BD82-1DD10E2E0D43" referredColumn="0B4F6278-11B9-6F1E-9D5D-CCB65CAC2DD3"/>
+</associations>
+</Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="739C03AC-5B73-ECC4-F69B-3204A2508ACC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:54:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED49B517-5B01-C7A3-CF6F-0FA8DAD2A4EB" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AA6B1A1-0147-BB93-15AF-5633386B7AB1" name="IFN_LAB_SUELOS_IFN_SUBP_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:38:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A37AF57E-5444-1C5D-B449-1E4ED591DC26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2B3D5BA-A19B-5651-48E4-872025E4DB49" name="IFN_LAB_SLOS_IFN_BRIG_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 04:54:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="739C03AC-5B73-ECC4-F69B-3204A2508ACC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

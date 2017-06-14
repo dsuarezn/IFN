@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A486302D-3838-AFDC-3D81-14DDAE40ACCC" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_OBSERVACIONES">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_OBSERVACIONES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>estructura con las observaciones generales a cada uno de los formularios de recoleccion de datos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OBSERVACION" id="A88B9AAC-2E45-1788-9B54-9EF5FC6DC8BF">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>ID_OBSERVACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BRCO_ID_BRIGADA_CONGLOMERADO" id="6E743615-F275-44AE-28F1-774DBAC2878B">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>BRCO_ID_BRIGADA_CONGLOMERADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificdor unico de la brigada y el conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13C5FCD8-002F-A1DD-F348-9D62BE2E66D4" referredColumn="AE0B0A61-1436-08B1-CDFB-7EC199F4201F"/>
+</associations>
+</Column>
+<Column name="FORMULARIO" id="91F16799-06C6-4F0B-F586-52394CB873AC">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>FORMULARIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador del formulario sobre el cual es la observacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DILIGENCIADO" id="64F1F504-6FC1-D022-5AD0-56D7B5194690">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>DILIGENCIADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>nombre de la persona que dilegencio la observacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="A1BBE8B0-90D9-0C66-749B-22641C10D999">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
+<sourceObjName>OBSERVACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>observacion realizada en el  formulario identificado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE6A0B96-5EF3-D85A-E87F-36B96DBA89D9" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_OBSERVACIONES_PK">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>SYS_C007885</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A88B9AAC-2E45-1788-9B54-9EF5FC6DC8BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="706DFA02-7277-413E-3C9C-CB2113608439" name="SYS_C008038">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:42 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E743615-F275-44AE-28F1-774DBAC2878B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

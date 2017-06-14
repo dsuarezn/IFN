@@ -1,0 +1,270 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED68FC8F-2ED2-2813-4471-41BEC6259C4A" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_REGISTROS_AUDITORIA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_REGISTROS_AUDITORIA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>estructura para almacenar los registros del proceso de auditoria de acuerdo con la configuracion realizada del modulo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REAU_ID" id="164B33C6-9E66-904F-D6D5-445FBFA36D2E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_TATAU_ID" id="EC4029AE-6E97-DFD1-B3DA-7E6F6FC1CED0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_TATAU_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico de tablas tipo auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="024550A0-9D64-EE58-85A9-88E6971CF814" referredColumn="DEBCF29F-1697-C453-AA7C-A96448378387"/>
+</associations>
+</Column>
+<Column name="REAU_TAOP_ID" id="C25E9AFC-2287-DE00-BF24-B7867B2C6FF0">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_TAOP_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico del tablas operaciones</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63EBF76C-D323-AF98-DD1E-AB84673B6C1E" referredColumn="DF7926F8-0B13-8089-A85F-A42652971651"/>
+</associations>
+</Column>
+<Column name="REAU_TACO_ID" id="82BA7037-86F1-692B-ADF2-783AC395B2BA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_TACO_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico de tablas columnas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0E02B3F-52C5-96D4-D6A6-FB365E7C2AC6" referredColumn="1EDD1B34-2F03-408B-F384-153E51414478"/>
+</associations>
+</Column>
+<Column name="REAU_FECHA_OPERACION" id="611FC441-085B-6F81-C77D-8C69BB76F4EC">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_FECHA_OPERACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>fecha de la operacion de auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_USUARIO_OPERACION" id="2197F7E9-125C-3BAB-D96D-9CE76F5D8777">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_USUARIO_OPERACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>usuario que realizao el registro de auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_VALOR_ANTERIOR" id="47D88D29-1ED3-A677-3574-5BA37A31F39D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_VALOR_ANTERIOR</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>valor anterior del registro modificado o actualizado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_VALOR_DESPUES" id="FB7B0E2C-A4D7-C1CF-E840-1D5B40C1BA8E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_VALOR_DESPUES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>valor actual del registro modificado o actualizado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_REGISTRO_ANTERIOR" id="5DA6CC1C-9911-E17E-1821-2D3CF3A71C9E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_REGISTRO_ANTERIOR</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>valor anterior del registro modificado o actualizado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_REGISTRO_DESPUES " id="63E02997-259D-F7E9-4985-0676C03D9B4E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_REGISTRO_DESPUES </sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>valor actual del registro modificado o actualizado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_TIMESTAMP" id="449851F7-2F3C-A4C0-F2EB-B82C1FDECCCB">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_TIMESTAMP</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>fecha de la operacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REAU_USR_ID" id="E1F5D6A9-E010-78AC-3AC2-2ABDDE16E644">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_REGISTROS_AUDITORIA</sourceObjSchema>
+<sourceObjName>REAU_USR_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador del usuario</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5357A379-7E1F-78A6-A9C7-D40BBF901344" name="IDT_REGISTROS_AUDITORIA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IDT_REGISTROS_AUDITORIA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="164B33C6-9E66-904F-D6D5-445FBFA36D2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="989C75AB-AE5B-CDD4-45F7-5476B7A0B228" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IDT_REGISTROS_AUDITORIA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IDT_REGISTROS_AUDITORIA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="164B33C6-9E66-904F-D6D5-445FBFA36D2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B906D89C-84A2-AAEE-681E-8E410E213802" name="IDT_REGISTROS_AUDITORIA_I_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC4029AE-6E97-DFD1-B3DA-7E6F6FC1CED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B876CD4-CADE-4DC5-9538-6435DD69AB2B" name="IDT_REGISTROS_AUDITORIA_I_FK2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C25E9AFC-2287-DE00-BF24-B7867B2C6FF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33D3EDEB-70B2-9012-23E2-AA20961E162F" name="IDT_REGISTROS_AUDITORIA_I_FK3">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82BA7037-86F1-692B-ADF2-783AC395B2BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_TAXONOMIA" directorySegmentName="seg_0" id="3EDEB2C1-E7B1-2C26-4F52-027173DF41F5">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ESPECIE" id="0DCF2849-9759-A2D3-E273-4A934C23DEFF">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FAMILIA" id="12D056C6-CB83-C6DC-88DC-537A87A32882">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENERO" id="72FE55EF-DCB3-AC1C-FB4E-11208B92763C">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TAXONOMIA" id="8BB772A5-1EC2-EAA5-B87E-5866E021C364">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TAXONOMIA_PK" id="DDF46CEE-1AE8-E848-58F3-CBF5271BB75B">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

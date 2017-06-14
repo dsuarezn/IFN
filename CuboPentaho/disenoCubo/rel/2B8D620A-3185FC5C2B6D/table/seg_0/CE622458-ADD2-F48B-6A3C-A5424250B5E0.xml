@@ -1,0 +1,290 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE622458-ADD2-F48B-6A3C-A5424250B5E0" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="FACT_SUELOS">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>Estructura para el almacenamiento de la recolecion y muetras de suelos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_suelosv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SUELOS" id="410EBEA4-078E-4CF3-4DD9-605CA12BA4C7">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISTACNCIA" id="C5A547F0-B8D9-277A-46EA-F0B93D5DC47C">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>distancia en metros del punto de muestreo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROCAS" id="1E1EB361-CBCE-637B-8935-87E830AA4468">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>rocas tamaño aproximado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAICES" id="FDCC8180-58C9-D69A-8D97-FBE022F5BE33">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>raices tamaño aproximado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RANGO_FOTOS" id="19D6E2F1-FB8D-3292-AE7D-60FEF8A28665">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>identificar el rango de fotos tomadas en el punto de muestreo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO_FRESCO" id="5A910E6D-E296-8ED6-6D6D-1BF33848A234">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<commentInRDBMS>peso fresco de la muestra en gramos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NO_DIAS_LEVANTAMIENTO" id="E4CF08CA-8CA2-12E8-3F3D-364B77314824">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-08 22:07:29 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_SUBPARCELAS_ID" id="00789202-4E41-4468-7C82-B2567FE9B755">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:40:10 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CB156CC-5E21-8CCC-0604-937BEBBC6BBC" referredColumn="3CA6FB09-4566-D44B-F286-CD32ACD3D09B"/>
+</associations>
+</Column>
+<Column name="DIM_DIVISION_POLITICA_ID" id="4465325D-979E-5236-B48C-5169BC1543DC">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:39:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB48ACA2-FF6C-E451-FF81-E6050391EDE1" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
+</associations>
+</Column>
+<Column name="DIM_CONGLOMERADO_ID" id="69DD9B97-043C-1B53-81E2-F1C106909B03">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:39:18 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73F001EC-8DF3-FC95-4FE0-7DC6D688B8AC" referredColumn="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</associations>
+</Column>
+<Column name="DIM_BRIGADA_ID" id="83A25C9E-C21C-AD19-8FDE-99A1F341EEC8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:48:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1D4F111-6435-246F-BD45-407341A6218D" referredColumn="95057CD8-F89B-0540-BF1E-39EF3CA39002"/>
+</associations>
+</Column>
+<Column name="DIM_VIGENCIAS_ID" id="6DF3B713-4A4B-10C1-3D0B-9AA6D633F051">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 20:00:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FD893C1-1F83-5642-82E4-A873159A59D3" referredColumn="2462014A-118E-53B7-AA2D-A19E6F5ACAFC"/>
+</associations>
+</Column>
+<Column name="DIM_COLORES_ID_COLOR" id="149F1738-43AC-1FDC-CCF2-69A4EDED5C5E">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-01-31 19:06:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D7CA9E2-5427-35B8-C289-A3F6D1E098C7" referredColumn="0A8E1196-C0F8-AEFA-94D7-54274824E0FB"/>
+</associations>
+</Column>
+<Column name="DIM_FERTILIDAD" id="48D33150-E210-8CF2-3783-2BAA256644C7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-09 21:16:01 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_CARBONO" id="C27EAEEF-612B-801F-90B8-93D3D28E4104">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-09 21:16:01 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_DENSIDAD" id="0D7C86A5-C3DF-7CB3-3B6F-BD1890F4D0DE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-09 21:16:01 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D54E7BBB-1B20-EBDA-2C4F-2B1118E08F66" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="IFN_SUELOSv1_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:39:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="410EBEA4-078E-4CF3-4DD9-605CA12BA4C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9300AF02-E448-EA17-AB1B-45F7A172738A" name="FACT_SUELOS_DIM_SUBP_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 17:40:10 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00789202-4E41-4468-7C82-B2567FE9B755"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A7AB72E-908C-4DAD-55DF-80F43F56C36A" name="FACT_SUEL_DIM_DIV_POL_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:39:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4465325D-979E-5236-B48C-5169BC1543DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7C8EB4B-D20E-7C10-39AC-B9AB37C58023" name="FACT_SUELOS_DIM_CONG_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:39:18 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69DD9B97-043C-1B53-81E2-F1C106909B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1874AB0-122C-B7DF-97F4-3563C88733DC" name="FACT_SUELOS_DIM_BRG_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:48:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83A25C9E-C21C-AD19-8FDE-99A1F341EEC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D051C2B-FFEF-18A4-4C95-560EF1828274" name="FACT_SUELOS_DIM_VIG_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 20:00:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DF3B713-4A4B-10C1-3D0B-9AA6D633F051"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DA21253-6082-7CD6-F010-4682E68BDDA8" name="FACT_SUELOS_DIM_COLORES_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-01-31 19:06:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="149F1738-43AC-1FDC-CCF2-69A4EDED5C5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

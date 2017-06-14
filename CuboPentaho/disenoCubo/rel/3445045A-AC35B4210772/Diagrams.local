@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="289AC74C-FF54-BDC1-DE95-68022A35950D" name="IFN_LOCAL" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

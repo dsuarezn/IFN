@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_BRIGADA_CONGLOMERADO" directorySegmentName="seg_0" id="8BDFFB21-0166-65ED-093B-512C24C300B9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43B73241-D97E-3939-631B-87A8F5A5CC38</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECHA_FIN" id="29109B7C-FACB-1757-3272-F6571C02BC90">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_BRIGADA" id="70F0A99D-7290-F1B9-B048-61588964B83F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAPE_ID_PARCELA" id="762E02FD-6BA9-CF71-3DF5-A4D1B4AD09CC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BRIG_ID_BRIGADA" id="82A8EB84-6281-C43E-C1F0-AFCAFC381406">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VIGENCIA" id="87B3AFA4-1745-5AEB-11BF-0FC0849DC4BC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_INICIO" id="AE1B7782-0637-9711-12DF-4B606AA67D8E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_BRIGADA_CONGLOMERADO" id="BA67B95C-545D-E9A9-906F-1A088E474932">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONG_ID_CONGLOMERADO" id="C5608CD9-E239-3ABC-8FD6-ADCDF354310A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IFN_BRIGADA_CONGLOMERADO_PK" id="B812CF60-EECE-CF45-47E3-C2524B1A6B96">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<segment>A324842D-3666-8E5F-09BE-41A79DD0CC64</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_BRIGADA_CONGLOMERADO_FK1" id="234060E6-BBF9-B7BF-062C-5016739AF632">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_BRIGADA_CONGLOMERADO_FK" id="7086D774-9277-C8AF-1EFA-173E5868987D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_BRIGADA_CONGLOMERADO_FK2" id="8EFB6647-CA41-65E4-12E2-F45C721D07C8">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_BRIGADA_CONGLOMERADO_PK" id="95CBA858-3D00-1235-ECDF-D6EA3510C67B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<segment>A324842D-3666-8E5F-09BE-41A79DD0CC64</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<existingIndex>B812CF60-EECE-CF45-47E3-C2524B1A6B96</existingIndex>
+<indexSegment>A324842D-3666-8E5F-09BE-41A79DD0CC64</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

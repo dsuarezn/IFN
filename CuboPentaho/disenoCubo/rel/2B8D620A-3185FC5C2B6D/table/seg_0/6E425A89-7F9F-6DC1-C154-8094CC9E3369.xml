@@ -1,0 +1,267 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E425A89-7F9F-6DC1-C154-8094CC9E3369" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_SUBPARCELAS">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:28:17 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>table_59</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SUBPARCELA" id="3CA6FB09-4566-D44B-F286-CD32ACD3D09B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro, identificador unico por subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_SUBPARCELA" id="9ED90292-4869-49C8-3B66-89C0F4A91EC9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>codigo dado a la subparcela en el marco del IFN</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTABLECIO" id="F6C25ED2-F114-E290-845C-68291CC0A411">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>se estanlecio o no la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD" id="6184F9A9-4BF1-CC51-22BB-669C51F072D1">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADOS_LATITUD" id="7FBA4D62-0BAE-DEF8-09D4-493675F93188">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas  grados latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINUTOS_LATITUD" id="6486C008-1B41-E363-2ADF-B5D4553A241E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas minutos latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDOS_LATITUD" id="BF45E709-8C75-6B89-A622-BC9B4BDBD767">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas segundos latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD" id="F52F38E1-3EFF-A946-2356-FDA9E670359B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADOS_LONGITUD" id="42B2B614-068D-EF1E-750F-73CB6263CA8C">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas grados longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINUTOS_LONGITUD" id="B37A0183-0DFB-12D8-43ED-395E6BF86CAA">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas minutos longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDOS_LONGITUD" id="678795C2-FCBD-FC36-30B4-48C5C2574CA9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>coordenadas  segundos longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES" id="D19DA079-65FB-23C7-EF35-1948B9D13C15">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:31:28 UTC</createdTime>
+<commentInRDBMS>observaciones generales a la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD_DECIMAL" id="D8D92AA8-24F7-4375-CCBD-AB1E6B82E550">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 16:31:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD_DECIMAL" id="2078D5F0-6EE8-85CC-11BA-BD2B78008BF9">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 16:31:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD_D_STR" id="935898EC-17DB-7DF0-E743-60418989A463">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:49:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD_D_STR" id="5F084439-39BE-7825-CED0-77AFBA7C36D6">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:49:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_CONGLOMERADO_ID" id="293DA69E-679A-2CE9-680E-DDC5AB26FAF2">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:53:27 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B92C23C5-183E-DE7D-62B1-56D9599BBC68" referredColumn="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</associations>
+</Column>
+<Column name="LATITUD_STR" id="EDAE5947-4926-9F11-69D1-CF46896C303B">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 21:48:48 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD_STR" id="983E1D4E-825B-108E-072A-29BF586B8F4F">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 21:48:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11438D91-E348-3376-ABDD-52EAA74A2A5E" name="DIM_SUBPARCELAS_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 16:32:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CA6FB09-4566-D44B-F286-CD32ACD3D09B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A3D8DE7-2602-B912-F397-DF60E8111944" name="DIM_SUBP_DIM_CONG_FK">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-15 19:53:27 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="293DA69E-679A-2CE9-680E-DDC5AB26FAF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

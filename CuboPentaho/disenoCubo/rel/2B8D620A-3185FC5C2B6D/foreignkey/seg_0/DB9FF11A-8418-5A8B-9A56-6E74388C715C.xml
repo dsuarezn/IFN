@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB9FF11A-8418-5A8B-9A56-6E74388C715C" containerWithKeyObject="32ACBF18-2CC4-D434-C606-147B539D01DE" localFKIndex="97B1B836-2A53-D477-A0AA-166315357EF1" name="FACT_PEND_DIM_BRIGADA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 19:55:09 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C9C91F1-09A8-2651-DC7A-E5F432B9B62B</referredTableID>
+<keyObject>E085EC18-11FA-8A18-A26E-ED492B9CC047</keyObject>
+<referredKeyID>E085EC18-11FA-8A18-A26E-ED492B9CC047</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="IFN_PERTURBACIION" directorySegmentName="seg_0" id="D0E2874D-A2C8-BB05-4A49-D79D4515A708">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43B73241-D97E-3939-631B-87A8F5A5CC38</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USUARIO_MODIFICACION" id="16E843EB-F829-3580-A9C7-6651F463EFFD">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PERTURBACION" id="2EF41BE2-43EF-83AB-B77D-8F546E297E01">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="4124BA80-9690-21A6-519F-87311820939C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="6C32B429-F0BF-2229-C5A7-C7C621240B60">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_PERTURBACION" id="8E991FDB-E82D-030C-4F1F-AC128BA421CD">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBP_ID_SUBPARCELA" id="8F53F80A-AED0-4D05-2250-09F29F6DC33A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MODIFICACION" id="B2C68C22-528E-7E7A-5B3E-CAB01C9AF711">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEVERIDAD_PERTURBACION" id="BE65EA99-AFDE-D1E4-2523-3332E7BC8057">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IFN_PERTURBACIION_PK" id="8B61FF5B-A4F6-EBE1-12D1-CFC1AE0B2CA7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>ED2AA9A2-E16D-4172-AAA3-48905828D103</schemaObject>
+<segment>A324842D-3666-8E5F-09BE-41A79DD0CC64</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_PERTURBACIION_IFN_SUB_FK1" id="8D1FE176-E268-D9F0-45CC-A36332FE7B9E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IFN_PERTURBACIION_PK" id="FF1524A9-A833-CE74-B31A-EE4B5EB199EA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<segment>A324842D-3666-8E5F-09BE-41A79DD0CC64</segment>
+<tableSpace>3D3D48E4-0E6E-D8F3-91AA-A96DA6B66001</tableSpace>
+<existingIndex>8B61FF5B-A4F6-EBE1-12D1-CFC1AE0B2CA7</existingIndex>
+<indexSegment>A324842D-3666-8E5F-09BE-41A79DD0CC64</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

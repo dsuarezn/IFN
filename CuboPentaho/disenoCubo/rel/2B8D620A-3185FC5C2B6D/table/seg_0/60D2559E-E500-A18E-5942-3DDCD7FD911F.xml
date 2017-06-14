@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60D2559E-E500-A18E-5942-3DDCD7FD911F" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_CONGLOMERADO">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:16:44 UTC</createdTime>
+<commentInRDBMS>Estructura principal que permite almacenar la informacion basica de los conglomerados</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_conglomeradov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONGLOMERADO" id="3E365C8B-956B-5B34-5087-4B09C1ED0984">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:16:45 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_CONGLOMERADO" id="54C02D96-85DB-FDEF-1758-377EA5923142">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:16:45 UTC</createdTime>
+<commentInRDBMS>codigo del conglomerado en el marco del IFN</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEREDA" id="C61C3891-C827-7D5F-654A-BA00A85E748B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>vereda de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREGIMIENTO" id="175CDEAE-9B9E-98C4-0EF8-01F4A4811087">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>corregimiento de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSPECCION_POLICIA" id="1A77B64A-860E-3803-7C28-253A8D2E7698">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>inspeccion de policia de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASERIO" id="8550C2D7-4BDE-B927-7A10-C208A2D9091C">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>caserio de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RANCHERIA" id="1A4A74CA-4112-D691-C252-1C1E4A1F45DC">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>rancheria de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESGUARDO_INDIGENA" id="11667A45-2683-2F54-4311-9B9162668982">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>resguardo indigena de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONSEJO_COMUNITARIO" id="328A50B4-54D0-22EE-4FA6-B72A40D61B01">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>consejo comunitario de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTRO" id="F8609CEC-A92B-06F3-982B-02FC0CA0A0F8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>otro tipo  de ubicacion del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 BYTE</dataTypeSize>
+<ownDataTypeParameters>70 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="9618AC4D-26B7-3CE2-30A2-E1C17D4BA42B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-12-02 17:51:34 UTC</createdTime>
+<commentInRDBMS>campo que permite identificar si es una parcela permanente o no</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B69BC989-8C92-D5C5-FDD5-75E0D27A3405" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="DIM_CONGLOMERADO_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:16:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

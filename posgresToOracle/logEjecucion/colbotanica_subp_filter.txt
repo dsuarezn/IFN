@@ -1,0 +1,15 @@
+f5_coleccion_botanica_id_;conglomerado_id_;codigo_subparcela;tipo_individuo;f5_coleccion_botanica_no_id;nombre_comun;familia_taxonomica;no_familia_en_lista;genero_taxonomico;no_genero_en_lista;especie_taxonomica;no_especie_en_lista;observaciones_individuo;f5_coleccion_botanica_numero_colector;colectada;codigo_conglomerado;anio_ejecucion;anioVigencia;ID_CONGLOMERADO_SEQ;ID_BRIG_CONG;ID_SUBPARCELA
+97000562;97000001;1;l;1;Mangle piñuelo;-;tetramiristaceae;-1;pelliceria;-1;rhizophorae;"Hojas alternas, simples, nervadura pinnada, nervios secundarios inconspicuos; sin estípulas.";0240;Y;139332;2016;2016;;;
+97000575;97000001;1;l;2;Mangle piñuelo;-1;tetramiristaceae;-1;pelliceria;-1;rhizophorae;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000588;97000001;1;l;3;Mangle piñuelo;-1;tetramiristaceae;-1;pelliceria;-1;rhizophorae;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000601;97000001;1;f;4;Mangle rojo;rhizophoraceae;;rhizophora;;mangle;;Hojas compuestas opuestas, borde liso, tallo ramificado y con corteza de color rojo.;0241;Y;139332;2016;2016;;;
+97000614;97000001;1;f;5;Mangle piñuelo;-1;tetramiristaceae;-1;pelliceria;-1;rhizophorae;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000627;97000001;3;l;6;Mangle nato;fabaceae;;mora;;oleifera;;Hojas compuestas opuestas y de borde entero.;0243;Y;139332;2016;2016;;;
+97000640;97000001;3;f;7;Mangle piñuelo;-1;tetramiristaceae;-1;pelliceria;-1;rhizophorae;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000653;97000001;3;f;8;Mangle piñuelo;-1;tetramiristaceae;-1;pelliceria;-1;rhizophorae;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000666;97000001;3;f;9;Mangle blanco;combretaceae;;laguncularia;;racemosa;;Hojas simples alternas, de borde entero y corteza de color blanco.;0244;N;139332;2016;2016;;;
+97000679;97000001;3;f;10;Mangle blanco;combretaceae;;laguncularia;;racemosa;;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000692;97000001;3;f;11;Mangle blanco;combretaceae;;laguncularia;;racemosa;;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000705;97000001;3;f;12;Mangle blanco;combretaceae;;laguncularia;;racemosa;;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000718;97000001;3;f;13;Mangle blanco;combretaceae;;laguncularia;;racemosa;;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 1;.;N;139332;2016;2016;;;
+97000731;97000001;4;f;14;Mangle nato;fabaceae;;mora;;oleifera;;No se colectó muestra porque esta especie anteriormente fue colectada. Es igual al individuo 6;.;N;139332;2016;2016;;;

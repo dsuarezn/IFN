@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_COLORES" directorySegmentName="seg_0" id="1FA1AAF3-AC3F-30CE-65DB-79D9B8937B69">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_COLOR" id="0A8E1196-C0F8-AEFA-94D7-54274824E0FB">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_HEXA_1" id="62C54DBF-5111-E534-5689-164D521EEFF4">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="9D4B0CAB-91C4-BBE4-F61E-74612EA14D0F">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_HEXA_3" id="C43914E2-BB96-4B61-02D0-F360C5898649">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_HEXA_2" id="D150DDA1-73EF-D660-5CCF-BA746F66F377">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_COLORES_PK" id="E217CF69-2ED8-12C9-0173-791685BFA5D5">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

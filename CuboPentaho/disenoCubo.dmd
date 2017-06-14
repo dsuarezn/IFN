@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="disenoCubo" id="CBF64D08-6D07-C66B-A076-DDD75683CC7D" version="3.5">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-23 16:32:32 UTC</createdTime>
+<ownerDesignName>ModeloCubo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CBF64D08-6D07-C66B-A076-DDD75683CC7D</designId>
+</OSDM_Design>

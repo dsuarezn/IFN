@@ -1,0 +1,299 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C8571A4-DAA2-27DE-92D8-944E1C1B9E07" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_PERSONAS">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PERSONAS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Estructura para lamacenar las personas que componen las brigadas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERSONA" id="8F9E8088-71AA-1711-039C-F1108184FE6F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>ID_PERSONA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRES" id="8632532B-B569-D66B-BCD9-6F3D3FB10573">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>NOMBRES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Nombres de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDOS" id="35F5B296-DB50-5321-E894-5DAE2BB7A5D7">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>APELLIDOS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Apellidos de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DOCUMENTO" id="868A3CE7-48A1-3C35-BF69-421BC9CFAEAF">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>TIPO_DOCUMENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Tipo de documento de identificacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_DOCUMENTO" id="9B397065-9976-FA6B-FAB2-65BCD0CF076C">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>NUMERO_DOCUMENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>numero del documento de identificacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION" id="D6BD1C29-A726-E47A-FE17-52FD53BA2079">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>DIRECCION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Direccion de residencia de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO_ELECTRONICO" id="EEAEC613-D346-AED4-B6AC-405CC803AFC5">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>CORREO_ELECTRONICO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Correo electromico de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="02C1D178-574B-AD5B-9D30-17F62CE71D7D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>TELEFONO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Telefono fijo de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CELULAR" id="6884017F-3FF3-3F4B-76C6-B7689EDCE4F7">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>CELULAR</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Telefono celular de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_SANGRE" id="91720D6D-A2DB-4B05-78C3-E6622D77474D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>TIPO_SANGRE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Tipo y rh de sangre de la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_PERSONA_CONTACTO" id="937C7A4B-6661-794B-72C6-B56C839B85BD">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>NOMBRE_PERSONA_CONTACTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Nombre de una persona para contactar en caso de emergencia</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO_CONTACTO" id="FD80C6BF-EE07-2F1C-A926-266AA647D48F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>TELEFONO_CONTACTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Telefono del contacto </commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO_CONTACTO" id="172F76A2-35D6-381C-E35A-6A10EC68CCF2">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>CORREO_CONTACTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>correo electronico del contacto</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORPORACION" id="B8084A1C-E0BF-0103-7D46-61839584E9BB">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>CORPORACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>entidad o corporacion con la que labora la persona</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPS" id="FD238F12-BB22-944F-5D46-7CFD422BE618">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>EPS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Entidad prestadora de salud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARL" id="A44D925D-9D8C-05D6-02A7-6668906EDBB4">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_PERSONAS</sourceObjSchema>
+<sourceObjName>ARL</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>Adminiostradora de Riesgos Laborales</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="909D7FF3-6599-D38E-E5E7-94E147AB3535" name="IFN_PERSONAS_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PERSONAS_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F9E8088-71AA-1711-039C-F1108184FE6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25D43AB6-17EB-673C-1F5F-09028C743F4F" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_PERSONAS_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_PERSONAS_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F9E8088-71AA-1711-039C-F1108184FE6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9F8F8A2-15C3-4D98-2394-4864528161F8" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_PARCELA_PERMANENTE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:26:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PARCELA" id="DF3F37CD-78A1-3BBB-96A4-1FF0F22EF5A1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro, identificador unico por subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PARCELA" id="3D01AF2C-0BA5-8FBA-E4E5-081A836CC730">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>codigo dado a la parcela permananete en el marco del IFN</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD" id="3898C101-78A0-F5D3-CACF-3D5B045EC918">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADOS_LATITUD" id="8FD3896C-46FF-D392-5562-584C2EC1397F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas  grados latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINUTOS_LATITUD" id="9D12ECEE-CE61-AEA1-FC36-1D75C9E79E1A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas minutos latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDOS_LATITUD" id="B2674020-87E3-5A31-06B5-AE14AC45C269">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas segundos latitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD" id="7A89C36A-748E-611C-02CA-FA95C245F851">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADOS_LONGITUD" id="18FAD1EB-CBE0-BEAF-CDC9-20B0FE2EF820">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas grados longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINUTOS_LONGITUD" id="6A5804C2-53B8-7FB7-A815-826D829E1994">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas minutos longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDOS_LONGITUD" id="9662865E-CA76-AFC6-9ADD-3F3F37539CE0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:28:08 UTC</createdTime>
+<commentInRDBMS>coordenadas  segundos longitud</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIENTACION_LATITUD" id="8D79449B-6DB5-5754-3C29-65490C0DA904">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-12 19:03:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIENTACION_LONGITUD" id="18D99427-0BAD-3C6D-298A-FC635DF38444">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-12 19:03:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_DEPARTAMENTO" id="3707AE07-8CE4-2375-3FE4-CF91D1CC857D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-12 19:11:29 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MUNICIPIO" id="A5638415-8C69-7005-A4C2-B31A25052B14">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-12 19:11:29 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUTO" id="7CFE715C-32F1-0069-6FBE-75FA19C597C0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-12 19:11:29 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAR" id="FA8A3CCD-3CF7-E9B4-CF47-1A1DB25F0DD7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-12 19:11:29 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB8DCCCA-FD50-6FCB-348A-6B034F2526F7" name="DIM_PARCELA_PERMANENTE_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-11 05:29:54 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF3F37CD-78A1-3BBB-96A4-1FF0F22EF5A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

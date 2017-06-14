@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C9C91F1-09A8-2651-DC7A-E5F432B9B62B" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_BRIGADA">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Estructura que permite almacenar los integrantes de las Brigadas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_brigadav1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BRIGADA" id="95057CD8-F89B-0540-BF1E-39EF3CA39002">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>identificador unico  de la estructura Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JEFE" id="5CFC919B-45F9-1872-C0A6-FB613FDDBB64">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Jefe de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TENICO" id="15E1A963-71B3-3EC5-D058-8698A7513980">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Tecnico de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOTANICO" id="85F9C6A1-B4A6-47A2-C364-000ADAF4C28B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Botanico de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GESTOR1" id="2B33A55E-0129-BDC7-7B87-27F1DA22E781">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Gestor1 de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GESTO2" id="83D5AED1-7FB2-3B2B-157F-F8F8DBE36407">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Gestor2 de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GESTOR3" id="2CDF8A91-5447-B73F-191B-DF426593FE32">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Gestor3 de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GESTOR4" id="F0A2A512-2449-DD7F-B964-D422A388C60F">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>Nombre del Gestor4 de la Brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BRIGADA_COMPLETA" id="8F823ACB-2903-B8FB-202F-1591BF7451B5">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-20 19:13:54 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000 BYTE</dataTypeSize>
+<ownDataTypeParameters>3000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="565E6A4B-F144-9B78-E69B-0B03D5B1F73E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<commentInRDBMS>usuario de creacion del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E085EC18-11FA-8A18-A26E-ED492B9CC047" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="DIM_BRIGADA_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:41:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95057CD8-F89B-0540-BF1E-39EF3CA39002"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,220 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="FACT_INDIVIDUOS" directorySegmentName="seg_0" id="0D9B9AC1-7707-4347-9537-4FA0371EF55E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUMERO_FUSTE" id="00676F68-6B97-5E7F-9F04-4D69CE33FAA8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALTURA_TOTAL" id="0438AFF6-49B2-7E02-AFB4-6F21BD7C07DD">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_EQUIPO_DISTANCIA" id="2E9D9053-D73F-CD49-2A29-94AB106849D6">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:42:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AZIMUT" id="3455F791-7E7E-154A-99F3-EB57518176EA">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONGLOMERADO_ID" id="469A5C8C-9679-4B6A-904E-126E0199E47A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:25:12 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_INDIVIDUOS" id="499F25EB-F994-78BE-D9F5-4ED685903A9B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IND_O_FUSTE" id="4BAE8F3C-192C-EC9F-CD4F-658BA0C16ECE">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_VIGENCIAS_ID" id="4D5629C4-FB2E-77E0-84E7-E94CEB0C7BDD">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:54:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_FORMA_FUSTE_ID" id="4FAD34CA-C9EF-4C54-61E1-A2303C6EDF50">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:58:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_EQUIPO_ALTURA" id="552E021B-6CD0-1064-3AB2-03B7261D007C">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POM" id="640865BA-8DA9-AD0E-D7B2-718A17E7B1F6">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMERO_ID" id="72B1DA16-F3A3-C295-D082-AE073D0DBCC6">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_TIPO_INDIVIDUO_ID" id="77D00D7F-8128-4FE5-700A-109C7B4D9881">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALTURA_FUSTE" id="79C678E2-A732-1A1D-9174-F12A4A919063">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONDICION_IND_ID" id="7DE4EE13-C5E0-5FDF-CC96-2D7464E674C8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:13:07 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMERO_GOLPES" id="8060DF55-1673-7F51-CFEC-9BEB3EEA7F5F">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAP1" id="9182CDB7-2C84-A6DB-E5A0-A0378577AC83">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_DANOS_ID" id="944259B4-6D6E-1BCA-E0B4-469D90E0F9E7">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:47:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_DIVISION_POLITICA_ID" id="97F7B67D-B0CF-7C96-7A67-3DA9D22D3CA5">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:24:24 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_TIPO_FUSTE_ID" id="98CE4037-291F-57E4-C539-E54D4E098F2D">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAP2" id="9D08434F-DA0F-77DA-6277-C08E2E287567">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_IND_O_FUSTE_ID" id="AE883F50-088A-671D-2BA2-1A75D88F0EA6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:33:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_SUBPARCELAS_ID" id="B15BD752-FC46-0CAA-BBCE-267B50C25452">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:09:33 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DISTANCIA" id="BAA13D6C-B467-53C5-8FA4-605368E8559A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_BRIGADA_ID" id="CB6BD395-9548-5672-0ADA-3406A4EBC6BE">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:47:06 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PENETRACION" id="DAC0E110-B6CD-241A-FE23-C1335B189F1F">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_COND_IND_FK" id="2BA01864-5D0E-3564-0AF4-AE044C037F8A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:13:07 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IND_DIM_IND_O_FUSTE_FK" id="2E230B93-BF5B-124E-4A88-DCEFB8EB9CC6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:33:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_INDI_DIM_DANOS_FK" id="4DFEA572-A4BE-BDE8-A81B-D07C7F3B3661">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:47:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_CONG_FK" id="5C955697-DBD3-8E39-863A-C8A6ECA94900">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:25:12 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IND_DIM_EQUIPO_ALTURA_FK" id="5E19E6A9-EC0F-316B-1220-326D197F9B86">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_EQUIPOS_FK" id="76BE1E02-4144-925E-EFA3-163C6FBB84FA">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:42:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_FRMFUSTE_FK" id="85663221-1690-0212-5F85-77C870BBC0CB">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:58:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_DIV_POL_FK" id="8AFD91E3-D720-DAE1-AB32-619E134641D2">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:24:24 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_BRG_FK" id="926D040A-1AB8-424C-5A14-A8F71F04933B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:47:06 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IFN_IND_DIM_VIG_FK" id="CA4A9AA6-3667-FECF-0DFB-E9DF3C95C916">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:54:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_INDI_DIM_TIPO_IND_FK" id="DC8CE202-2975-FEC5-2BD6-77FE70447350">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_IND_DIM_TIPO_FUSTE_FK" id="E2E97C30-09FF-C1C7-3F05-18E1FE4319A8">
+<createdBy>Alexander</createdBy>
+<createdTime>2017-02-14 19:52:04 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IFN_IND_DIM_SUBP_FK" id="F134D4AA-AD06-FFBF-C072-87AA8E77B0E9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:09:33 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FACT_INDIVIDUOS_PK" id="560BA4EB-98C7-E5EE-D2A1-FE59F5CA056D">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 20:04:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>E7E47D68-C6A0-9904-E18A-D1B6D65006C4</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97975334-2B09-1401-220D-D7271FC11475" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_TABLAS_TIPO_AUDITORIA">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_TABLAS_TIPO_AUDITORIA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Estructura donde se configura el tipo de auditoria sobre las tablas parametrizadas en el modulo de auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TATAU_ID" id="DEBCF29F-1697-C453-AA7C-A96448378387">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TATAU_TAAU_ID" id="0C840C75-2B97-945A-7B1D-7A068FAF6E4B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_TAAU_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>identificador unico de la tabla auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C12AE9C2-EDCC-5214-0BDC-9366CB4BC752" referredColumn="00B5AF26-91B7-02EC-4507-F11D0254CCA4"/>
+</associations>
+</Column>
+<Column name="TATAU_TIPO_AUDITORIA" id="F717622B-EC11-99E3-0C36-F26CD347C00A">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_TIPO_AUDITORIA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>tipo de auditoria a realizar a la tabla</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TATAU_FECHA_DESDE" id="5DC8EC87-4C5D-9CF2-68D1-8B3811EB5A60">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_FECHA_DESDE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>fecha desde que esta habilitada la operacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TATAU_FECHA_HASTA" id="947F9C2A-AC3F-DC0B-A25A-48E1895C2D5B">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_FECHA_HASTA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>fecha hasta la que esta habilitada la operacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TATAU_TIMESTAMP" id="9A7B0F56-BFCE-349A-A86D-DDCA7603E1A9">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_TIMESTAMP</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>fecha del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TATAU_USR_ID" id="BC17F331-93E9-9E7D-4E03-0B3917D4084E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_TIPO_AUDITORIA</sourceObjSchema>
+<sourceObjName>TATAU_USR_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<commentInRDBMS>usuario del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF4BB535-DBA6-BDE1-9011-28338945CB77" name="IFN_TABLAS_TIPO_AUDITORIA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_TABLAS_TIPO_AUDITORIA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:19 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEBCF29F-1697-C453-AA7C-A96448378387"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E82F0714-5F62-4E0D-2EB7-5479C43E6F3E" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_TABLAS_TIPO_AUDITORIA_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_TABLAS_TIPO_AUDITORIA_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEBCF29F-1697-C453-AA7C-A96448378387"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="167AF8F3-0DC9-DA0A-2F8E-8E2A35E32D5E" name="IFN_TABLAS_TIPO_AUDITORIA_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C840C75-2B97-945A-7B1D-7A068FAF6E4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

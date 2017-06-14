@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="024550A0-9D64-EE58-85A9-88E6971CF814" containerWithKeyObject="ED68FC8F-2ED2-2813-4471-41BEC6259C4A" localFKIndex="B906D89C-84A2-AAEE-681E-8E410E213802" name="IDT_REGISTROS_AUDITORIA_I_FK1">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IDT_REGISTROS_AUDITORIA_I_FK1</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97975334-2B09-1401-220D-D7271FC11475</referredTableID>
+<keyObject>AF4BB535-DBA6-BDE1-9011-28338945CB77</keyObject>
+<referredKeyID>AF4BB535-DBA6-BDE1-9011-28338945CB77</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

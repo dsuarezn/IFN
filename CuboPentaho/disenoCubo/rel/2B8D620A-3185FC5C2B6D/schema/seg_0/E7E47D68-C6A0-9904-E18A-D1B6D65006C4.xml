@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="IFNLOCAL" directorySegmentName="seg_0" id="E7E47D68-C6A0-9904-E18A-D1B6D65006C4">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-24 16:35:55 UTC</createdTime>
+<ownerDesignName>ModeloCubo</ownerDesignName>
+</SchemaObject>

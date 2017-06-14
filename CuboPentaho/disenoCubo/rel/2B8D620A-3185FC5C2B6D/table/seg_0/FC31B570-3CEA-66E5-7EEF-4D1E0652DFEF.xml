@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC31B570-3CEA-66E5-7EEF-4D1E0652DFEF" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_NO_PUNTO_REF">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:30:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>table_64</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_NUMERO_PUNTO_REF" id="3C3DE628-5AB8-425A-B31C-B78D94179646">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:31:57 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PUNTO_REF" id="C9B9F949-0A42-97CD-FBAA-BD5BC3983DE2">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:31:57 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DFC1BB9-D72F-F62E-FA2A-EE6F1FFE6683" name="DIM_NO_PUNTO_REF_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:32:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C3DE628-5AB8-425A-B31C-B78D94179646"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

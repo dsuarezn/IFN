@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F833F13-6EB6-2B37-D023-E29269612251" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="DIM_VIGENCIAS">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<commentInRDBMS>Estructura para almacenar y relacionar las brigadas con un conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_brigada_conglomeradov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VIGENCIA" id="2462014A-118E-53B7-AA2D-A19E6F5ACAFC">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<commentInRDBMS>Identificador unico de la estructura brigada conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_BRIGADA" id="700247C2-9955-3BA6-2EFF-3008B6F96EA1">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<commentInRDBMS>campo para identificar el tipo de brigada (recoleccion, control de calidad)</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIGENCIA" id="28C160BD-1DE4-5C62-4714-CDC4E0703579">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<commentInRDBMS>Vigencia del operativo del IFN</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="ADA86BAA-5C95-7632-C054-60383B39B5ED">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<commentInRDBMS>Fecha de inicio del operativo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="92A33F43-4556-73B1-3BB5-7DC6C6DE73D4">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<commentInRDBMS>Fecha Final del operativo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B28D0CE-C233-FB8D-BCED-2EEAE6FB4583" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="DIM_VIGENCIAS_PK">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:53:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2462014A-118E-53B7-AA2D-A19E6F5ACAFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

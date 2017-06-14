@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="FACT_COBERTURAS_PERTURBACIONES" directorySegmentName="seg_0" id="C796AA1B-563F-5739-4A95-1711F08D9676">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:21:39 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PORCENTAJE" id="0F93C5FA-1F0B-491A-CD1B-BEA6AB11C23A">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:21:39 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_VIGENCIAS_ID" id="14B5C67A-BBAA-8D69-FC6B-8566508DAAF8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:55:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_TIPO_PERTURBACION_ID" id="2D1AE8B7-FB90-0619-8114-AD5D58F3BE9E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 22:03:26 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONGLOMERADO_ID" id="5CF84993-3DA7-6C2B-8B11-41D3C49C4C1E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:25:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_DIVISION_POLITICA_ID" id="5D0120F9-94EF-698B-E04A-EBCD2F8E0304">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:25:51 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_SUBPARCELAS_ID" id="654AF236-1CFB-9EF4-C389-838DAC71D5FF">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:25:11 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_BRIGADA_ID" id="7050F0B2-A2C6-AA3C-4EC4-3AA1A1E8F1A9">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:47:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_COBERTURA" id="70F92B52-13DC-6BE0-CEC2-319492A676D7">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:21:39 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_SEVERIDAD_PERTURBACION_ID" id="8E3F4B35-EE81-7D3E-CBD8-FD26445873FC">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 22:03:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_TIPO_COBERTURAS_ID" id="F6114463-8A71-0F68-4A76-854EB508ED7E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:58:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_PERT_DIM_TP_PERT_FK" id="048B0A10-E47C-1A07-29B0-69C198818DE4">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 22:03:26 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_DIM_TIPO_COB_FK" id="3AF4B4BA-65E0-BC28-4D2A-7570C39E07BF">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:58:16 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_PERT_DIM_VIG_FK" id="40A9DB88-947F-46CD-CCE0-703688DEA140">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:55:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_PERT_DIM_DIVPOL_FK" id="767FC1C2-515C-978F-1FD9-506BB9DC713B">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:25:51 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_PERT_DIM_SVD_PERT_FK" id="8BE069DE-309C-E1B3-1792-147ABC1B3468">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 22:03:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_PERT_DIM_CONG_FK" id="BED129B6-1F24-11B9-D681-BE340F3500A8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:25:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_DIM_SUBP_FK" id="C099A337-39C2-054F-404A-AA82B5C4163E">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:25:11 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_COB_PERT_DIM_BRG_FK" id="D6036613-82C5-D434-91AE-24ECF2698B17">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-29 19:47:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_COB_PERT_PK" id="E63CDC14-2550-8667-7BA0-5CC758620043">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 19:21:39 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>E7E47D68-C6A0-9904-E18A-D1B6D65006C4</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

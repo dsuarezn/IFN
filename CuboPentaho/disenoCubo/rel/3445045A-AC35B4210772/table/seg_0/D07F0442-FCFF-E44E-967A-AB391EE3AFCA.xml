@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D07F0442-FCFF-E44E-967A-AB391EE3AFCA" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_TABLAS_OPERACIONES">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_TABLAS_OPERACIONES</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>Estructura para almacenar los tipos de operaciones sobre los que se realizara auditoria a as tabla y columnas parametrizadas en el modulo de auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TAOP_ID" id="62D4708A-1AD4-9C90-1F22-BED0FC7AE1C6">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAOP_TATAU_ID" id="9EF1128F-EA84-EE7D-21DB-BE5CD3C08FA9">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_TATAU_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador unico de la tabal tipo auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75A54652-D670-09A2-297B-C4290997C2D7" referredColumn="2E6C7A16-29EE-96B3-41B2-F88D72C6E4D9"/>
+</associations>
+</Column>
+<Column name="TAOP_OPERACION" id="74CF5BE0-FAD6-93CD-FE4D-E6ED984BE884">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_OPERACION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>tipo de operacion sobre la que se realiza la auditoria (creacion, modificacion eliminacion)</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAOP_FECHA_DESDE" id="B995EC29-48E4-5F4D-2E49-55F0AEDC3356">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_FECHA_DESDE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha desde que esta habilitada la operacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAOP_FECHA_HASTA" id="1EFCD3D8-6863-93A9-A6CF-B0A82BBD072D">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_FECHA_HASTA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha hasta la que esta habilitada la operacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAOP_TIMESTAMP" id="979D8B61-38BF-3C2D-7C7A-50DECFEB1B30">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_TIMESTAMP</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAOP_USR_ID" id="1D38EA15-546F-8D93-5507-69DF35601FF5">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_OPERACIONES</sourceObjSchema>
+<sourceObjName>TAOP_USR_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>usuario del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73307B2D-E943-76B0-0574-4FB2FF28F346" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_TABLAS_OPERACIONES_PK">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>SYS_C007955</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62D4708A-1AD4-9C90-1F22-BED0FC7AE1C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC8D9627-EB68-4CE0-6740-3E86559EFC51" name="SYS_C008047">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:42 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EF1128F-EA84-EE7D-21DB-BE5CD3C08FA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

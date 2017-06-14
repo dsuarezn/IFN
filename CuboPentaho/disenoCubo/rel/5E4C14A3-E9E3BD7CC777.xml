@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="IFN_MODIFICADO" id="5E4C14A3-437D-3FE0-BD7A-E9E3BD7CC777" mainViewID="4DBA1959-02A5-F497-47BB-691F154602EE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:47:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>IFN_DESA</connName>
+<connUrl>jdbc:oracle:thin:@172.16.1.8:1524:dbdesa</connUrl>
+<connUser>ifn</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

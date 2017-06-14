@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1774CC0-EF20-9523-8CC2-68C1FB143AF2" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_TABLAS_COLUMNAS">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_TABLAS_COLUMNAS</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>Estructura que almacena los campos de las tablas sobre os que se configura el modelo de auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TACO_ID" id="747F397A-CF47-A229-AEC4-3B5FA302666C">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador unico del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TACO_TATAU_ID" id="54D976D4-5904-9EFF-E5BF-3AF1CEF3A8EE">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_TATAU_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>identificador unico de la tablas tipo auditoria</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1B9AF31-7228-58AD-F210-DF1976E78B93" referredColumn="2E6C7A16-29EE-96B3-41B2-F88D72C6E4D9"/>
+</associations>
+</Column>
+<Column name="TACO_NOMBRE_COLUMNA" id="733092FD-6508-8D58-973E-EDAE03BB9FEF">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_NOMBRE_COLUMNA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>nombre de la columna o campo de la tabla</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TACO_FECHA_DESDE" id="23088A89-8B15-2466-C125-8ED091440BAE">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_FECHA_DESDE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha desde que esta habilitada la auditoria sobre la columna</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TACO_FECHA_HASTA" id="4F723E40-5916-B89F-CFCC-E2C2FF9B9A8B">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_FECHA_HASTA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha hasta la que esta habilitada la auditoria sobre la columna</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TACO_TIMESTAMP" id="7304F3A0-7FD1-93CF-5C1C-412917F249FA">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_TIMESTAMP</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>fecha del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TACO_USR_ID" id="86413AC5-5A8C-43FC-8A1A-9883F5F780B6">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN_TABLAS_COLUMNAS</sourceObjSchema>
+<sourceObjName>TACO_USR_ID</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<commentInRDBMS>usuario del registro</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D7EBAD0-5B8F-5D01-DB44-8FE8A6C06DF8" schemaObject="5711D6B2-5DAF-419F-6DBC-2B5B187F7EBF" name="IFN_TABLAS_COLUMNAS_PK">
+<sourceConnName>ifn_local</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>SYS_C007951</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="747F397A-CF47-A229-AEC4-3B5FA302666C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B00388F3-618B-2274-F772-918B994D0CC4" name="SYS_C008046">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:12:42 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54D976D4-5904-9EFF-E5BF-3AF1CEF3A8EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

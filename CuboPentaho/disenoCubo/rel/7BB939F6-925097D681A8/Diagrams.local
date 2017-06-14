@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="9D644EED-B7B4-ABF7-3984-6E2C9F76FBB6" name="IFN_DESA" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

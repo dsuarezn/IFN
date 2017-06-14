@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BDFFB21-0166-65ED-093B-512C24C300B9" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_BRIGADA_CONGLOMERADO">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_BRIGADA_CONGLOMERADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:12 UTC</createdTime>
+<commentInRDBMS>Estructura para almacenar y relacionar las brigadas con un conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BRIGADA_CONGLOMERADO" id="BA67B95C-545D-E9A9-906F-1A088E474932">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>ID_BRIGADA_CONGLOMERADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Identificador unico de la estructura brigada conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BRIG_ID_BRIGADA" id="82A8EB84-6281-C43E-C1F0-AFCAFC381406">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>BRIG_ID_BRIGADA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador unico de la brigada</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2450BD2F-5A14-2648-D895-EBBBD7745379" referredColumn="63E48ADE-B09E-91FD-1589-593F4853241B"/>
+</associations>
+</Column>
+<Column name="CONG_ID_CONGLOMERADO" id="C5608CD9-E239-3ABC-8FD6-ADCDF354310A">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>CONG_ID_CONGLOMERADO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>identificador unico del conglomerado</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8301A271-C199-3E96-C90B-83957CFA7389" referredColumn="58DF00E1-A8AE-44C7-AC80-6720C8AAD5D6"/>
+</associations>
+</Column>
+<Column name="TIPO_BRIGADA" id="70F0A99D-7290-F1B9-B048-61588964B83F">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>TIPO_BRIGADA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>campo para identificar el tipo de brigada (recoleccion, control de calidad)</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAPE_ID_PARCELA" id="762E02FD-6BA9-CF71-3DF5-A4D1B4AD09CC">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>PAPE_ID_PARCELA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Intificador unico de la tabla de parcelas permanentes</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CE66207-D1EC-7ABB-538F-8BC477DCFD1B" referredColumn="75F1A7F9-A8F5-E99D-09C9-64F734DD48D2"/>
+</associations>
+</Column>
+<Column name="VIGENCIA" id="87B3AFA4-1745-5AEB-11BF-0FC0849DC4BC">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>VIGENCIA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Vigencia del operativo del IFN</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="AE1B7782-0637-9711-12DF-4B606AA67D8E">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>FECHA_INICIO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Fecha de inicio del operativo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="29109B7C-FACB-1757-3272-F6571C02BC90">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_BRIGADA_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>FECHA_FIN</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:13 UTC</createdTime>
+<commentInRDBMS>Fecha Final del operativo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95CBA858-3D00-1235-ECDF-D6EA3510C67B" name="IFN_BRIGADA_CONGLOMERADO_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_BRIGADA_CONGLOMERADO_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:15 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA67B95C-545D-E9A9-906F-1A088E474932"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B812CF60-EECE-CF45-47E3-C2524B1A6B96" schemaObject="ED2AA9A2-E16D-4172-AAA3-48905828D103" name="IFN_BRIGADA_CONGLOMERADO_PK">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN</sourceObjSchema>
+<sourceObjName>IFN_BRIGADA_CONGLOMERADO_PK</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA67B95C-545D-E9A9-906F-1A088E474932"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7086D774-9277-C8AF-1EFA-173E5868987D" name="IFN_BRIGADA_CONGLOMERADO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82A8EB84-6281-C43E-C1F0-AFCAFC381406"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="234060E6-BBF9-B7BF-062C-5016739AF632" name="IFN_BRIGADA_CONGLOMERADO_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5608CD9-E239-3ABC-8FD6-ADCDF354310A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EFB6647-CA41-65E4-12E2-F45C721D07C8" name="IFN_BRIGADA_CONGLOMERADO_FK2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-03-09 20:13:22 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="762E02FD-6BA9-CF71-3DF5-A4D1B4AD09CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

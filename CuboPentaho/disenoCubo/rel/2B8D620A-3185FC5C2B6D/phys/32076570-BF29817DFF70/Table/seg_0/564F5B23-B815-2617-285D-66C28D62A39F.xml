@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_ORIENTACION" directorySegmentName="seg_0" id="564F5B23-B815-2617-285D-66C28D62A39F">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-24 18:42:53 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="5CFE5A8B-5FD9-89D4-6EEB-6A5D083A4D9F">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-24 18:46:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDORIENTACION" id="E377349A-5441-129C-B1C7-28F2EAD1C543">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-24 18:46:49 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_ORIENTACION_PK" id="BB3AF2DC-48EC-417E-21A8-FD058ECA75B8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-24 18:56:26 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

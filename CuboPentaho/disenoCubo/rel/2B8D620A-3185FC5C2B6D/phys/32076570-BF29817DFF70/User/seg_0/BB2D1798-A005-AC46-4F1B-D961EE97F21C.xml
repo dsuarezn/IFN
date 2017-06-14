@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="IFNLOCAL" directorySegmentName="seg_0" id="BB2D1798-A005-AC46-4F1B-D961EE97F21C">
+<sourceConnName>IFNLOCAL</sourceConnName>
+<sourceObjName>IFNLOCAL</sourceObjName>
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-24 16:35:54 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>E7E47D68-C6A0-9904-E18A-D1B6D65006C4</schemaObject>
+</UserOraclev10g>

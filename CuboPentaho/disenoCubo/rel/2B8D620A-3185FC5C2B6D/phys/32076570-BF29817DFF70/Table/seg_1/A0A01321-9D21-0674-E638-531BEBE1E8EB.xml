@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_SEVERIDAD_PERTURBACION" directorySegmentName="seg_1" id="A0A01321-9D21-0674-E638-531BEBE1E8EB">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:37:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<schemaObject>A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CODE_SEVERIDAD_PERT" id="543340A2-DCFC-059B-AB68-458A45162BB8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:37:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESC_SEVERIDAD_PERT" id="7BF9292E-A16F-2CB0-578F-09DB95C0ECD4">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:37:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SEVERIDAD_PERTURBACION" id="A2EB08E3-4309-C3E0-24B7-CB6295433EBE">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:37:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_SEVERIDADPER_PK" id="E2537DB8-DDD0-CC0D-1098-E8273C16A3D8">
+<createdBy>Alexander</createdBy>
+<createdTime>2016-11-28 21:37:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

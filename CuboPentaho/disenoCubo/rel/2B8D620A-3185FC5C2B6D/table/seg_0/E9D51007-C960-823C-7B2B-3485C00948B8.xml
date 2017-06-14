@@ -1,0 +1,315 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9D51007-C960-823C-7B2B-3485C00948B8" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="FACT_DETRITOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:12:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DETRITO" id="EA737F5C-E214-8E6C-B93F-FA03978929C4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>identificador unico de la estructura</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSECTO" id="0C0FF44C-FE63-E61F-C292-31F13BF89952">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para almaenar el tipo de transecto (a...h)</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECCION" id="55CEDAF8-05FB-2823-990F-26B5B262283A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para almacenar el tipo de seccion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PIEZA" id="64C79062-2463-D64D-299F-1FD6FEC965D7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para identificar el numero de pieza</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DETRITO" id="A23B596B-2EC4-E452-50DB-40F792922E3B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para identificar el tipo de detrito</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISTANCIA_SECCION" id="A7067AC1-6AE6-90C8-98E7-0C3F8E91A1E4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>capo para identificar la distancia en la seccion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIAMETRO1" id="B48F2898-B49C-6F16-2B6C-F77EE7809D07">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para la medida del diametro 1</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIAMETRO2" id="2695974A-B368-5171-8034-F3E64F783373">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para la medida del diametro 2</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AZIMUT" id="657AEF93-F700-29E2-A8ED-CD396F23EAC1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para almacenar el azimut</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INCLINACION" id="A1FC2673-E930-DC49-47C7-8C6A7C65D3A6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para almacenar la inclinacion en grados</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PENETRACION" id="40F3045C-30B1-336B-1B6C-D9E9A8BAA304">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para almacenar la penetracion menor a 20 cm</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_GOLPES" id="9C009FA2-DF00-A08C-2C0F-CB33C68AD05E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>numero de golpes para alcanzar la penetracion = 20 cm</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO_RODAJA" id="5BCEA238-5F5A-CE71-48F3-E2729385A7E6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>peso en gramos de la rodaja</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPESOR1" id="A79CDF73-265B-0C64-9E1D-03DD639058A3">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>espesor 1 de la rodaja</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPESOR2" id="5A1A67E3-8C75-D9CC-7068-0A03B269B4D4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>espesor 2 de la rodaja</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPESOR3" id="5246C9B8-F9EF-D677-7A81-A95CF370BEEF">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>espesor 3 de la rodaja</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPESOR4" id="F7B4B1CF-F218-A117-D975-A83C35828674">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>espesor 4 de la rodaja</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO_FRESCO" id="C1C43317-D36A-352E-64FE-85B2ED8910B4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:19:55 UTC</createdTime>
+<commentInRDBMS>campo para el peso fresco de la muestra en gramos</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_BRIGADA_ID" id="8D9AC391-1C38-7D83-C9CB-BC2B410C7468">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:27:32 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C720C6AC-7FBB-2C0F-49D7-6A674E3F1D6C" referredColumn="95057CD8-F89B-0540-BF1E-39EF3CA39002"/>
+</associations>
+</Column>
+<Column name="DIM_CONGLOMERADO_ID" id="53B524F1-639D-399C-1B06-9A383D3D710F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:28:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C1109CB-10E7-E4E4-5EAF-064F3AF78642" referredColumn="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</associations>
+</Column>
+<Column name="DIM_DIVISION_POLITICA_ID" id="A2A5C3A3-51DA-D697-946A-F898AA26A526">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 05:32:23 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01089E70-6DE1-48C1-9D4F-BD011830B54A" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABE3A884-D94E-8CC2-8422-BB372A2DF7BF" name="FACT_DETRITOS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:27:06 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA737F5C-E214-8E6C-B93F-FA03978929C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63E3716F-0D3E-3F84-BE9A-1042EA29E403" name="FACT_DET_DIM_BRIGADA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:27:32 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D9AC391-1C38-7D83-C9CB-BC2B410C7468"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FE4BA5A-D785-F97C-F036-D17A2AAA64C8" name="FACT_DET_DIM_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-13 02:28:03 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53B524F1-639D-399C-1B06-9A383D3D710F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78D382A5-30EF-1960-B47E-BE6C5373DCAE" name="FACT_DETRI_DIM_DIVIPOLA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 05:32:23 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A5C3A3-51DA-D697-946A-F898AA26A526"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

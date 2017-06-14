@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="4DBA1959-02A5-F497-47BB-691F154602EE" name="IFN_MODIFICADO" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

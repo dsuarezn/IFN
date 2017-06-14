@@ -1,0 +1,2 @@
+codigo_conglomerado;ID_CONGLOMERADO_SEQ;ID_SUBPARCELA;codigo_subparcela
+139332                                                                                                                                                                                                                                                         ;;;1
