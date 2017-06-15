@@ -136,6 +136,145 @@
   <hop> <from>Filter rows 2</from><to>Table output 2</to><enabled>Y</enabled> </hop>
   </order>
   <step>
+    <name>Database join 2</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IFNLOCAL</connection>
+    <rowlimit>0</rowlimit>
+    <sql>&#xd;&#xa;select&#xd;&#xa;cong.ID_CONGLOMERADO ID_CONGLOMERADO_SEQ, bc.ID_BRIGADA_CONGLOMERADO ID_BRIG_CONG, sbp.ID_SUBPARCELA&#xd;&#xa;from &#xd;&#xa;IFN.IFN_BRIGADA_CONGLOMERADO bc, IFN.IFN_CONGLOMERADO cong, IFN.IFN_SUBPARCELAS sbp&#xd;&#xa;WHERE cong.CODIGO_CONGLOMERADO&#x3d;&#x3f;&#xd;&#xa;and bc.CONG_ID_CONGLOMERADO&#x3d;cong.ID_CONGLOMERADO&#xd;&#xa;and bc.TIPO_BRIGADA&#x3d;&#x27;estandar&#x27;&#xd;&#xa;and bc.VIGENCIA&#x3d;&#x3f;&#xd;&#xa;and sbp.CONG_ID_CONGLOMERADO&#x3d;cong.ID_CONGLOMERADO&#xd;&#xa;and sbp.CODIGO_SUBPARCELA&#x3d;&#x3f;&#xd;&#xa;</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>codigo_conglomerado</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>anioVigencia</name>
+        <type>Number</type>
+      </field>
+      <field>
+        <name>codigo_subparcela</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>624</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database join 2 2</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IFNLOCAL</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select&#xd;&#xa;suelos.ID_SUELOS ID_SUELOS_SEQ&#xd;&#xa;from &#xd;&#xa;IFN.IFN_SUELOS suelos &#xd;&#xa;WHERE suelos.SUBP_ID_SUBPARCELA&#x3d;&#x3f; and suelos.IFN_ID_BRIGADA_CONG&#x3d;&#x3f;</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>ID_CONGLOMERADO_SEQ</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>ID_BRIG_CONG</name>
+        <type>Number</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>832</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Table output 2</send_true_to>
+<send_false_to>Text file output</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>ID_SUBPARCELA</leftvalue>
+   <function>IS NOT NULL</function>
+   <rightvalue/>
+   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1024</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get Variables</name>
+    <type>GetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>anio_ejecucion</name>
+        <variable>&#x24;&#x7b;anio_ejecucion&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>448</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Modified Java Script Value</name>
     <type>ScriptValueMod</type>
     <description/>
@@ -226,6 +365,66 @@
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>832</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 2 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var supbconsulta&#x3d;parseFloat&#x28;codigo_subparcela&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;supbconsulta&#x29; &#x7c;&#x7c; isNaN&#x28;supbconsulta&#x29;&#x29; &#x7b;&#xd;&#xa;	supbconsulta&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;var conglomeradoId&#x3d;id.toString&#x28;&#x29;.substring&#x28;0,id.toString&#x28;&#x29;.length-2&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var conglomeradoIdInt&#x3d;parseFloat&#x28;conglomeradoId&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>supbconsulta</name>
+        <rename>supbconsulta</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>448</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 2 2 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>anioVigencia</name>
+        <rename>anioVigencia</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>624</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
       </GUI>
@@ -360,205 +559,6 @@
     </step>
 
   <step>
-    <name>Database join 2</name>
-    <type>DBJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <connection>IFNLOCAL</connection>
-    <rowlimit>0</rowlimit>
-    <sql>&#xd;&#xa;select&#xd;&#xa;cong.ID_CONGLOMERADO ID_CONGLOMERADO_SEQ, bc.ID_BRIGADA_CONGLOMERADO ID_BRIG_CONG, sbp.ID_SUBPARCELA&#xd;&#xa;from &#xd;&#xa;IFN.IFN_BRIGADA_CONGLOMERADO bc, IFN.IFN_CONGLOMERADO cong, IFN.IFN_SUBPARCELAS sbp&#xd;&#xa;WHERE cong.CODIGO_CONGLOMERADO&#x3d;&#x3f;&#xd;&#xa;and bc.CONG_ID_CONGLOMERADO&#x3d;cong.ID_CONGLOMERADO&#xd;&#xa;and bc.TIPO_BRIGADA&#x3d;&#x27;estandar&#x27;&#xd;&#xa;and bc.VIGENCIA&#x3d;&#x3f;&#xd;&#xa;and sbp.CONG_ID_CONGLOMERADO&#x3d;cong.ID_CONGLOMERADO&#xd;&#xa;and sbp.CODIGO_SUBPARCELA&#x3d;&#x3f;&#xd;&#xa;</sql>
-    <outer_join>Y</outer_join>
-    <replace_vars>N</replace_vars>
-    <parameter>
-      <field>
-        <name>codigo_conglomerado</name>
-        <type>String</type>
-      </field>
-      <field>
-        <name>anioVigencia</name>
-        <type>Number</type>
-      </field>
-      <field>
-        <name>codigo_subparcela</name>
-        <type>None</type>
-      </field>
-    </parameter>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>624</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Get Variables</name>
-    <type>GetVariable</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>
-      <field>
-        <name>anio_ejecucion</name>
-        <variable>&#x24;&#x7b;anio_ejecucion&#x7d;</variable>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>448</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Modified Java Script Value 2 2</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var supbconsulta&#x3d;parseFloat&#x28;codigo_subparcela&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;supbconsulta&#x29; &#x7c;&#x7c; isNaN&#x28;supbconsulta&#x29;&#x29; &#x7b;&#xd;&#xa;	supbconsulta&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;var conglomeradoId&#x3d;id.toString&#x28;&#x29;.substring&#x28;0,id.toString&#x28;&#x29;.length-2&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var conglomeradoIdInt&#x3d;parseFloat&#x28;conglomeradoId&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>      <field>        <name>supbconsulta</name>
-        <rename>supbconsulta</rename>
-        <type>Integer</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>448</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Modified Java Script Value 2 2 2</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>      <field>        <name>anioVigencia</name>
-        <rename>anioVigencia</rename>
-        <type>Integer</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>624</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Database join 2 2</name>
-    <type>DBJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <connection>IFNLOCAL</connection>
-    <rowlimit>0</rowlimit>
-    <sql>select&#xd;&#xa;suelos.ID_SUELOS ID_SUELOS_SEQ&#xd;&#xa;from &#xd;&#xa;IFN.IFN_SUELOS suelos &#xd;&#xa;WHERE suelos.SUBP_ID_SUBPARCELA&#x3d;&#x3f; and suelos.IFN_ID_BRIGADA_CONG&#x3d;&#x3f;</sql>
-    <outer_join>Y</outer_join>
-    <replace_vars>N</replace_vars>
-    <parameter>
-      <field>
-        <name>ID_CONGLOMERADO_SEQ</name>
-        <type>String</type>
-      </field>
-      <field>
-        <name>ID_BRIG_CONG</name>
-        <type>Number</type>
-      </field>
-    </parameter>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>832</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Filter rows 2</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to>Table output 2</send_true_to>
-<send_false_to>Text file output</send_false_to>
-    <compare>
-<condition>
- <negated>N</negated>
- <conditions>
-  <condition>
-   <negated>N</negated>
-   <leftvalue>ID_SUBPARCELA</leftvalue>
-   <function>IS NOT NULL</function>
-   <rightvalue/>
-   </condition>
-  </conditions>
- </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1024</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>Text file output</name>
     <type>TextFileOutput</type>
     <description/>
@@ -583,7 +583,7 @@
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>C&#x3a;&#x5c;Users&#x5c;Usuario&#x5c;Desktop&#x5c;Collect&#x5c;posgresToOracle&#x5c;logEjecucion&#x5c;Post_Suelos_Muestras_No_Subp</name>
+      <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;logEjecucion&#x2f;Post_Suelos_Muestras_No_Subp</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>

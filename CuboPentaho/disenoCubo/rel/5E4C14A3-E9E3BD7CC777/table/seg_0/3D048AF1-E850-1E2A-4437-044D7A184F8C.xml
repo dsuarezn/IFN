@@ -25,7 +25,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="BRCO_ID_BRIGADA_CONGLOMERADO" id="E246AEC9-5B93-4C5A-5E87-B2F73BAD7BE9">
+<Column name="IFN_BRIG_CONG_ID" id="E246AEC9-5B93-4C5A-5E87-B2F73BAD7BE9">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
 <sourceObjName>BRCO_ID_BRIGADA_CONGLOMERADO</sourceObjName>
@@ -90,6 +90,20 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_CONGLOMERADO" id="B7EB0C1D-C1E4-7BBE-AC6A-5B1FB1F992F0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-15 15:38:07 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="130AAA1C-32ED-EC97-EE00-6733A937F7B4" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="4783A93F-137A-3B00-9D8E-57F7F920AA52" name="IFN_OBSERVACIONES_PK">
@@ -127,6 +141,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E246AEC9-5B93-4C5A-5E87-B2F73BAD7BE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10C34A33-3C0C-629D-5566-DCFA2EC287EB" name="IFN_OBS_IFN_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-15 15:38:07 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7EB0C1D-C1E4-7BBE-AC6A-5B1FB1F992F0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

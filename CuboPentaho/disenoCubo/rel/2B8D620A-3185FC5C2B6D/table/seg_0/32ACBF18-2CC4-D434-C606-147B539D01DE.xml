@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32ACBF18-2CC4-D434-C606-147B539D01DE" name="FACT_PENDIENTES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32ACBF18-2CC4-D434-C606-147B539D01DE" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="FACT_PENDIENTES">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-06-14 19:44:22 UTC</createdTime>
 <ownerDesignName>disenoCubo</ownerDesignName>
@@ -134,20 +134,6 @@
 <colAssociation fkAssociation="78161F1D-FC83-1CB6-2A4C-B28317913B12" referredColumn="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
 </associations>
 </Column>
-<Column name="DIM_DIVISION_POLITICA_ID" id="9EC404A3-A5D8-788F-7EB8-EF19156462FE">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-06-14 19:58:01 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8AB465DD-F924-DB72-4236-060972B619CC" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
-</associations>
-</Column>
 <Column name="DIM_SUBPARCELAS_ID" id="CE8DA0E7-81FA-E01C-6E6E-5BDFEDADC775">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-06-14 20:03:50 UTC</createdTime>
@@ -160,6 +146,20 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="9057EF2F-CAAF-4D14-915A-44742699CC0C" referredColumn="3CA6FB09-4566-D44B-F286-CD32ACD3D09B"/>
+</associations>
+</Column>
+<Column name="DIM_DIVISION_POLITICA_ID" id="5F851620-77B6-23DB-1871-1D4F7F1E5D60">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:13:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43D52B6C-1653-4AC3-E973-8E2361C7C488" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
 </associations>
 </Column>
 </columns>
@@ -195,16 +195,6 @@
 <colUsage columnID="6DF12669-AFFE-ABAF-584A-46F46274767C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="35D519BE-EEB0-66DE-D419-F6CB789C6AD4" name="FACT_PEND_DIM_DIVIPOLA_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-06-14 19:58:01 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="9EC404A3-A5D8-788F-7EB8-EF19156462FE"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="82ED23D0-5963-B229-CDBA-D60E65305B31" name="FACT_PEND_DIM_SUBP_FK">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-06-14 20:03:50 UTC</createdTime>
@@ -213,6 +203,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CE8DA0E7-81FA-E01C-6E6E-5BDFEDADC775"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37607724-27D8-6E9A-C5FF-ABA2235B4438" name="FACT_PEND_DIM_DIVIPOLA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:13:52 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F851620-77B6-23DB-1871-1D4F7F1E5D60"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
