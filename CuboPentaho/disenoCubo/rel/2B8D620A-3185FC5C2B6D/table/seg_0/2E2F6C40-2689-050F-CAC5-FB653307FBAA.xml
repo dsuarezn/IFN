@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E2F6C40-2689-050F-CAC5-FB653307FBAA" schemaObject="A7D3E0F0-24D6-94CC-0A0E-01BFF0AFAA1B" name="FACT_EQUIPOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:07:58 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EQUIPO" id="8615C69D-0111-01B8-C9C6-B17D805C4693">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:09:18 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ELEMENTO" id="AE3E365D-ACD7-D80C-F72E-F464297FDDA9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:09:18 UTC</createdTime>
+<commentInRDBMS>tipo de elemento o instrumento </commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD" id="ECC4D3C4-EDFE-5369-F5A5-4FB8205A2190">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:09:18 UTC</createdTime>
+<commentInRDBMS>cantidad del elemento o instrumento</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONDICION" id="612B5530-30B0-302F-F4B1-1A0CC98635EE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:09:18 UTC</createdTime>
+<commentInRDBMS>condicion del elemento o instrumento</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSONA" id="00A00D4C-8ED5-434A-F6FB-153918789277">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:09:18 UTC</createdTime>
+<commentInRDBMS>persona encargada del elemento o el instrumento</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_BRIGADA_ID" id="C2CA940E-0A47-DCB2-344A-19096F9A1B99">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:10:00 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FF0E38D-232E-A84E-208D-A8D07CA48B14" referredColumn="95057CD8-F89B-0540-BF1E-39EF3CA39002"/>
+</associations>
+</Column>
+<Column name="DIM_CONGLOMERADO_ID" id="28AEB1D7-702E-6F8D-D61C-C8B30B6D248E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:10:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D0F1FFA-2242-F6CE-1379-B5E9DD817348" referredColumn="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</associations>
+</Column>
+<Column name="DIM_DIVISION_POLITICA_ID" id="9BF73263-8759-3DA4-1DAE-404E71272302">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:11:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="602D648A-2024-0664-2D32-3A86F8CDE6ED" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E60CF6E9-4AD2-509E-611F-BBD797A31629" name="FACT_EQUIPOS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:11:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8615C69D-0111-01B8-C9C6-B17D805C4693"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9F8288F-6075-6C26-747C-84E0FBB01FB9" name="FACT_EQUIPOS_DIM_BRIG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:10:00 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2CA940E-0A47-DCB2-344A-19096F9A1B99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E39D8018-0504-C326-B6B1-36F1318BB5BB" name="FACT_EQUIPOS_DIM_CONG_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:10:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28AEB1D7-702E-6F8D-D61C-C8B30B6D248E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FC6D046-0674-9BD2-A876-AB98E2E10997" name="FACT_EQUI_DIM_DIVIPOLA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-14 22:11:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BF73263-8759-3DA4-1DAE-404E71272302"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
