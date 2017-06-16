@@ -353,10 +353,16 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var valores&#x3d;null&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;HORA_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	if&#x28;horas&#x21;&#x3d;null&#x29;&#x7b;&#xd;&#xa;		var timeArray&#x3d;horas.getString&#x28;&#x29;.split&#x28;&#x22;&#x3a;&#x22;&#x29;&#x3b;&#xd;&#xa;		var horasTemp&#x3d;timeArray&#x5b;0&#x5d;&#x2b;timeArray&#x5b;1&#x5d;&#x3b;&#xd;&#xa;		valores&#x3d;parseInt&#x28;horasTemp&#x29;&#x3b;&#xd;&#xa;	&#x7d;	&#xd;&#xa;&#x7d;&#xd;&#xa;else&#x7b;&#xd;&#xa;	valores&#x3d;tiempos&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>anioVigencia</name>
         <rename>anioVigencia</rename>
         <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>valores</name>
+        <rename>valores</rename>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
         <replace>N</replace>
@@ -413,6 +419,51 @@
         </field>      <field>        <name>tiempo_preparacion_muestras_detritos</name>
         <value>PREP_MUESTR_DETR</value>
         <norm>tiempos</norm>
+        </field>      <field>        <name>hora_salida_a_conglomerado</name>
+        <value>HORA_SALIDA_TO_CONG</value>
+        <norm>horas</norm>
+        </field>      <field>        <name>hora_inicio_trabajo_conglomerado</name>
+        <value>HORA_INICIO_TRABAJO_CONG</value>
+        <norm>horas</norm>
+        </field>      <field>        <name>hora_salida_de_conglomerado</name>
+        <value>HORA_SALIDA_DE_CONG</value>
+        <norm>horas</norm>
+        </field>      <field>        <name>hora_llegada_campamento</name>
+        <value>HORA_LLEGADA_CAMP</value>
+        <norm>horas</norm>
+        </field>      <field>        <name>cantidad_spf_latizales</name>
+        <value>CANT_SPF_LATIZALES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_spf_fustales</name>
+        <value>CANT_SPF_FUSTALES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_spf_fustales_grandes</name>
+        <value>CANT_SPF_FUSTALES_GRANDES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_individuos_brinzales</name>
+        <value>CANT_IND_BRINZALES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_individuos_latizales</name>
+        <value>CANT_IND_LATIZALES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_individuos_fustales</name>
+        <value>CANT_IND_FUSTALES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_individuos_fustales_grandes</name>
+        <value>CANT_IND_FUSTALES_GRANDES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_muestras_botanicas</name>
+        <value>CANT_MUESTRAS_BOTANICAS</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_spf_brinzales</name>
+        <value>CANT_SPF_BRINZALES</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_muestras_suelos</name>
+        <value>CANT_MUESTRAS_SUELOS</value>
+        <norm>tiempos</norm>
+        </field>      <field>        <name>cantidad_muestras_detritos</name>
+        <value>CANT_MUESTRAS_DETRITOS</value>
+        <norm>tiempos</norm>
         </field>      </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>432</xloc>
@@ -467,7 +518,7 @@
            <schema_name/>
            </partitioning>
     <connection>PGSQL_IFN_CALC_LOCAL</connection>
-    <sql>select &#xd;&#xa;inc.f12_rendimiento_id_&#xd;&#xa;,inc.conglomerado_id_&#xd;&#xa;,inc.dia&#xd;&#xa;,inc.fecha&#xd;&#xa;,inc.fecha_year&#xd;&#xa;,inc.fecha_month&#xd;&#xa;,inc.fecha_day&#xd;&#xa;,inc.establecimiento_y_desmantelamiento_min&#xd;&#xa;,inc.tiempo_materializacion_centroidesspf_min&#xd;&#xa;,inc.tiempo_recorrido_entre_centroidesspf_min&#xd;&#xa;,inc.tiempo_medicion_registro_info_spf_min&#xd;&#xa;,inc.tiempo_medicion_registro_brinzales_min&#xd;&#xa;,inc.tiempo_medicion_registro_latizales_min&#xd;&#xa;,inc.tiempo_medicion_registro_fustales_min&#xd;&#xa;,inc.tiempo_medicion_registr_fust_grandes_min&#xd;&#xa;,inc.tiempo_preparacion_muestras_botanicas&#xd;&#xa;,inc.tiempo_preparacion_muestras_suelos&#xd;&#xa;,inc.tiempo_preparacion_muestras_detritos&#xd;&#xa;,cong.id codigo_conglomerado&#xd;&#xa;FROM conglomerados.f12_rendimiento inc, conglomerados.conglomerado cong&#xd;&#xa;where inc.conglomerado_id_&#x3d;cong.conglomerado_id_&#xd;&#xa;and inc.dia&#x3d;2&#xd;&#xa;order by codigo_conglomerado&#xd;&#xa;</sql>
+    <sql>select &#xd;&#xa;inc.f12_rendimiento_id_&#xd;&#xa;,inc.conglomerado_id_&#xd;&#xa;,inc.dia&#xd;&#xa;,inc.fecha&#xd;&#xa;,inc.fecha_year&#xd;&#xa;,inc.fecha_month&#xd;&#xa;,inc.fecha_day&#xd;&#xa;,inc.establecimiento_y_desmantelamiento_min&#xd;&#xa;,inc.hora_salida_a_conglomerado&#xd;&#xa;,inc.hora_salida_a_conglomerado_hour&#xd;&#xa;,inc.hora_salida_a_conglomerado_minute&#xd;&#xa;,inc.hora_inicio_trabajo_conglomerado&#xd;&#xa;,inc.hora_inicio_trabajo_conglomerado_hour&#xd;&#xa;,inc.hora_inicio_trabajo_conglomerado_minute&#xd;&#xa;,inc.hora_salida_de_conglomerado&#xd;&#xa;,inc.hora_salida_de_conglomerado_hour&#xd;&#xa;,inc.hora_salida_de_conglomerado_minute&#xd;&#xa;,inc.hora_llegada_campamento&#xd;&#xa;,inc.hora_llegada_campamento_hour&#xd;&#xa;,inc.hora_llegada_campamento_minute&#xd;&#xa;,inc.tiempo_materializacion_centroidesspf_min&#xd;&#xa;,inc.tiempo_recorrido_entre_centroidesspf_min&#xd;&#xa;,inc.tiempo_medicion_registro_info_spf_min&#xd;&#xa;,inc.cantidad_spf_brinzales&#xd;&#xa;,inc.tiempo_medicion_registro_brinzales_min&#xd;&#xa;,inc.cantidad_spf_latizales&#xd;&#xa;,inc.tiempo_medicion_registro_latizales_min&#xd;&#xa;,inc.cantidad_spf_fustales&#xd;&#xa;,inc.tiempo_medicion_registro_fustales_min&#xd;&#xa;,inc.cantidad_spf_fustales_grandes&#xd;&#xa;,inc.tiempo_medicion_registr_fust_grandes_min&#xd;&#xa;,inc.cantidad_individuos_brinzales&#xd;&#xa;,inc.cantidad_individuos_latizales&#xd;&#xa;,inc.cantidad_individuos_fustales&#xd;&#xa;,inc.cantidad_individuos_fustales_grandes&#xd;&#xa;,inc.cantidad_muestras_botanicas&#xd;&#xa;,inc.tiempo_preparacion_muestras_botanicas&#xd;&#xa;,inc.cantidad_muestras_suelos&#xd;&#xa;,inc.tiempo_preparacion_muestras_suelos&#xd;&#xa;,inc.cantidad_muestras_detritos&#xd;&#xa;,inc.tiempo_preparacion_muestras_detritos&#xd;&#xa;,cong.id codigo_conglomerado&#xd;&#xa;FROM conglomerados.f12_rendimiento inc, conglomerados.conglomerado cong&#xd;&#xa;where inc.conglomerado_id_&#x3d;cong.conglomerado_id_&#xd;&#xa;and inc.dia&#x3d;2&#xd;&#xa;order by codigo_conglomerado&#xd;&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -546,7 +597,7 @@
         </field>
         <field>
           <column_name>RENDIMIENTO</column_name>
-          <stream_name>tiempos</stream_name>
+          <stream_name>valores</stream_name>
         </field>
         <field>
           <column_name>DIA_RENDIMIENTO</column_name>
@@ -555,6 +606,10 @@
         <field>
           <column_name>IFN_BRIG_CONG_ID</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_RENDIMIENTO</column_name>
+          <stream_name>fecha</stream_name>
         </field>
     </fields>
      <cluster_schema/>

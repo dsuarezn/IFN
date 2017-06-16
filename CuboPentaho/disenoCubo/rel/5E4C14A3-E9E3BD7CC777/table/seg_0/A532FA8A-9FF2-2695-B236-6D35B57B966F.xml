@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A532FA8A-9FF2-2695-B236-6D35B57B966F" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_COBERTURA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A532FA8A-9FF2-2695-B236-6D35B57B966F" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_COBERTURA_PERTUBACIONES">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN</sourceObjSchema>
 <sourceObjName>IFN_COBERTURA</sourceObjName>
@@ -7,11 +7,12 @@
 <createdTime>2017-04-03 21:48:45 UTC</createdTime>
 <commentInRDBMS>Estructura que permite identificar el tipo de cobertura de las subparcelas</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_cobertura</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_COBERTURA" id="AC8C47B6-AF96-9C63-7BF0-DEF6067F7951">
+<Column name="ID_COBERTURA_PERTURBACION" id="AC8C47B6-AF96-9C63-7BF0-DEF6067F7951">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
 <sourceObjName>ID_COBERTURA</sourceObjName>
@@ -73,6 +74,32 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TIPO_PERTURBACION" id="5CE5FE87-38BF-B539-E73D-96813F518B13">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-16 17:32:29 UTC</createdTime>
+<commentInRDBMS>tipo de perturbacion que se presenta en la subparcela</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEVERIDAD_PERTURBACION" id="4CDE79AC-DAFD-B7A8-1BA1-A8FC3AFAC086">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-16 17:32:29 UTC</createdTime>
+<commentInRDBMS>tipo de severidad de la perturbacion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="IFN_ID_BRIGADA_CONG" id="78FEB4C3-49B8-123F-EF64-4848E834CCE2">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-03 23:10:05 UTC</createdTime>
@@ -86,6 +113,18 @@
 <associations>
 <colAssociation fkAssociation="8ED82CD1-C469-6B7A-A848-451DEAD102B9" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
 </associations>
+</Column>
+<Column name="OBSERVACION" id="D7D6B58B-8647-FF56-4637-4B2E7530F021">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-16 19:09:11 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="USUARIO_CREACION" id="16B2CEDB-8071-DAB0-7D7D-56688B064A17">
 <sourceConnName>IFN_DESA</sourceConnName>

@@ -12,7 +12,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_OBSERVACION" id="D21ABEDB-9C2B-BED9-92B6-6AADFCF5D3B4">
+<Column name="ID_INFO_GENERAL" id="D21ABEDB-9C2B-BED9-92B6-6AADFCF5D3B4">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
 <sourceObjName>ID_OBSERVACION</sourceObjName>

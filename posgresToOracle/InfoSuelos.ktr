@@ -554,6 +554,10 @@
           <column_name>IFN_ID_BRIGADA_CONG</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
         </field>
+        <field>
+          <column_name>OBSERVACION</column_name>
+          <stream_name>observacion_razon</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>

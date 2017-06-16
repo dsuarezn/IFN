@@ -101,6 +101,18 @@
 <colAssociation fkAssociation="70162C0F-442E-A7ED-F57B-0E2451996C1C" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
 </associations>
 </Column>
+<Column name="PLACA" id="5DD67A51-D6D0-1655-7B86-88174010FBE0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-16 17:19:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_CREACAION" id="714D68CB-8DAE-4313-BC0D-8240D3EA9A7F">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_EQUIPOS</sourceObjSchema>

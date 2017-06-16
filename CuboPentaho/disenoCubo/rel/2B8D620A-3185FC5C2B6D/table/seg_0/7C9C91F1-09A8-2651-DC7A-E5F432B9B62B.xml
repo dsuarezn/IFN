@@ -72,7 +72,7 @@
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GESTO2" id="83D5AED1-7FB2-3B2B-157F-F8F8DBE36407">
+<Column name="GESTOR2" id="83D5AED1-7FB2-3B2B-157F-F8F8DBE36407">
 <createdBy>Alexander</createdBy>
 <createdTime>2016-11-29 19:41:53 UTC</createdTime>
 <commentInRDBMS>Nombre del Gestor2 de la Brigada</commentInRDBMS>

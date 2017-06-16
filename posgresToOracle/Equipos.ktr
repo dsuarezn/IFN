@@ -429,6 +429,10 @@
           <column_name>IFN_BRIGADA_CONG_ID</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
         </field>
+        <field>
+          <column_name>PLACA</column_name>
+          <stream_name>no_placa</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>

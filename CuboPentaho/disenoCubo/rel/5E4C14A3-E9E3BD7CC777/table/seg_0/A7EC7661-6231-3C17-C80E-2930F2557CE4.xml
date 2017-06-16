@@ -348,6 +348,18 @@
 <colAssociation fkAssociation="3B0BA425-07FA-7FBA-7BC7-2F90F65C238E" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
 </associations>
 </Column>
+<Column name="OBSERVACION" id="F667FAA1-67FA-408F-C111-AE222B752369">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-16 17:12:21 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_CREACION" id="FBD9E72F-113A-D16A-8B47-704ADC06351B">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_INDIVIDUOS</sourceObjSchema>
@@ -408,8 +420,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
