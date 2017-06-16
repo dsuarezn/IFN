@@ -168,6 +168,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DAP2" id="7FE9825C-77C7-7294-D9CF-E597B0CCDCEE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-28 01:47:54 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="POM" id="099ACBE1-292E-B89B-60DA-0EBBF9220251">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
@@ -273,6 +284,66 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CUADRANTE" id="EF73712D-A6D8-EBBF-6874-5482BEBF2363">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>CUADRANTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>Numero del cuadrante se la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUB_CUADRANTE" id="EA227C65-04AA-FD04-687D-904B9CC62ED3">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
+<sourceObjName>SUB_CUADRANTE</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<commentInRDBMS>Nuemro del subcuadrante en la parcela permanente</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_ID_BRIGADA_CONGLOMERADO" id="74DF8D37-9A94-C741-2B7F-9DDCA33232C9">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:32:18 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8541F67C-BB8D-A4E6-D627-EA2956CEBE76" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+<Column name="PAPE_ID_PARCELA" directorySegmentName="seg_1" id="152DDE90-F02E-8D85-38C7-AC1143FB707D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-31 17:04:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8759B25B-EEFE-3CF2-9399-1F8916BD7107" referredColumn="FB1FB579-3089-9E34-2144-FC347741871D"/>
+</associations>
+</Column>
 <Column name="OBSERVACIONES" id="CCB595C1-CE11-4781-C7DB-E1F3407B3788">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
@@ -352,78 +423,6 @@
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CUADRANTE" id="EF73712D-A6D8-EBBF-6874-5482BEBF2363">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
-<sourceObjName>CUADRANTE</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:47 UTC</createdTime>
-<commentInRDBMS>Numero del cuadrante se la parcela permanente</commentInRDBMS>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,3,0</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SUB_CUADRANTE" id="EA227C65-04AA-FD04-687D-904B9CC62ED3">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
-<sourceObjName>SUB_CUADRANTE</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:47 UTC</createdTime>
-<commentInRDBMS>Nuemro del subcuadrante en la parcela permanente</commentInRDBMS>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>5 BYTE</dataTypeSize>
-<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_ID_BRIGADA_CONGLOMERADO" id="74DF8D37-9A94-C741-2B7F-9DDCA33232C9">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 23:32:18 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8541F67C-BB8D-A4E6-D627-EA2956CEBE76" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
-</Column>
-<Column name="DAP2" id="7FE9825C-77C7-7294-D9CF-E597B0CCDCEE">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-28 01:47:54 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PAPE_ID_PARCELA" directorySegmentName="seg_1" id="152DDE90-F02E-8D85-38C7-AC1143FB707D">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-31 17:04:38 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8759B25B-EEFE-3CF2-9399-1F8916BD7107" referredColumn="FB1FB579-3089-9E34-2144-FC347741871D"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

@@ -58,20 +58,6 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CONGLOMERADO" id="FA59CDDC-8FA5-B8EA-2050-30A121BEBFA3">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-28 04:59:52 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="EC3F9672-4E34-CF1A-BD76-FF88E2D60C9B" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
-</associations>
-</Column>
 <Column name="IFN_BRIGADA_CONGLOMERADO_ID" id="B17C7989-2A56-E876-2AE3-97F62965CDE0">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-28 05:00:47 UTC</createdTime>
@@ -88,16 +74,6 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="132CE20F-0208-75E3-345A-DFDDADFEEE30" name="IFN_LAB_DET_CONG_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-28 04:59:52 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="FA59CDDC-8FA5-B8EA-2050-30A121BEBFA3"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="AF8422C1-68C2-0160-A07C-0021A8025BB4" name="IFN_LAB_DET_BRIG_CONG_FK">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-28 05:00:47 UTC</createdTime>

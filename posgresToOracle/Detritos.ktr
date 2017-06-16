@@ -407,7 +407,7 @@
            <schema_name/>
            </partitioning>
     <connection>IFNLOCAL</connection>
-    <sql>SELECT NVL&#x28;max&#x28;ID_DETRITOD&#x29;,0&#x29; MAXID_F9_DETRITO FROM IFN_DETRITOS&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</sql>
+    <sql>SELECT NVL&#x28;max&#x28;ID_DETRITO&#x29;,0&#x29; MAXID_F9_DETRITO FROM IFN_DETRITOS&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -451,7 +451,7 @@
     <return_field/>
     <fields>
         <field>
-          <column_name>ID_DETRITOD</column_name>
+          <column_name>ID_DETRITO</column_name>
           <stream_name>SEQ_F9_DETRITOS</stream_name>
         </field>
         <field>
@@ -521,10 +521,6 @@
         <field>
           <column_name>DISTANCIA_SECCION</column_name>
           <stream_name>distancia_seccion</stream_name>
-        </field>
-        <field>
-          <column_name>ID_CONGLOMERADO</column_name>
-          <stream_name>ID_CONGLOMERADO_SEQ</stream_name>
         </field>
         <field>
           <column_name>IFN_ID_BRIGADA_CONG</column_name>

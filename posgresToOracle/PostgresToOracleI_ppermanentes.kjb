@@ -216,8 +216,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>560</xloc>
-      <yloc>288</yloc>
+      <xloc>1072</xloc>
+      <yloc>528</yloc>
       </entry>
     <entry>
       <name>ppermanentes_herbarios</name>
@@ -347,15 +347,6 @@
     </hop>
     <hop>
       <from>ppermanentes</from>
-      <to>IndividuosPP</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>ppermanentes</from>
       <to>Coleccion Botanica Pape</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -375,6 +366,15 @@
     <hop>
       <from>ppherb</from>
       <to>ppermanentes_herbarios</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>pp_brigadas_conglomerados_pp</from>
+      <to>IndividuosPP</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>

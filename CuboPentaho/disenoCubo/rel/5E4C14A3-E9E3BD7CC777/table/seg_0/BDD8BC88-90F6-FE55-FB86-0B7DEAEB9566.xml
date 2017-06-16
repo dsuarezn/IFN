@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDD8BC88-90F6-FE55-FB86-0B7DEAEB9566" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_PERTURBACIION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDD8BC88-90F6-FE55-FB86-0B7DEAEB9566" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_PERTURBACION">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN</sourceObjSchema>
 <sourceObjName>IFN_PERTURBACIION</sourceObjName>
@@ -7,6 +7,7 @@
 <createdTime>2017-04-03 21:48:46 UTC</createdTime>
 <commentInRDBMS>Estructura para almacenar las perturbaciones presentadas en en la subparcelas</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_perturbaciion</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -74,6 +75,20 @@
 <ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="E7449A2F-2110-0E26-66FF-5207092710B0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:08:28 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="781019AD-E080-1AEE-DBB7-0115D51C53F7" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
 <Column name="USUARIO_CREACION" id="0EE11459-657E-B7FB-2E35-7EF5C292CA94">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_PERTURBACIION</sourceObjSchema>
@@ -137,20 +152,6 @@
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_ID_BRIGADA_CONG" id="E7449A2F-2110-0E26-66FF-5207092710B0">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 23:08:28 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="781019AD-E080-1AEE-DBB7-0115D51C53F7" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

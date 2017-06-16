@@ -212,6 +212,30 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ORIENTACION_LATITUD" id="768A1BB8-FA9B-B0DB-EEEE-CBEDF0C5069F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-19 05:41:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIENTACION_LONGITUD" id="E7632AD7-A86D-EDD2-B49E-18FBD283A6B6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-19 05:41:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_CREACION" id="B0A7605A-073A-83AB-B3AC-77F5971808E4">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_SUBPARCELAS</sourceObjSchema>
@@ -273,30 +297,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ORIENTACION_LATITUD" id="768A1BB8-FA9B-B0DB-EEEE-CBEDF0C5069F">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-19 05:41:13 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ORIENTACION_LONGITUD" id="E7632AD7-A86D-EDD2-B49E-18FBD283A6B6">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-19 05:41:13 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

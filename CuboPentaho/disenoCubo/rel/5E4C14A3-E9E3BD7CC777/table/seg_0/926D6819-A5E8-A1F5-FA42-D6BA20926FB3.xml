@@ -24,25 +24,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CONG_ID_CONGLOMERADO" id="5FC431EF-AFD5-BA96-1A32-C207BBAAE2C8">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_EQUIPOS</sourceObjSchema>
-<sourceObjName>CONG_ID_CONGLOMERADO</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:47 UTC</createdTime>
-<commentInRDBMS>identificador unico del conglomerado</commentInRDBMS>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8F626255-5944-3816-8078-6D6C135FFC82" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
-</associations>
-</Column>
-<Column name="ELEMNETO" id="76DF1F07-9039-A468-170B-CD4EF76D91F5">
+<Column name="ELEMENTO" id="76DF1F07-9039-A468-170B-CD4EF76D91F5">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_EQUIPOS</sourceObjSchema>
 <sourceObjName>ELEMNETO</sourceObjName>
@@ -104,6 +86,20 @@
 <dataTypeSize>200 BYTE</dataTypeSize>
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_BRIGADA_CONG_ID" id="901D7ED5-AAB6-1378-BB45-752EB810667E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-18 20:13:54 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70162C0F-442E-A7ED-F57B-0E2451996C1C" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
 </Column>
 <Column name="USUARIO_CREACAION" id="714D68CB-8DAE-4313-BC0D-8240D3EA9A7F">
 <sourceConnName>IFN_DESA</sourceConnName>
@@ -169,20 +165,6 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IFN_BRIGADA_CONG_ID" id="901D7ED5-AAB6-1378-BB45-752EB810667E">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-18 20:13:54 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="70162C0F-442E-A7ED-F57B-0E2451996C1C" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="0F3EBEFB-E7EF-521A-89FA-E943A31F0771" name="IFN_EQUIPOS_PK">
@@ -210,16 +192,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A85A100E-B40A-659B-A3BF-ABABE9B31268"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FE427C1B-81AA-EE9A-D9C3-5546775BE3D0" name="IFN_EQUIPOS_IFN_CONGLOMER_FK1">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:50 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="5FC431EF-AFD5-BA96-1A32-C207BBAAE2C8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="07F1A9F9-7599-4876-1F8E-FC20FDE9EE29" name="IFN_EQU_BRIG_CONG_FK">

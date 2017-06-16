@@ -656,12 +656,6 @@
       <schema>IFN</schema>
       <table>IFN_ENVIO_MUESTRAS_LABORATORIO</table>
       <key>
-        <name>ID_CONGLOMERADO_SEQ</name>
-        <field>ID_CONGLOMERADO</field>
-        <condition>&#x3d;</condition>
-        <name2/>
-        </key>
-      <key>
         <name>cantidad_piezas</name>
         <field>CANTIDAD_PIEZAS</field>
         <condition>&#x3d;</condition>

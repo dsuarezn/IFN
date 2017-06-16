@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D048AF1-E850-1E2A-4437-044D7A184F8C" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_OBSERVACIONES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D048AF1-E850-1E2A-4437-044D7A184F8C" schemaObject="3E48E386-25C0-F1B3-46F2-EE06203B5612" name="IFN_INFO_GENERAL">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN</sourceObjSchema>
 <sourceObjName>IFN_OBSERVACIONES</sourceObjName>
@@ -7,6 +7,7 @@
 <createdTime>2017-04-03 21:48:46 UTC</createdTime>
 <commentInRDBMS>estructura con las observaciones generales a cada uno de los formularios de recoleccion de datos</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
+<ordsAlias>ifn_observaciones</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -54,27 +55,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DILIGENCIADO" id="5497E73A-AA47-86E6-3AB2-8203D68927A0">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
-<sourceObjName>DILIGENCIADO</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:47 UTC</createdTime>
-<commentInRDBMS>nombre de la persona que dilegencio la observacion</commentInRDBMS>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 BYTE</dataTypeSize>
-<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="OBSERVACION" id="DDE7ED1A-A45F-8F51-30A3-71A87811C698">
+<Column name="INFORMACION" id="DDE7ED1A-A45F-8F51-30A3-71A87811C698">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_OBSERVACIONES</sourceObjSchema>
 <sourceObjName>OBSERVACION</sourceObjName>
@@ -90,19 +75,17 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CONGLOMERADO" id="B7EB0C1D-C1E4-7BBE-AC6A-5B1FB1F992F0">
+<Column name="TIPOINFO" id="27BF41C6-7B4B-E990-F3E2-51A7240D9408">
 <createdBy>Usuario</createdBy>
-<createdTime>2017-06-15 15:38:07 UTC</createdTime>
+<createdTime>2017-06-15 18:22:34 UTC</createdTime>
 <ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="130AAA1C-32ED-EC97-EE00-6733A937F7B4" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -141,16 +124,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E246AEC9-5B93-4C5A-5E87-B2F73BAD7BE9"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="10C34A33-3C0C-629D-5566-DCFA2EC287EB" name="IFN_OBS_IFN_CONG_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-06-15 15:38:07 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B7EB0C1D-C1E4-7BBE-AC6A-5B1FB1F992F0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

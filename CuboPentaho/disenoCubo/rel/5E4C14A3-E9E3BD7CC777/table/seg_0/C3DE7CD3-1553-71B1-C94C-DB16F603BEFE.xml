@@ -89,7 +89,7 @@
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GESTO2" id="8E37BA3A-9A9C-CA45-764B-16D31F807DB4">
+<Column name="GESTOR2" id="8E37BA3A-9A9C-CA45-764B-16D31F807DB4">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_BRIGADA</sourceObjSchema>
 <sourceObjName>GESTO2</sourceObjName>
@@ -121,13 +121,13 @@
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="USUARIO_CREACION" id="A2F2A9F4-0657-FC12-D584-91A460105748">
+<Column name="GESTOR4" id="8A542970-90F0-9C1B-BA94-E69EA59C17A8">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_BRIGADA</sourceObjSchema>
-<sourceObjName>USUARIO_CREACION</sourceObjName>
+<sourceObjName>GESTOR4</sourceObjName>
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-03 21:48:46 UTC</createdTime>
-<commentInRDBMS>usuario de creacion del registro</commentInRDBMS>
+<commentInRDBMS>Nombre del Gestor4 de la Brigada</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -137,13 +137,13 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GESTOR4" id="8A542970-90F0-9C1B-BA94-E69EA59C17A8">
+<Column name="USUARIO_CREACION" id="A2F2A9F4-0657-FC12-D584-91A460105748">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_BRIGADA</sourceObjSchema>
-<sourceObjName>GESTOR4</sourceObjName>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-03 21:48:46 UTC</createdTime>
-<commentInRDBMS>Nombre del Gestor4 de la Brigada</commentInRDBMS>
+<commentInRDBMS>usuario de creacion del registro</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

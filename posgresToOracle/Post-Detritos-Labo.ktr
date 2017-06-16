@@ -147,14 +147,10 @@
            </partitioning>
     <connection>IFNLOCAL</connection>
     <rowlimit>0</rowlimit>
-    <sql>select&#xd;&#xa;det.ID_DETRITOD ID_DETRITO_SEQ&#xd;&#xa;from &#xd;&#xa;IFN.IFN_DETRITOS det &#xd;&#xa;WHERE det.ID_CONGLOMERADO&#x3d;&#x3f; and det.IFN_ID_BRIGADA_CONG&#x3d;&#x3f;</sql>
+    <sql>select&#xd;&#xa;det.ID_DETRITO ID_DETRITO_SEQ&#xd;&#xa;from &#xd;&#xa;IFN.IFN_DETRITOS det &#xd;&#xa;WHERE det.IFN_ID_BRIGADA_CONG&#x3d;&#x3f;</sql>
     <outer_join>Y</outer_join>
     <replace_vars>N</replace_vars>
     <parameter>
-      <field>
-        <name>ID_CONGLOMERADO_SEQ</name>
-        <type>String</type>
-      </field>
       <field>
         <name>ID_BRIG_CONG</name>
         <type>Number</type>
@@ -403,10 +399,6 @@
           <stream_name>ID_DETRITO_SEQ</stream_name>
         </field>
         <field>
-          <column_name>ID_CONGLOMERADO</column_name>
-          <stream_name>ID_CONGLOMERADO_SEQ</stream_name>
-        </field>
-        <field>
           <column_name>IFN_BRIGADA_CONGLOMERADO_ID</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
         </field>
@@ -444,7 +436,7 @@
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;logEjecucion&#x2f;Post_Detritos_Muestras_No_CongId</name>
+      <name>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x2f;logEjecucion&#x2f;Post_Detritos_Muestras_No_CongId</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -465,7 +457,7 @@
       <field>
         <name>f9_muestreo_detritos_madera_transectos_id_</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -477,7 +469,7 @@
       <field>
         <name>id_cong</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -501,7 +493,7 @@
       <field>
         <name>transecto_code_id_</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -525,7 +517,7 @@
       <field>
         <name>seccion_code_id_</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -537,7 +529,7 @@
       <field>
         <name>no_pieza</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -561,7 +553,7 @@
       <field>
         <name>tipo_detrito_code_id_</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -573,7 +565,7 @@
       <field>
         <name>distancia_seccion</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -585,7 +577,7 @@
       <field>
         <name>diam_1_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -597,7 +589,7 @@
       <field>
         <name>diam_2_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -609,7 +601,7 @@
       <field>
         <name>azimut</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -621,7 +613,7 @@
       <field>
         <name>inclinacion_pieza</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -633,7 +625,7 @@
       <field>
         <name>penetracion_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -645,7 +637,7 @@
       <field>
         <name>penetracion_golpes</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -657,7 +649,7 @@
       <field>
         <name>peso_rodaja_gr</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -669,7 +661,7 @@
       <field>
         <name>espesor_1_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -681,7 +673,7 @@
       <field>
         <name>espesor_2_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -693,7 +685,7 @@
       <field>
         <name>espesor_3_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -705,7 +697,7 @@
       <field>
         <name>espesor_4_cm</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -717,7 +709,7 @@
       <field>
         <name>peso_fresco_muestra_gr</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -729,7 +721,7 @@
       <field>
         <name>pesosec</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -741,7 +733,7 @@
       <field>
         <name>pieza_to</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -777,7 +769,7 @@
       <field>
         <name>anioVigencia</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -800,6 +792,18 @@
       </field>
       <field>
         <name>ID_BRIG_CONG</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_DETRITO_SEQ</name>
         <type>BigNumber</type>
         <format/>
         <currency/>

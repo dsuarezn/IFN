@@ -73,6 +73,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="78FEB4C3-49B8-123F-EF64-4848E834CCE2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:10:05 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8ED82CD1-C469-6B7A-A848-451DEAD102B9" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
 <Column name="USUARIO_CREACION" id="16B2CEDB-8071-DAB0-7D7D-56688B064A17">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_COBERTURA</sourceObjSchema>
@@ -135,20 +149,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_ID_BRIGADA_CONG" id="78FEB4C3-49B8-123F-EF64-4848E834CCE2">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 23:10:05 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8ED82CD1-C469-6B7A-A848-451DEAD102B9" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

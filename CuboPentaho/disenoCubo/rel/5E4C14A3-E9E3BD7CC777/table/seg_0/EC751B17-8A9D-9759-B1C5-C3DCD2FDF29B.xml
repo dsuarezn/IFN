@@ -119,6 +119,35 @@
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TIPO_MUESTRA" id="2390D3A5-351C-93FD-6636-448A57727F45">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
+<sourceObjName>TIPO_MUESTRA</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_BRIG_CONG_ID" id="0D2D3AFC-72EB-65BC-67C3-FA615777ABA5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-19 00:54:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="709812BD-8300-3016-9A5E-326479B140DC" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
 <Column name="USUARIO_CREACION" id="38A2D0D7-E524-A577-87B0-A082960C17DD">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
@@ -182,49 +211,6 @@
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TIPO_MUESTRA" id="2390D3A5-351C-93FD-6636-448A57727F45">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
-<sourceObjName>TIPO_MUESTRA</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:46 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ID_CONGLOMERADO" id="E0869708-52B7-8769-AB75-634CD09C2CFF">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_ENVIO_MUESTRAS_LABORATORIO</sourceObjSchema>
-<sourceObjName>ID_CONGLOMERADO</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:46 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_BRIG_CONG_ID" id="0D2D3AFC-72EB-65BC-67C3-FA615777ABA5">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-19 00:54:45 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="709812BD-8300-3016-9A5E-326479B140DC" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

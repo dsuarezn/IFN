@@ -26,23 +26,6 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CONGLOMERADO" id="C6845D30-F3B2-0E54-8CA1-2C1A32C55827">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_UBICACION_CONGLOMERADO</sourceObjSchema>
-<sourceObjName>ID_CONGLOMERADO</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:48 UTC</createdTime>
-<commentInRDBMS>identificador unico del conglomerado </commentInRDBMS>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4AC29DCF-7717-4FEB-5070-D7382600AD1B" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
-</associations>
-</Column>
 <Column name="TIPO_UBICACION" id="F3D20502-F94A-8A06-8D95-0D1A41433FAC">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_UBICACION_CONGLOMERADO</sourceObjSchema>
@@ -95,6 +78,20 @@
 <dataTypeSize>30 BYTE</dataTypeSize>
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_BRIGADA_CONG_ID" id="A16A2A4D-1626-8025-760A-2C097020CDFB">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-18 20:42:26 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B85B2D2-914C-5520-A0D0-2C1EA050C213" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
 </Column>
 <Column name="USUARIO_CREACION" id="143F563B-0AF1-052E-95FA-139D8D17C6E6">
 <sourceConnName>IFN_DESA</sourceConnName>
@@ -160,20 +157,6 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IFN_BRIGADA_CONG_ID" id="A16A2A4D-1626-8025-760A-2C097020CDFB">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-18 20:42:26 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4B85B2D2-914C-5520-A0D0-2C1EA050C213" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FACAE820-0B9D-C204-8F04-57ABC4C00239" name="IFN_UBICACION_COMGLOMERAD_PK">
@@ -201,16 +184,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BE687778-E0DB-2203-8176-B0F52EC2F236"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="025C2DF1-5E79-0599-DE8B-5192532136E9" name="IFN_UBICACION_COMGLOMERADO_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:50 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="C6845D30-F3B2-0E54-8CA1-2C1A32C55827"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4392A9EA-B9DC-345C-4824-B398F7AC08E1" name="IFN_UBIC_CONG_IFN_BRIG_FK">

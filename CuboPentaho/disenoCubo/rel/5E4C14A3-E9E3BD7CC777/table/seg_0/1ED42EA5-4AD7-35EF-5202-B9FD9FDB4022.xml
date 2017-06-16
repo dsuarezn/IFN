@@ -103,7 +103,7 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMERO_COLECTOR" id="77E0ABA9-951A-3A21-687B-8BAB6CA0242F">
+<Column name="NUMERO_COLECTOR" id="77E0ABA9-951A-3A21-687B-8BAB6CA0242F">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_PUNTOS_REFERENCIA_SPF</sourceObjSchema>
 <sourceObjName>NOMERO_COLECTOR</sourceObjName>

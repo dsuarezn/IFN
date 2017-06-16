@@ -42,7 +42,7 @@
 <colAssociation fkAssociation="F51D9872-1525-F8CB-2762-757318EDC649" referredColumn="0B4F6278-11B9-6F1E-9D5D-CCB65CAC2DD3"/>
 </associations>
 </Column>
-<Column name="DISTACNCIA" id="AB801DC7-C0E6-FCE9-EB09-06EE3BC1AAC6">
+<Column name="DISTANCIA" id="AB801DC7-C0E6-FCE9-EB09-06EE3BC1AAC6">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_SUELOS</sourceObjSchema>
 <sourceObjName>DISTACNCIA</sourceObjName>
@@ -197,6 +197,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="F2DC9608-F1B8-119B-7626-550D06C9A2EC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:13:36 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7AFB4DB-FD00-E319-E1FE-E6C045F7AE25" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
 <Column name="USUARIO_CREACION" id="801A6FD2-5677-0580-7536-16DB6B27FB2C">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_SUELOS</sourceObjSchema>
@@ -260,20 +274,6 @@
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_ID_BRIGADA_CONG" id="F2DC9608-F1B8-119B-7626-550D06C9A2EC">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 23:13:36 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C7AFB4DB-FD00-E319-E1FE-E6C045F7AE25" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

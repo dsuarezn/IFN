@@ -217,6 +217,36 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="REGION" id="D995A690-44F1-F9A4-6976-BE6EEF48029D">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>REGION</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAR" id="C4FBF2AB-CA54-D0D2-CD18-1E16C7BF04F4">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_CONGLOMERADO</sourceObjSchema>
+<sourceObjName>CAR</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:46 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_CREACION" id="F842BB8E-E383-33A0-0901-4FDBEBC0E70D">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_CONGLOMERADO</sourceObjSchema>
@@ -279,36 +309,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="REGION" id="D995A690-44F1-F9A4-6976-BE6EEF48029D">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_CONGLOMERADO</sourceObjSchema>
-<sourceObjName>REGION</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:46 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CAR" id="C4FBF2AB-CA54-D0D2-CD18-1E16C7BF04F4">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_CONGLOMERADO</sourceObjSchema>
-<sourceObjName>CAR</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:46 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 BYTE</dataTypeSize>
-<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

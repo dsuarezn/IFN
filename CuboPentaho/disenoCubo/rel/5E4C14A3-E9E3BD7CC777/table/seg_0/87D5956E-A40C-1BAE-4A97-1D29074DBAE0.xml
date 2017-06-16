@@ -137,6 +137,34 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="IFN_ID_BRIGADA_CONG" id="8B636BBC-2716-73D1-618B-A65573F04E9F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:36:13 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F7A195F-66B3-19A9-9457-3B5E30D74273" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+<Column name="PAPE_ID_PARCELA" id="A3413823-F1BF-3AC6-CF0F-AD920B5C335A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-31 21:12:41 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="372BC96A-5B74-2190-30B1-E376CD63A831" referredColumn="FB1FB579-3089-9E34-2144-FC347741871D"/>
+</associations>
+</Column>
 <Column name="USUARIO_CREACION" id="8432882F-B241-94BE-3833-98DA071A2FED">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_COLECCION_PAPE</sourceObjSchema>
@@ -200,34 +228,6 @@
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_ID_BRIGADA_CONG" id="8B636BBC-2716-73D1-618B-A65573F04E9F">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 23:36:13 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="1F7A195F-66B3-19A9-9457-3B5E30D74273" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
-</Column>
-<Column name="PAPE_ID_PARCELA" id="A3413823-F1BF-3AC6-CF0F-AD920B5C335A">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-31 21:12:41 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="372BC96A-5B74-2190-30B1-E376CD63A831" referredColumn="FB1FB579-3089-9E34-2144-FC347741871D"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

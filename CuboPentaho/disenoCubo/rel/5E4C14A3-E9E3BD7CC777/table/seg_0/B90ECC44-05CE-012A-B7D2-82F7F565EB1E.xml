@@ -150,20 +150,6 @@
 <colAssociation fkAssociation="867DF01D-F126-1698-5C17-FE2827D4AA78" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
 </associations>
 </Column>
-<Column name="ID_CONGLOMERADO" id="87B81103-B226-1DD2-71CD-2EC3F08A2A4D">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-06-13 20:56:23 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="5C25F8B7-B4B2-3587-4AE5-17E3955F11EF" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="0B94B7C0-DD25-D551-99EE-C542F931A25E" name="IFN_RENDIMIENTO_PK">
@@ -201,16 +187,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C2F146F9-D302-6A6D-0618-D92FB97DCCE5"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="7A12823B-D82C-C2D5-C317-604FAF20ECFC" name="IFN_REND_IFN_CONG_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-06-13 20:56:23 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="87B81103-B226-1DD2-71CD-2EC3F08A2A4D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -11,7 +11,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_DETRITOD" id="1348F20A-6894-5D33-6C1A-3C55B86D989F">
+<Column name="ID_DETRITO" id="1348F20A-6894-5D33-6C1A-3C55B86D989F">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_DETRITOS</sourceObjSchema>
 <sourceObjName>ID_DETRITOD</sourceObjName>
@@ -283,7 +283,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="USUASRIO_CREACION" id="13D6E9F1-968B-FBA2-4E23-2C099B51CB58">
+<Column name="IFN_ID_BRIGADA_CONG" id="45C91597-DB46-ECF3-B948-589B5F42DE78">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 23:34:01 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64915272-38BE-ABEC-6BF0-30DF16C57FA9" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+<Column name="USUARIO_CREACION" id="13D6E9F1-968B-FBA2-4E23-2C099B51CB58">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_DETRITOS</sourceObjSchema>
 <sourceObjName>USUASRIO_CREACION</sourceObjName>
@@ -311,8 +325,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="USUARIO_MODIFICACION" id="6A5D989D-899F-97FE-8278-93BBCA49B4ED">
@@ -346,34 +359,6 @@
 <dataTypeSize>7</dataTypeSize>
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_ID_BRIGADA_CONG" id="45C91597-DB46-ECF3-B948-589B5F42DE78">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 23:34:01 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="64915272-38BE-ABEC-6BF0-30DF16C57FA9" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
-</Column>
-<Column name="ID_CONGLOMERADO" id="15F5C2F9-14AD-5F8E-1656-3DF43E2148D9">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-19 03:59:15 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4224C150-50CC-62BF-88CF-E67029D84F2F" referredColumn="380AF13F-D98C-E9BA-D4F2-4D1C4E5159EC"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -412,16 +397,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="45C91597-DB46-ECF3-B948-589B5F42DE78"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="752C0B96-AEE6-E783-5C98-FBD2E8A723DF" name="IFN_DETRITOS_CONG_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-19 03:59:15 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="15F5C2F9-14AD-5F8E-1656-3DF43E2148D9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
