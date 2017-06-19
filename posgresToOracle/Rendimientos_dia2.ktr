@@ -129,13 +129,13 @@
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Join Rows &#x28;cartesian product&#x29;</from><to>Calculator</to><enabled>Y</enabled> </hop>
   <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
-  <hop> <from>Table input</from><to>Row Normaliser</to><enabled>Y</enabled> </hop>
-  <hop> <from>Row Normaliser</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>Filter rows 2</from><to>Add sequence</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows 2</from><to>Get Variables</to><enabled>Y</enabled> </hop>
   <hop> <from>Get Variables</from><to>Modified Java Script Value 2 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value 2 2</from><to>Database join 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>Sort rows 2</from><to>Get Variables</to><enabled>Y</enabled> </hop>
-  <hop> <from>Database join 2</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database join 2</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Add sequence</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input</from><to>Row Normaliser</to><enabled>Y</enabled> </hop>
+  <hop> <from>Row Normaliser</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -234,47 +234,6 @@
     </step>
 
   <step>
-    <name>Filter rows 2</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to>Add sequence</send_true_to>
-<send_false_to/>
-    <compare>
-<condition>
- <negated>N</negated>
- <conditions>
-  <condition>
-   <negated>N</negated>
-   <leftvalue>tiempos</leftvalue>
-   <function>IS NOT NULL</function>
-   <rightvalue/>
-   </condition>
-  <condition>
-   <negated>N</negated>
-   <operator>AND</operator>
-   <leftvalue>tiempos</leftvalue>
-   <function>&#x3e;</function>
-   <rightvalue/>
-   <value><name>constant</name><type>Number</type><text>0.0</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</mask></value>   </condition>
-  </conditions>
- </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>608</xloc>
-      <yloc>256</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>Get Variables</name>
     <type>GetVariable</type>
     <description/>
@@ -339,140 +298,6 @@
     </step>
 
   <step>
-    <name>Modified Java Script Value 2 2</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var valores&#x3d;null&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;HORA_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	if&#x28;horas&#x21;&#x3d;null&#x29;&#x7b;&#xd;&#xa;		var timeArray&#x3d;horas.getString&#x28;&#x29;.split&#x28;&#x22;&#x3a;&#x22;&#x29;&#x3b;&#xd;&#xa;		var horasTemp&#x3d;timeArray&#x5b;0&#x5d;&#x2b;timeArray&#x5b;1&#x5d;&#x3b;&#xd;&#xa;		valores&#x3d;parseInt&#x28;horasTemp&#x29;&#x3b;&#xd;&#xa;	&#x7d;	&#xd;&#xa;&#x7d;&#xd;&#xa;else&#x7b;&#xd;&#xa;	valores&#x3d;tiempos&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>      <field>        <name>anioVigencia</name>
-        <rename>anioVigencia</rename>
-        <type>Integer</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>      <field>        <name>valores</name>
-        <rename>valores</rename>
-        <type>Number</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>224</xloc>
-      <yloc>256</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Row Normaliser</name>
-    <type>Normaliser</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-   <typefield>typefield</typefield>
-    <fields>      <field>        <name>establecimiento_y_desmantelamiento_min</name>
-        <value>ESTBL_Y_DESM</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_materializacion_centroidesspf_min</name>
-        <value>MATER_CENTR_SPF</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_recorrido_entre_centroidesspf_min</name>
-        <value>RECOR_CENTR_SPF</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_medicion_registro_info_spf_min</name>
-        <value>MED_REG_INFO_SPF</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_medicion_registro_brinzales_min</name>
-        <value>MED_REG_BRINZ</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_medicion_registro_latizales_min</name>
-        <value>MED_REG_LATIZ</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_medicion_registro_fustales_min</name>
-        <value>MED_REG_FUSTZ</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_medicion_registr_fust_grandes_min</name>
-        <value>MED_REG_FUSTZ_GRD</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_preparacion_muestras_botanicas</name>
-        <value>PREP_MUESTR_BOT</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_preparacion_muestras_suelos</name>
-        <value>PREP_MUESTR_SUEL</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>tiempo_preparacion_muestras_detritos</name>
-        <value>PREP_MUESTR_DETR</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>hora_salida_a_conglomerado</name>
-        <value>HORA_SALIDA_TO_CONG</value>
-        <norm>horas</norm>
-        </field>      <field>        <name>hora_inicio_trabajo_conglomerado</name>
-        <value>HORA_INICIO_TRABAJO_CONG</value>
-        <norm>horas</norm>
-        </field>      <field>        <name>hora_salida_de_conglomerado</name>
-        <value>HORA_SALIDA_DE_CONG</value>
-        <norm>horas</norm>
-        </field>      <field>        <name>hora_llegada_campamento</name>
-        <value>HORA_LLEGADA_CAMP</value>
-        <norm>horas</norm>
-        </field>      <field>        <name>cantidad_spf_latizales</name>
-        <value>CANT_SPF_LATIZALES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_spf_fustales</name>
-        <value>CANT_SPF_FUSTALES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_spf_fustales_grandes</name>
-        <value>CANT_SPF_FUSTALES_GRANDES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_individuos_brinzales</name>
-        <value>CANT_IND_BRINZALES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_individuos_latizales</name>
-        <value>CANT_IND_LATIZALES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_individuos_fustales</name>
-        <value>CANT_IND_FUSTALES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_individuos_fustales_grandes</name>
-        <value>CANT_IND_FUSTALES_GRANDES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_muestras_botanicas</name>
-        <value>CANT_MUESTRAS_BOTANICAS</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_spf_brinzales</name>
-        <value>CANT_SPF_BRINZALES</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_muestras_suelos</name>
-        <value>CANT_MUESTRAS_SUELOS</value>
-        <norm>tiempos</norm>
-        </field>      <field>        <name>cantidad_muestras_detritos</name>
-        <value>CANT_MUESTRAS_DETRITOS</value>
-        <norm>tiempos</norm>
-        </field>      </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>432</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>Sort rows 2</name>
     <type>SortRows</type>
     <description/>
@@ -518,7 +343,7 @@
            <schema_name/>
            </partitioning>
     <connection>PGSQL_IFN_CALC_LOCAL</connection>
-    <sql>select &#xd;&#xa;inc.f12_rendimiento_id_&#xd;&#xa;,inc.conglomerado_id_&#xd;&#xa;,inc.dia&#xd;&#xa;,inc.fecha&#xd;&#xa;,inc.fecha_year&#xd;&#xa;,inc.fecha_month&#xd;&#xa;,inc.fecha_day&#xd;&#xa;,inc.establecimiento_y_desmantelamiento_min&#xd;&#xa;,inc.hora_salida_a_conglomerado&#xd;&#xa;,inc.hora_salida_a_conglomerado_hour&#xd;&#xa;,inc.hora_salida_a_conglomerado_minute&#xd;&#xa;,inc.hora_inicio_trabajo_conglomerado&#xd;&#xa;,inc.hora_inicio_trabajo_conglomerado_hour&#xd;&#xa;,inc.hora_inicio_trabajo_conglomerado_minute&#xd;&#xa;,inc.hora_salida_de_conglomerado&#xd;&#xa;,inc.hora_salida_de_conglomerado_hour&#xd;&#xa;,inc.hora_salida_de_conglomerado_minute&#xd;&#xa;,inc.hora_llegada_campamento&#xd;&#xa;,inc.hora_llegada_campamento_hour&#xd;&#xa;,inc.hora_llegada_campamento_minute&#xd;&#xa;,inc.tiempo_materializacion_centroidesspf_min&#xd;&#xa;,inc.tiempo_recorrido_entre_centroidesspf_min&#xd;&#xa;,inc.tiempo_medicion_registro_info_spf_min&#xd;&#xa;,inc.cantidad_spf_brinzales&#xd;&#xa;,inc.tiempo_medicion_registro_brinzales_min&#xd;&#xa;,inc.cantidad_spf_latizales&#xd;&#xa;,inc.tiempo_medicion_registro_latizales_min&#xd;&#xa;,inc.cantidad_spf_fustales&#xd;&#xa;,inc.tiempo_medicion_registro_fustales_min&#xd;&#xa;,inc.cantidad_spf_fustales_grandes&#xd;&#xa;,inc.tiempo_medicion_registr_fust_grandes_min&#xd;&#xa;,inc.cantidad_individuos_brinzales&#xd;&#xa;,inc.cantidad_individuos_latizales&#xd;&#xa;,inc.cantidad_individuos_fustales&#xd;&#xa;,inc.cantidad_individuos_fustales_grandes&#xd;&#xa;,inc.cantidad_muestras_botanicas&#xd;&#xa;,inc.tiempo_preparacion_muestras_botanicas&#xd;&#xa;,inc.cantidad_muestras_suelos&#xd;&#xa;,inc.tiempo_preparacion_muestras_suelos&#xd;&#xa;,inc.cantidad_muestras_detritos&#xd;&#xa;,inc.tiempo_preparacion_muestras_detritos&#xd;&#xa;,cong.id codigo_conglomerado&#xd;&#xa;FROM conglomerados.f12_rendimiento inc, conglomerados.conglomerado cong&#xd;&#xa;where inc.conglomerado_id_&#x3d;cong.conglomerado_id_&#xd;&#xa;and inc.dia&#x3d;2&#xd;&#xa;order by codigo_conglomerado&#xd;&#xa;</sql>
+    <sql>select &#xd;&#xa;inc.f12_rendimiento_id_&#xd;&#xa;,inc.conglomerado_id_&#xd;&#xa;,inc.dia&#xd;&#xa;,inc.fecha&#xd;&#xa;,inc.fecha_year&#xd;&#xa;,inc.fecha_month&#xd;&#xa;,inc.fecha_day&#xd;&#xa;,inc.establecimiento_y_desmantelamiento_min&#xd;&#xa;,cast&#x28;to_char&#x28;inc.hora_salida_a_conglomerado, &#x27;HH24MI&#x27;&#x29; as int&#x29; hora_salida_a_conglomerado&#xd;&#xa;,cast&#x28;to_char&#x28;inc.hora_inicio_trabajo_conglomerado, &#x27;HH24MI&#x27;&#x29;as int&#x29; hora_inicio_trabajo_conglomerado&#xd;&#xa;,cast&#x28;to_char&#x28;inc.hora_salida_de_conglomerado, &#x27;HH24MI&#x27;&#x29;as int&#x29; hora_salida_de_conglomerado&#xd;&#xa;,cast&#x28;to_char&#x28;inc.hora_llegada_campamento, &#x27;HH24MI&#x27;&#x29;as int&#x29; hora_llegada_campamento&#xd;&#xa;,inc.tiempo_materializacion_centroidesspf_min&#xd;&#xa;,inc.tiempo_recorrido_entre_centroidesspf_min&#xd;&#xa;,inc.tiempo_medicion_registro_info_spf_min&#xd;&#xa;,inc.tiempo_preparacion_muestras_botanicas&#xd;&#xa;,inc.tiempo_preparacion_muestras_suelos&#xd;&#xa;,inc.tiempo_medicion_registro_brinzales_min&#xd;&#xa;,inc.tiempo_preparacion_muestras_detritos&#xd;&#xa;,inc.tiempo_medicion_registro_fustales_min&#xd;&#xa;,inc.tiempo_medicion_registro_latizales_min&#xd;&#xa;,inc.tiempo_medicion_registr_fust_grandes_min&#xd;&#xa;,inc.cantidad_spf_latizales&#xd;&#xa;,inc.cantidad_spf_fustales&#xd;&#xa;,inc.cantidad_spf_fustales_grandes&#xd;&#xa;,inc.cantidad_individuos_brinzales&#xd;&#xa;,inc.cantidad_individuos_latizales&#xd;&#xa;,inc.cantidad_individuos_fustales&#xd;&#xa;,inc.cantidad_individuos_fustales_grandes&#xd;&#xa;,inc.cantidad_muestras_botanicas&#xd;&#xa;,inc.cantidad_spf_brinzales&#xd;&#xa;,inc.cantidad_muestras_suelos&#xd;&#xa;,inc.cantidad_muestras_detritos&#xd;&#xa;,cong.id codigo_conglomerado&#xd;&#xa;FROM conglomerados.f12_rendimiento inc, conglomerados.conglomerado cong&#xd;&#xa;where inc.conglomerado_id_&#x3d;cong.conglomerado_id_&#xd;&#xa;and inc.dia&#x3d;2&#xd;&#xa;order by codigo_conglomerado&#xd;&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -616,6 +441,207 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1104</xloc>
       <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 2 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var eshoras&#x3d;0&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;HORA_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	eshoras&#x3d;1&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var escant&#x3d;0&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;CANT_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	escant&#x3d;1&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var valores&#x3d;valores&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>anioVigencia</name>
+        <rename>anioVigencia</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>valores</name>
+        <rename>valores</rename>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>eshoras</name>
+        <rename>eshoras</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>escant</name>
+        <rename>escant</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>224</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Add sequence</send_true_to>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>valores</leftvalue>
+   <function>IS NOT NULL</function>
+   <rightvalue/>
+   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>AND</operator>
+   <leftvalue>valores</leftvalue>
+   <function>&#x3e;</function>
+   <rightvalue/>
+   <value><name>constant</name><type>Number</type><text>0.0</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</mask></value>   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>AND</operator>
+   <leftvalue>eshoras</leftvalue>
+   <function>&#x3c;&#x3e;</function>
+   <rightvalue/>
+   <value><name>constant</name><type>Integer</type><text>1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>&#x23;&#x3b;-&#x23;</mask></value>   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>AND</operator>
+   <leftvalue>escant</leftvalue>
+   <function>&#x3c;&#x3e;</function>
+   <rightvalue/>
+   <value><name>constant</name><type>Integer</type><text>1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>&#x23;&#x3b;-&#x23;</mask></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>608</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Row Normaliser</name>
+    <type>Normaliser</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <typefield>typefield</typefield>
+    <fields>      <field>        <name>hora_salida_a_conglomerado</name>
+        <value>HORA_SALIDA_TO_CONG</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>hora_inicio_trabajo_conglomerado</name>
+        <value>HORA_INICIO_TRABAJO_CONG</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>hora_salida_de_conglomerado</name>
+        <value>HORA_SALIDA_DE_CONG</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>hora_llegada_campamento</name>
+        <value>HORA_LLEGADA_CAMP</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>establecimiento_y_desmantelamiento_min</name>
+        <value>ESTBL_Y_DESM</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_materializacion_centroidesspf_min</name>
+        <value>MATER_CENTR_SPF</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_recorrido_entre_centroidesspf_min</name>
+        <value>RECOR_CENTR_SPF</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_medicion_registro_info_spf_min</name>
+        <value>MED_REG_INFO_SPF</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_medicion_registro_brinzales_min</name>
+        <value>MED_REG_BRINZ</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_medicion_registro_latizales_min</name>
+        <value>MED_REG_LATIZ</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_medicion_registro_fustales_min</name>
+        <value>MED_REG_FUSTZ</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_medicion_registr_fust_grandes_min</name>
+        <value>MED_REG_FUSTZ_GRD</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_preparacion_muestras_botanicas</name>
+        <value>PREP_MUESTR_BOT</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_preparacion_muestras_suelos</name>
+        <value>PREP_MUESTR_SUEL</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>tiempo_preparacion_muestras_detritos</name>
+        <value>PREP_MUESTR_DETR</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_spf_latizales</name>
+        <value>CANT_SPF_LATIZALES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_spf_fustales</name>
+        <value>CANT_SPF_FUSTALES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_spf_fustales_grandes</name>
+        <value>CANT_SPF_FUSTALES_GRANDES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_individuos_brinzales</name>
+        <value>CANT_IND_BRINZALES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_individuos_latizales</name>
+        <value>CANT_IND_LATIZALES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_individuos_fustales</name>
+        <value>CANT_IND_FUSTALES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_individuos_fustales_grandes</name>
+        <value>CANT_IND_FUSTALES_GRANDES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_muestras_botanicas</name>
+        <value>CANT_MUESTRAS_BOTANICAS</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_spf_brinzales</name>
+        <value>CANT_SPF_BRINZALES</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_muestras_suelos</name>
+        <value>CANT_MUESTRAS_SUELOS</value>
+        <norm>valores</norm>
+        </field>      <field>        <name>cantidad_muestras_detritos</name>
+        <value>CANT_MUESTRAS_DETRITOS</value>
+        <norm>valores</norm>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>432</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

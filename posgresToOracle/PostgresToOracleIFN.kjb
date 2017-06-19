@@ -63,7 +63,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>816</xloc>
+      <xloc>880</xloc>
       <yloc>320</yloc>
       </entry>
     <entry>
@@ -1772,12 +1772,17 @@
           <variable_value>true</variable_value>
           <variable_type>JVM</variable_type>
         </field>
+        <field>
+          <variable_name>calidad</variable_name>
+          <variable_value>true</variable_value>
+          <variable_type>CURRENT_JOB</variable_type>
+        </field>
       </fields>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>624</xloc>
-      <yloc>864</yloc>
+      <yloc>816</yloc>
       </entry>
     <entry>
       <name>Simple evaluation</name>
@@ -1853,7 +1858,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>816</xloc>
+      <xloc>800</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
@@ -1998,6 +2003,59 @@
       <nr>0</nr>
       <xloc>816</xloc>
       <yloc>1200</yloc>
+      </entry>
+    <entry>
+      <name>Simple evaluation 2 2</name>
+      <description/>
+      <type>SIMPLE_EVAL</type>
+      <valuetype>variable</valuetype>
+      <fieldname/>
+      <variablename>calidad</variablename>
+      <fieldtype>string</fieldtype>
+      <mask/>
+      <comparevalue>true</comparevalue>
+      <minvalue/>
+      <maxvalue/>
+      <successcondition>equal</successcondition>
+      <successnumbercondition>equal</successnumbercondition>
+      <successbooleancondition>false</successbooleancondition>
+      <successwhenvarset>N</successwhenvarset>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>960</xloc>
+      <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>calidad</name>
+      <description/>
+      <type>JOB</type>
+      <specification_method>filename</specification_method>
+      <job_object_id/>
+      <filename>C&#x3a;&#x5c;Users&#x5c;Usuario&#x5c;Desktop&#x5c;Collect&#x5c;RepoIFN&#x5c;posgresToOracle&#x5c;calidad.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <expand_remote_job>N</expand_remote_job>
+      <create_parent_folder>N</create_parent_folder>
+      <pass_export>N</pass_export>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>1136</xloc>
+      <yloc>160</yloc>
       </entry>
   </entries>
   <hops>
@@ -2357,7 +2415,7 @@
       <to>CargaSubparcelasGeoRef</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
@@ -2544,6 +2602,24 @@
     <hop>
       <from>BrigadaConglomerado</from>
       <to>Observaciones por formulario</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Conglomerados</from>
+      <to>Simple evaluation 2 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Simple evaluation 2 2</from>
+      <to>calidad</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
