@@ -499,7 +499,7 @@
     <fields>
         <field>
           <column_name>TIPO_FUSTE</column_name>
-          <stream_name>tipo_fuste</stream_name>
+          <stream_name>tallo_un_mul</stream_name>
         </field>
         <field>
           <column_name>DANO</column_name>
@@ -576,6 +576,30 @@
         <field>
           <column_name>IFN_ID_BRIGADA_CONGLOMERADO</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
+        </field>
+        <field>
+          <column_name>EQUIPO1</column_name>
+          <stream_name>equipo1</stream_name>
+        </field>
+        <field>
+          <column_name>EQUIPO2</column_name>
+          <stream_name>equipo2</stream_name>
+        </field>
+        <field>
+          <column_name>PLACA_ID</column_name>
+          <stream_name>placa</stream_name>
+        </field>
+        <field>
+          <column_name>NUMERO_FUSTE</column_name>
+          <stream_name>numero_de_fustes</stream_name>
+        </field>
+        <field>
+          <column_name>IND_O_FUSTE</column_name>
+          <stream_name>ind_o_fuste</stream_name>
+        </field>
+        <field>
+          <column_name>TIPO_INDIVIDUO</column_name>
+          <stream_name>tipo_fuste</stream_name>
         </field>
     </fields>
      <cluster_schema/>

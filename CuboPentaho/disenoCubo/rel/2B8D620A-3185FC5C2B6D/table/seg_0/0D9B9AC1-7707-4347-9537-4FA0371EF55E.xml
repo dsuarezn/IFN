@@ -424,6 +424,19 @@
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PLACA_ID" id="5B9C93BC-E429-6834-2405-22465F56ED4A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 18:18:29 UTC</createdTime>
+<commentInRDBMS>numero de identificacion del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="560BA4EB-98C7-E5EE-D2A1-FE59F5CA056D" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="FACT_INDIVIDUOS_PK">

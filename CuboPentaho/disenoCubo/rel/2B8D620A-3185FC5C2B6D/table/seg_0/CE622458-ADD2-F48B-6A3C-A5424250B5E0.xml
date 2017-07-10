@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DISTACNCIA" id="C5A547F0-B8D9-277A-46EA-F0B93D5DC47C">
+<Column name="DISTANCIA" id="C5A547F0-B8D9-277A-46EA-F0B93D5DC47C">
 <createdBy>Alexander</createdBy>
 <createdTime>2016-11-28 17:39:05 UTC</createdTime>
 <commentInRDBMS>distancia en metros del punto de muestreo</commentInRDBMS>

@@ -42,7 +42,7 @@
 <colAssociation fkAssociation="FE6DB639-8E94-F164-D994-274A83913DC6" referredColumn="0B4F6278-11B9-6F1E-9D5D-CCB65CAC2DD3"/>
 </associations>
 </Column>
-<Column name="TIPO" id="BAC63D1F-FACC-6DB6-438F-0E0B24A11D9C">
+<Column name="TIPO_INDIVIDUO" id="BAC63D1F-FACC-6DB6-438F-0E0B24A11D9C">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_INDIVIDUOS</sourceObjSchema>
 <sourceObjName>TIPO</sourceObjName>

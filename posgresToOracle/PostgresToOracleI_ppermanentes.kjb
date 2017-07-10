@@ -183,8 +183,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>816</xloc>
-      <yloc>528</yloc>
+      <xloc>576</xloc>
+      <yloc>368</yloc>
       </entry>
     <entry>
       <name>IndividuosPP</name>
@@ -216,8 +216,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1072</xloc>
-      <yloc>528</yloc>
+      <xloc>576</xloc>
+      <yloc>208</yloc>
       </entry>
     <entry>
       <name>ppermanentes_herbarios</name>
@@ -249,8 +249,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1152</xloc>
-      <yloc>384</yloc>
+      <xloc>784</xloc>
+      <yloc>528</yloc>
       </entry>
     <entry>
       <name>Coleccion Botanica Pape</name>
@@ -282,8 +282,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>688</xloc>
-      <yloc>384</yloc>
+      <xloc>784</xloc>
+      <yloc>208</yloc>
       </entry>
     <entry>
       <name>ppherb</name>
@@ -304,8 +304,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>912</xloc>
-      <yloc>384</yloc>
+      <xloc>784</xloc>
+      <yloc>368</yloc>
       </entry>
   </entries>
   <hops>
@@ -346,15 +346,6 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>ppermanentes</from>
-      <to>Coleccion Botanica Pape</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>Coleccion Botanica Pape</from>
       <to>ppherb</to>
       <from_nr>0</from_nr>
@@ -375,6 +366,15 @@
     <hop>
       <from>pp_brigadas_conglomerados_pp</from>
       <to>IndividuosPP</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>IndividuosPP</from>
+      <to>Coleccion Botanica Pape</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>

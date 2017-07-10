@@ -496,7 +496,7 @@
     <return_field/>
     <fields>
         <field>
-          <column_name>TIPO</column_name>
+          <column_name>TIPO_INDIVIDUO</column_name>
           <stream_name>tipo</stream_name>
         </field>
         <field>

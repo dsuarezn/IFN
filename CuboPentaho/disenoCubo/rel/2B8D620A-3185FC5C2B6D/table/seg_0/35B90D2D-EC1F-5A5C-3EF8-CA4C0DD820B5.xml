@@ -206,6 +206,19 @@
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PLACA_ID" id="FC0E5F79-79B3-34F4-2646-595F45B8A212">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 04:18:41 UTC</createdTime>
+<commentInRDBMS>numero de identificacion del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="DIM_COLECTADA" id="5D917D23-46FB-2D73-7FCE-BEC87541C37F">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-06-09 19:44:56 UTC</createdTime>
@@ -243,6 +256,21 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="09AC5C3B-BB30-C6A0-BDDD-D7750716BE79" referredColumn="499F25EB-F994-78BE-D9F5-4ED685903A9B"/>
+</associations>
+</Column>
+<Column name="DIM_PP_ID_PARCELA" id="6935E214-1F41-1CCB-6990-850D8BE61B8E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 04:06:26 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="155926D3-FBCA-BC2E-E7F2-46A2FC367847" referredColumn="DF3F37CD-78A1-3BBB-96A4-1FF0F22EF5A1"/>
 </associations>
 </Column>
 </columns>
@@ -326,6 +354,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="ED3D1959-D07B-86E0-F3F1-EA8FAFD18692"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7668FE84-DEA9-2957-C144-0D3FF9AFC99A" name="FACT_COLBOT_DIM_PPERMANENTE_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 04:06:26 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6935E214-1F41-1CCB-6990-850D8BE61B8E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

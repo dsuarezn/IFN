@@ -145,7 +145,7 @@
            <schema_name/>
            </partitioning>
     <connection>IFNLOCAL</connection>
-    <sql>select &#xd;&#xa;BG.JEFE    &#xd;&#xa;,BG.TENICO    &#xd;&#xa;,BG.BOTANICO&#xd;&#xa;,BG.GESTOR1    &#xd;&#xa;,BG.GESTOR2    &#xd;&#xa;,BG.GESTOR3    &#xd;&#xa;,BG.GESTOR4    &#xd;&#xa;from &#xd;&#xa;IFN.IFN_BRIGADA BG&#xd;&#xa;group by BG.JEFE, BG.TENICO, BG.BOTANICO, BG.GESTOR1, BG.GESTOR2, BG.GESTOR3, BG.GESTOR4  </sql>
+    <sql>select &#xd;&#xa;BG.JEFE    &#xd;&#xa;,BG.TENICO    &#xd;&#xa;,BG.BOTANICO&#xd;&#xa;,BG.GESTOR1    &#xd;&#xa;,BG.GESTOR2    &#xd;&#xa;,BG.GESTOR3    &#xd;&#xa;,BG.GESTOR4&#xd;&#xa;,&#x27;Jefe&#x3a; &#x27;&#x7c;&#x7c;BG.JEFE&#x7c;&#x7c;&#x27;, Tecnico&#x3a; &#x27;&#x7c;&#x7c;BG.TENICO&#x7c;&#x7c;&#x27;, Bot&#xe1;nico&#x3a; &#x27;&#x7c;&#x7c;BG.BOTANICO&#x7c;&#x7c;&#x27;, Gestor1&#x3a; &#x27;&#x7c;&#x7c;BG.GESTOR1&#x7c;&#x7c;&#x27;, Gestor2&#x3a; &#x27;&#x7c;&#x7c;BG.GESTOR2&#x7c;&#x7c;&#x27;, Gestor3&#x3a; &#x27;&#x7c;&#x7c;BG.GESTOR3&#x7c;&#x7c;&#x27;, Gestor4&#x3a; &#x27;&#x7c;&#x7c;BG.GESTOR4 COMPLETA&#xd;&#xa;from &#xd;&#xa;IFN.IFN_BRIGADA BG&#xd;&#xa;group by BG.JEFE, BG.TENICO, BG.BOTANICO, BG.GESTOR1, BG.GESTOR2, BG.GESTOR3, BG.GESTOR4  </sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -219,6 +219,10 @@
         <field>
           <column_name>ID_BRIGADA</column_name>
           <stream_name>SEQ_BRIGADA</stream_name>
+        </field>
+        <field>
+          <column_name>BRIGADA_COMPLETA</column_name>
+          <stream_name>COMPLETA</stream_name>
         </field>
     </fields>
      <cluster_schema/>

@@ -53,8 +53,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4 BYTE</dataTypeSize>
-<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DANO" id="1DC520F5-2975-572F-1F2D-19B5D83CEFA1">
@@ -360,6 +360,82 @@
 <ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EQUIPO1" id="459702D3-8913-532B-B802-AD6EB70C3F67">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 00:14:47 UTC</createdTime>
+<commentInRDBMS>tipo de equipo utilizado en la medicion</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EQUIPO2" id="91E727E1-8894-C774-BC8B-2623DE3A3723">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 00:14:47 UTC</createdTime>
+<commentInRDBMS>tipo de equipo utilizado en la medicion de alturas</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLACA_ID" id="71D54577-BA5B-6C96-489D-2619DEDDED7F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 00:16:14 UTC</createdTime>
+<commentInRDBMS>numero de identificacion del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_FUSTE" id="C054D3EA-B6AF-29FB-D2F1-A386DE89008A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 00:31:06 UTC</createdTime>
+<commentInRDBMS>numero de fustes del individuo</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IND_O_FUSTE" id="434733C8-D278-7943-7972-C033F3754D3E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 00:31:06 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_INDIVIDUO" id="60BE4B66-CD4A-674A-E9AD-961A7BAE542C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-06-20 01:13:45 UTC</createdTime>
+<commentInRDBMS>tipo de individuo segun tamaño</commentInRDBMS>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_CREACION" id="E2D199EC-57B0-A871-6E29-18AD93738FDE">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_INDIVIDUOS_PAPE</sourceObjSchema>
@@ -420,8 +496,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

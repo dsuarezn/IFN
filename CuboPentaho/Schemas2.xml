@@ -120,7 +120,7 @@
     <Hierarchy name="Gestor 2" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
       <Table name="DIM_BRIGADA" schema="IFN">
       </Table>
-      <Level name="Gestor 2" visible="true" column="GESTO2" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      <Level name="Gestor 2" visible="true" column="GESTOR2" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
       </Level>
     </Hierarchy>
     <Hierarchy name="Gestor 3" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
@@ -198,13 +198,13 @@
       </Level>
     </Hierarchy>
     <Hierarchy name="Genero" visible="true" hasAll="true" primaryKey="ID_COLECCION">
-      <Table name="FACT_COLECCION_BOTANICA" schema="IFN" alias="">
+      <Table name="FACT_COLECCION_BOTANICA" schema="IFN">
       </Table>
       <Level name="Genero" visible="true" column="GENERO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
       </Level>
     </Hierarchy>
     <Hierarchy name="Especie" visible="true" hasAll="true" primaryKey="ID_COLECCION">
-      <Table name="FACT_COLECCION_BOTANICA" schema="IFN" alias="">
+      <Table name="FACT_COLECCION_BOTANICA" schema="IFN">
       </Table>
       <Level name="Especie" visible="true" column="ESPECIE" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
       </Level>
@@ -495,31 +495,31 @@
     </Measure>
   </Cube>
   <Cube name="Equipos" visible="true" cache="true" enabled="true">
-    <Table name="FACT_EQUIPOS" schema="IFN" alias="">
+    <Table name="FACT_EQUIPOS" schema="IFN">
     </Table>
-    <Dimension type="StandardDimension" visible="true" name="Elemento">
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Elemento">
       <Hierarchy name="Elemento" visible="true" hasAll="true">
         <Level name="Elemento" visible="true" column="ELEMENTO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
         </Level>
       </Hierarchy>
     </Dimension>
-    <Dimension type="StandardDimension" visible="true" name="Condicion">
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Condicion">
       <Hierarchy name="default" visible="true" hasAll="true">
         <Level name="Condicion" visible="true" column="CONDICION" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" caption="Condici&#243;n">
         </Level>
       </Hierarchy>
     </Dimension>
-    <Dimension type="StandardDimension" visible="true" name="Persona">
+    <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Persona">
       <Hierarchy name="default" visible="true" hasAll="true">
         <Level name="Persona" visible="true" column="PERSONA" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
         </Level>
       </Hierarchy>
     </Dimension>
-    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID">
+    <DimensionUsage source="Bridaga" name="Brigada" visible="true" foreignKey="DIM_BRIGADA_ID" highCardinality="false">
     </DimensionUsage>
-    <DimensionUsage source="Conglomerado" name="Conglomerado" visible="true" foreignKey="DIM_CONGLOMERADO_ID">
+    <DimensionUsage source="Conglomerado" name="Conglomerado" visible="true" foreignKey="DIM_CONGLOMERADO_ID" highCardinality="false">
     </DimensionUsage>
-    <DimensionUsage source="Division Politica" name="Division Politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID">
+    <DimensionUsage source="Division Politica" name="Division Politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID" highCardinality="false">
     </DimensionUsage>
     <Measure name="Count - equipos" column="ID_EQUIPO" aggregator="distinct-count" visible="true">
     </Measure>
