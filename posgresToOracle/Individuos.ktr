@@ -130,13 +130,16 @@
   <hop> <from>Table input 2</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Join Rows &#x28;cartesian product&#x29;</from><to>Calculator</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
   <hop> <from>Filter rows 2</from><to>Text file output</to><enabled>Y</enabled> </hop>
   <hop> <from>Filter rows 2</from><to>Add sequence</to><enabled>Y</enabled> </hop>
   <hop> <from>Get Variables</from><to>Modified Java Script Value 2 2 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value 2 2 2</from><to>Database join 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value 2 2</from><to>Get Variables</to><enabled>Y</enabled> </hop>
   <hop> <from>Database join 2</from><to>Modified Java Script Value 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion 2</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Datos Usuario Migracion 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Table output</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table output</from><to>Text file output 2</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -234,6 +237,54 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>352</xloc>
       <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;var USUARIOMOD&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;var SYSDATE2&#x3d;new Date&#x28;&#x29;&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>USUARIOMOD</name>
+        <rename>USUARIOMOD</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE2</name>
+        <rename>SYSDATE2</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1040</xloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -415,6 +466,178 @@
     </step>
 
   <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>MAXID_F4_IND</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f4_registro_medicion_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_conglomerado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>conglomerado_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_subparcela</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numero_id</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>condicion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>azimut</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>distancia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>tipo_fuste</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ind_o_fuste</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>unico_o_multiple</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numero_fuste</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dap1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>dap2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>equipo1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>pom</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>altura_fuste</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>altura_total</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>equipo2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dano</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>penetracion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>golpes</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>se_colecto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>observacion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formafuste</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anio_ejecucion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anioVigencia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_CONGLOMERADO_SEQ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_BRIG_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_SUBPARCELA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>seq_f4_individuos</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_F4_IND</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>USUARIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>USUARIOMOD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1040</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Table input</name>
     <type>TableInput</type>
     <description/>
@@ -426,7 +649,7 @@
            <schema_name/>
            </partitioning>
     <connection>PGSQL_IFN_CALC_LOCAL</connection>
-    <sql>select &#xd;&#xa;consulta.f4_registro_medicion_id_&#xd;&#xa;,consulta.id codigo_conglomerado&#xd;&#xa;,consulta.conglomerado_id_&#xd;&#xa;,consulta.subparcela codigo_subparcela&#xd;&#xa;,consulta.tipo&#xd;&#xa;,consulta.numero_id&#xd;&#xa;,consulta.condicion&#xd;&#xa;,consulta.azimut&#xd;&#xa;,consulta.distancia&#xd;&#xa;,consulta.tipo_fuste&#xd;&#xa;,consulta.ind_o_fuste&#xd;&#xa;,consulta.unico_o_multiple &#xd;&#xa;,consulta.numero_fuste&#xd;&#xa;,consulta.dap1&#xd;&#xa;,consulta.dap2&#xd;&#xa;,consulta.equipo1&#xd;&#xa;,consulta.pom&#xd;&#xa;,consulta.altura_fuste&#xd;&#xa;,consulta.altura_total&#xd;&#xa;,consulta.equipo2&#xd;&#xa;,consulta.dano&#xd;&#xa;,consulta.penetracion&#xd;&#xa;,consulta.golpes&#xd;&#xa;,consulta.se_colecto&#xd;&#xa;,consulta.observacion&#xd;&#xa;,consulta.formafuste&#xd;&#xa;from&#xd;&#xa;&#x28;select&#xd;&#xa;cong.f4_registro_medicion_id_&#xd;&#xa;,cg.id&#xd;&#xa;,cong.conglomerado_id_&#xd;&#xa;,cong.no_spf as subparcela&#xd;&#xa;,cong.tamano_individuo as tipo&#xd;&#xa;,cong.no_id as numero_id&#xd;&#xa;,cong.condicion_individuo as condicion&#xd;&#xa;,cong.f4_registro_medicion_azimut as azimut&#xd;&#xa;,cong.f4_registro_medicion_distancia_m as distancia&#xd;&#xa;,cong.tallo_unico_multiple as tipo_fuste&#xd;&#xa;,null as numero_fuste&#xd;&#xa;,&#x27;individuo&#x27; as ind_o_fuste&#xd;&#xa;,&#x27;unico&#x27; as unico_o_multiple &#xd;&#xa;,cong.dap1_cm as dap1&#xd;&#xa;,cong.dap2_cm as dap2&#xd;&#xa;,cong.equipo1&#xd;&#xa;,cong.pom_m as pom&#xd;&#xa;,cong.altura_fuste_m as altura_fuste&#xd;&#xa;,cong.altura_total_m as altura_total&#xd;&#xa;,cong.equipo2&#xd;&#xa;,cong.dano&#xd;&#xa;,cong.f4_registro_medicion_penetracion_cm as penetracion&#xd;&#xa;,cong.penetracion_golpes as golpes&#xd;&#xa;,cong.a_colectar as se_colecto&#xd;&#xa;,cong.f4_registro_medicion_observaciones as observacion&#xd;&#xa;,forma.formafuste&#xd;&#xa;from conglomerados.f4_registro_medicion cong, conglomerados.conglomerado cg,&#xd;&#xa;&#x28;select  f4_registro_medicion_id_ regmed, string_agg&#x28;forma_fuste,&#x27;, &#x27;&#x29; formafuste from conglomerados.forma_fuste&#xd;&#xa;GROUP BY f4_registro_medicion_id_&#x29; forma&#xd;&#xa;where cong.f4_registro_medicion_id_&#x3d;forma.regmed and cong.conglomerado_id_&#x3d;cg.conglomerado_id_&#xd;&#xa;and cong.tallo_unico_multiple&#x21;&#x3d;&#x27;multiple&#x27;&#xd;&#xa;union&#xd;&#xa;select &#xd;&#xa;ind.f4_registro_medicion_id_&#xd;&#xa;,cg.id&#xd;&#xa;,ind.conglomerado_id_&#xd;&#xa;,ind.no_spf as subparcela&#xd;&#xa;,fu.tamano_fuste as tipo&#xd;&#xa;,ind.no_id as numero_id&#xd;&#xa;,fu.condicion_fuste as condicion&#xd;&#xa;,null as azimut&#xd;&#xa;,null as distancia&#xd;&#xa;,ind.tallo_unico_multiple as tipo_fuste&#xd;&#xa;,fu.no_fuste as numero_fuste &#xd;&#xa;,&#x27;fuste&#x27; as ind_o_fuste&#xd;&#xa;,&#x27;multiple&#x27; as unico_o_multiple&#xd;&#xa;,fu.dap1_cm_fuste as dap1&#xd;&#xa;,fu.dap2_cm_fuste as dap2&#xd;&#xa;,fu.equipo1_fuste as equipo1&#xd;&#xa;,fu.pom_m_fuste as pom&#xd;&#xa;,fu.altura_fuste as altura_fuste&#xd;&#xa;,fu.altura_total_fuste as altura_total&#xd;&#xa;,fu.equipo2_fuste as equipo2&#xd;&#xa;,fu.dano_fuste as dano&#xd;&#xa;,fu.penetracion_cm as penetracion&#xd;&#xa;,fu.penetracion_golpes_fuste as golpes&#xd;&#xa;,null as se_colecto&#xd;&#xa;,&#x27;&#x27; as observacion&#xd;&#xa;,forma.formafuste&#xd;&#xa;from conglomerados.f4_registro_medicion_numero_fustes fu, conglomerados.f4_registro_medicion ind, conglomerados.conglomerado cg,&#xd;&#xa;&#x28;select f4_registro_medicion_id_ regmed, string_agg&#x28;forma_fuste,&#x27;, &#x27;&#x29; formafuste from conglomerados.forma_fuste &#xd;&#xa;GROUP BY f4_registro_medicion_id_&#x29; forma&#xd;&#xa;where fu.f4_registro_medicion_id_&#x3d; ind.f4_registro_medicion_id_ and ind.conglomerado_id_&#x3d;cg.conglomerado_id_&#xd;&#xa;and forma.regmed&#x3d;ind.f4_registro_medicion_id_&#xd;&#xa;and ind.tallo_unico_multiple&#x3d;&#x27;multiple&#x27;&#xd;&#xa;union&#xd;&#xa;select&#xd;&#xa;cong.f4_registro_medicion_id_&#xd;&#xa;,cg.id&#xd;&#xa;,cong.conglomerado_id_&#xd;&#xa;,cong.no_spf as subparcela&#xd;&#xa;,cong.tamano_individuo as tipo&#xd;&#xa;,cong.no_id as numero_id&#xd;&#xa;,cong.condicion_individuo as condicion&#xd;&#xa;,cong.f4_registro_medicion_azimut as azimut&#xd;&#xa;,cong.f4_registro_medicion_distancia_m as distancia&#xd;&#xa;,cong.tallo_unico_multiple as tipo_fuste&#xd;&#xa;,null as numero_fuste&#xd;&#xa;,&#x27;individuo&#x27; as ind_o_fuste&#xd;&#xa;,&#x27;multiple&#x27; as unico_o_multiple &#xd;&#xa;,cong.dap1_cm as dap1&#xd;&#xa;,cong.dap2_cm as dap2&#xd;&#xa;,cong.equipo1&#xd;&#xa;,cong.pom_m as pom&#xd;&#xa;,cong.altura_fuste_m as altura_fuste&#xd;&#xa;,cong.altura_total_m as altura_total&#xd;&#xa;,cong.equipo2&#xd;&#xa;,cong.dano&#xd;&#xa;,cong.f4_registro_medicion_penetracion_cm as penetracion&#xd;&#xa;,cong.penetracion_golpes as golpes&#xd;&#xa;,cong.a_colectar as se_colecto&#xd;&#xa;,cong.f4_registro_medicion_observaciones as observacion&#xd;&#xa;,forma.formafuste&#xd;&#xa;from conglomerados.f4_registro_medicion cong, conglomerados.conglomerado cg,&#xd;&#xa;&#x28;select  f4_registro_medicion_id_ regmed, string_agg&#x28;forma_fuste,&#x27;, &#x27;&#x29; formafuste from conglomerados.forma_fuste&#xd;&#xa;GROUP BY f4_registro_medicion_id_&#x29; forma&#xd;&#xa;where cong.f4_registro_medicion_id_&#x3d;forma.regmed and cong.conglomerado_id_&#x3d;cg.conglomerado_id_&#xd;&#xa;and cong.tallo_unico_multiple&#x3d;&#x27;multiple&#x27;&#xd;&#xa;&#x29; consulta&#xd;&#xa;ORDER BY consulta.f4_registro_medicion_id_, consulta.conglomerado_id_, consulta.subparcela, consulta.numero_id, consulta.numero_fuste</sql>
+    <sql>select &#xd;&#xa;consulta.f4_registro_medicion_id_&#xd;&#xa;,consulta.id codigo_conglomerado&#xd;&#xa;,consulta.conglomerado_id_&#xd;&#xa;,consulta.subparcela codigo_subparcela&#xd;&#xa;,consulta.tipo&#xd;&#xa;,consulta.numero_id&#xd;&#xa;,consulta.condicion&#xd;&#xa;,consulta.azimut&#xd;&#xa;,consulta.distancia&#xd;&#xa;,consulta.tipo_fuste&#xd;&#xa;,consulta.ind_o_fuste&#xd;&#xa;,consulta.unico_o_multiple &#xd;&#xa;,consulta.numero_fuste&#xd;&#xa;,consulta.dap1&#xd;&#xa;,consulta.dap2&#xd;&#xa;,consulta.equipo1&#xd;&#xa;,consulta.pom&#xd;&#xa;,consulta.altura_fuste&#xd;&#xa;,consulta.altura_total&#xd;&#xa;,consulta.equipo2&#xd;&#xa;,consulta.dano&#xd;&#xa;,consulta.penetracion&#xd;&#xa;,consulta.golpes&#xd;&#xa;,consulta.se_colecto&#xd;&#xa;,consulta.observacion&#xd;&#xa;,consulta.formafuste&#xd;&#xa;from&#xd;&#xa;&#x28;select&#xd;&#xa;cong.f4_registro_medicion_id_&#xd;&#xa;,cg.id&#xd;&#xa;,cong.conglomerado_id_&#xd;&#xa;,cong.no_spf as subparcela&#xd;&#xa;,cong.tamano_individuo as tipo&#xd;&#xa;,cong.no_id as numero_id&#xd;&#xa;,cong.condicion_individuo as condicion&#xd;&#xa;,cong.f4_registro_medicion_azimut as azimut&#xd;&#xa;,cong.f4_registro_medicion_distancia_m as distancia&#xd;&#xa;,cong.tallo_unico_multiple as tipo_fuste&#xd;&#xa;,null as numero_fuste&#xd;&#xa;,&#x27;individuo&#x27; as ind_o_fuste&#xd;&#xa;,&#x27;unico&#x27; as unico_o_multiple &#xd;&#xa;,cong.dap1_cm as dap1&#xd;&#xa;,cong.dap2_cm as dap2&#xd;&#xa;,cong.equipo1&#xd;&#xa;,cong.pom_m as pom&#xd;&#xa;,cong.altura_fuste_m as altura_fuste&#xd;&#xa;,cong.altura_total_m as altura_total&#xd;&#xa;,cong.equipo2&#xd;&#xa;,cong.dano&#xd;&#xa;,cong.f4_registro_medicion_penetracion_cm as penetracion&#xd;&#xa;,cong.penetracion_golpes as golpes&#xd;&#xa;,cong.a_colectar as se_colecto&#xd;&#xa;,cong.f4_registro_medicion_observaciones as observacion&#xd;&#xa;,forma.formafuste&#xd;&#xa;from conglomerados.conglomerado cg, conglomerados.f4_registro_medicion cong  LEFT OUTER JOIN &#xd;&#xa;&#x28;select  f4_registro_medicion_id_ regmed, string_agg&#x28;forma_fuste,&#x27;, &#x27;&#x29; formafuste from conglomerados.forma_fuste&#xd;&#xa;GROUP BY f4_registro_medicion_id_&#x29; forma on &#x28;cong.f4_registro_medicion_id_&#x3d;forma.regmed&#x29;&#xd;&#xa;where  cong.conglomerado_id_&#x3d;cg.conglomerado_id_&#xd;&#xa;and cong.tallo_unico_multiple&#x21;&#x3d;&#x27;multiple&#x27;&#xd;&#xa;union&#xd;&#xa;select &#xd;&#xa;ind.f4_registro_medicion_id_&#xd;&#xa;,cg.id&#xd;&#xa;,ind.conglomerado_id_&#xd;&#xa;,ind.no_spf as subparcela&#xd;&#xa;,fu.tamano_fuste as tipo&#xd;&#xa;,ind.no_id as numero_id&#xd;&#xa;,fu.condicion_fuste as condicion&#xd;&#xa;,null as azimut&#xd;&#xa;,null as distancia&#xd;&#xa;,ind.tallo_unico_multiple as tipo_fuste&#xd;&#xa;,fu.no_fuste as numero_fuste &#xd;&#xa;,&#x27;fuste&#x27; as ind_o_fuste&#xd;&#xa;,&#x27;multiple&#x27; as unico_o_multiple&#xd;&#xa;,fu.dap1_cm_fuste as dap1&#xd;&#xa;,fu.dap2_cm_fuste as dap2&#xd;&#xa;,fu.equipo1_fuste as equipo1&#xd;&#xa;,fu.pom_m_fuste as pom&#xd;&#xa;,fu.altura_fuste as altura_fuste&#xd;&#xa;,fu.altura_total_fuste as altura_total&#xd;&#xa;,fu.equipo2_fuste as equipo2&#xd;&#xa;,fu.dano_fuste as dano&#xd;&#xa;,fu.penetracion_cm as penetracion&#xd;&#xa;,fu.penetracion_golpes_fuste as golpes&#xd;&#xa;,null as se_colecto&#xd;&#xa;,&#x27;&#x27; as observacion&#xd;&#xa;,forma.formafuste&#xd;&#xa;from conglomerados.conglomerado cg, conglomerados.f4_registro_medicion_numero_fustes fu, conglomerados.f4_registro_medicion ind LEFT OUTER JOIN  &#xd;&#xa;&#x28;select f4_registro_medicion_id_ regmed, string_agg&#x28;forma_fuste,&#x27;, &#x27;&#x29; formafuste from conglomerados.forma_fuste &#xd;&#xa;GROUP BY f4_registro_medicion_id_&#x29; forma on &#x28;forma.regmed&#x3d;ind.f4_registro_medicion_id_&#x29;&#xd;&#xa;where fu.f4_registro_medicion_id_&#x3d; ind.f4_registro_medicion_id_ and ind.conglomerado_id_&#x3d;cg.conglomerado_id_&#xd;&#xa;and ind.tallo_unico_multiple&#x3d;&#x27;multiple&#x27;&#xd;&#xa;union&#xd;&#xa;select&#xd;&#xa;cong.f4_registro_medicion_id_&#xd;&#xa;,cg.id&#xd;&#xa;,cong.conglomerado_id_&#xd;&#xa;,cong.no_spf as subparcela&#xd;&#xa;,cong.tamano_individuo as tipo&#xd;&#xa;,cong.no_id as numero_id&#xd;&#xa;,cong.condicion_individuo as condicion&#xd;&#xa;,cong.f4_registro_medicion_azimut as azimut&#xd;&#xa;,cong.f4_registro_medicion_distancia_m as distancia&#xd;&#xa;,cong.tallo_unico_multiple as tipo_fuste&#xd;&#xa;,null as numero_fuste&#xd;&#xa;,&#x27;individuo&#x27; as ind_o_fuste&#xd;&#xa;,&#x27;multiple&#x27; as unico_o_multiple &#xd;&#xa;,cong.dap1_cm as dap1&#xd;&#xa;,cong.dap2_cm as dap2&#xd;&#xa;,cong.equipo1&#xd;&#xa;,cong.pom_m as pom&#xd;&#xa;,cong.altura_fuste_m as altura_fuste&#xd;&#xa;,cong.altura_total_m as altura_total&#xd;&#xa;,cong.equipo2&#xd;&#xa;,cong.dano&#xd;&#xa;,cong.f4_registro_medicion_penetracion_cm as penetracion&#xd;&#xa;,cong.penetracion_golpes as golpes&#xd;&#xa;,cong.a_colectar as se_colecto&#xd;&#xa;,cong.f4_registro_medicion_observaciones as observacion&#xd;&#xa;,forma.formafuste&#xd;&#xa;from  conglomerados.conglomerado cg, conglomerados.f4_registro_medicion cong LEFT OUTER JOIN &#xd;&#xa;&#x28;select  f4_registro_medicion_id_ regmed, string_agg&#x28;forma_fuste,&#x27;, &#x27;&#x29; formafuste from conglomerados.forma_fuste&#xd;&#xa;GROUP BY f4_registro_medicion_id_&#x29; forma on &#x28;cong.f4_registro_medicion_id_&#x3d;forma.regmed&#x29;&#xd;&#xa;where cong.conglomerado_id_&#x3d;cg.conglomerado_id_&#xd;&#xa;and cong.tallo_unico_multiple&#x3d;&#x27;multiple&#x27;&#xd;&#xa;&#x29; consulta&#xd;&#xa;ORDER BY consulta.f4_registro_medicion_id_, consulta.conglomerado_id_, consulta.subparcela, consulta.numero_id, consulta.numero_fuste</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -587,11 +810,19 @@
           <column_name>OBSERVACION</column_name>
           <stream_name>observacion</stream_name>
         </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1040</xloc>
-      <yloc>256</yloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -621,7 +852,7 @@
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x5c;logEjecucion&#x5c;Rel_individuos</name>
+      <name>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x5c;logEjecucion&#x5c;cong_filter_individuos_idsubp_null</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -708,7 +939,71 @@
       </GUI>
     </step>
 
+  <step>
+    <name>Text file output 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1040</xloc>
+      <yloc>656</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step_error_handling>
+      <error>
+        <source_step>Table output</source_step>
+        <target_step>Text file output 2</target_step>
+        <is_enabled>Y</is_enabled>
+        <nr_valuename/>
+        <descriptions_valuename/>
+        <fields_valuename/>
+        <codes_valuename/>
+        <max_errors/>
+        <max_pct_errors/>
+        <min_pct_rows/>
+      </error>
   </step_error_handling>
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>

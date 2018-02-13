@@ -273,6 +273,53 @@
 <colAssociation fkAssociation="155926D3-FBCA-BC2E-E7F2-46A2FC367847" referredColumn="DF3F37CD-78A1-3BBB-96A4-1FF0F22EF5A1"/>
 </associations>
 </Column>
+<Column name="DIM_NIVEL_DETERMINACION" id="3DDDDD87-8DE2-761F-DA94-F7B33C841C9E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-07-24 21:09:12 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DETERMINADOR" id="61F325F5-7082-6E58-EE22-9A1C8B2E2FC1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-07-25 03:58:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOR" id="175B7FDF-0595-FD7D-F7E5-E54540A9BCCE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-07-25 03:58:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="54DE1CD4-89F3-30AD-2CD2-B6AF285C6D9D">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-07-25 03:58:38 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3CDC0195-3085-4FB0-4736-D77B51C326FB" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="IFN_COLECCION_BOTANICAv1_PK">

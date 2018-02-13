@@ -129,15 +129,28 @@
   <hop> <from>Table input 2</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Join Rows &#x28;cartesian product&#x29;</from><to>Calculator</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
   <hop> <from>Filter rows 2</from><to>Text file output</to><enabled>Y</enabled> </hop>
   <hop> <from>Filter rows 2</from><to>Add sequence</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>tllenar lab_herbario</to><enabled>Y</enabled> </hop>
   <hop> <from>Calculator</from><to>Copy rows to result</to><enabled>Y</enabled> </hop>
   <hop> <from>Get Variables</from><to>Modified Java Script Value 2 2 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>Modified Java Script Value 2 2 2</from><to>Database join 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Database join 2</from><to>Modified Java Script Value 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input</from><to>Get Variables</to><enabled>Y</enabled> </hop>
+  <hop> <from>Add sequence 2</from><to>Join Rows &#x28;cartesian product&#x29; 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Join Rows &#x28;cartesian product&#x29; 2</from><to>Calculator 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input 2 2</from><to>Join Rows &#x28;cartesian product&#x29; 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Add sequence 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Datos Usuario Migracion</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion 2</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator 2</from><to>Datos Usuario Migracion 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 3</from><to>Text file output 3 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Filter rows 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 3</from><to>coleccion botanica</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 3 2</from><to>Text file output 3 2 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Filter rows 3 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 3 2</from><to>tllenar lab_herbario</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value 2 2 2</from><to>Unique rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Unique rows</from><to>Database join 2</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -162,8 +175,37 @@
       <max_value>999999999</max_value>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>816</xloc>
-      <yloc>336</yloc>
+      <xloc>672</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Add sequence 2</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>seq_f5_labo_herbario_cong</valuename>
+      <use_database>N</use_database>
+      <connection/>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>848</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -195,8 +237,41 @@
 </calculation>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1040</xloc>
-      <yloc>256</yloc>
+      <xloc>896</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Calculator 2</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <calculation><field_name>SEQ_F5_LAB_HERBARIO_CONG</field_name>
+<calc_type>ADD</calc_type>
+<field_a>MAXID_F5_LAB_HERBARIO_CONG</field_a>
+<field_b>seq_f5_labo_herbario_cong</field_b>
+<field_c/>
+<value_type>None</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<remove>N</remove>
+<conversion_mask/>
+<decimal_symbol/>
+<grouping_symbol/>
+<currency_symbol/>
+</calculation>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1008</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -214,8 +289,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1232</xloc>
-      <yloc>256</yloc>
+      <xloc>896</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -252,8 +327,92 @@
     </parameter>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>592</xloc>
-      <yloc>480</yloc>
+      <xloc>448</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;var USUARIOMOD&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;var SYSDATE2&#x3d;new Date&#x28;&#x29;&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>USUARIOMOD</name>
+        <rename>USUARIOMOD</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE2</name>
+        <rename>SYSDATE2</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1056</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1168</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -286,8 +445,90 @@
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>704</xloc>
-      <yloc>256</yloc>
+      <xloc>560</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 3</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Text file output 3 2</send_true_to>
+<send_false_to>coleccion botanica</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>tipo_individuo</leftvalue>
+   <function>CONTAINS</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>REF</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>OR</operator>
+   <leftvalue>tipo_individuo</leftvalue>
+   <function>CONTAINS</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>ref</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1056</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 3 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Text file output 3 2 2</send_true_to>
+<send_false_to>tllenar lab_herbario</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>tipo_individuo</leftvalue>
+   <function>CONTAINS</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>REF</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>OR</operator>
+   <leftvalue>tipo_individuo</leftvalue>
+   <function>CONTAINS</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>ref</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>928</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -319,8 +560,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>432</xloc>
-      <yloc>336</yloc>
+      <xloc>288</xloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -350,8 +591,39 @@
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>896</xloc>
-      <yloc>256</yloc>
+      <xloc>752</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Join Rows &#x28;cartesian product&#x29; 2</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>848</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -371,35 +643,53 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>familia_taxonomica&#x3d;replace&#x28;familia_taxonomica,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;familia_taxonomica &#x3d; replace&#x28;familia_taxonomica,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;familia_taxonomica &#x3d; replace&#x28;familia_taxonomica,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;familia_taxonomica &#x3d; replace&#x28;familia_taxonomica,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;genero_taxonomico&#x3d;replace&#x28;genero_taxonomico,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;genero_taxonomico &#x3d; replace&#x28;genero_taxonomico,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;genero_taxonomico &#x3d; replace&#x28;genero_taxonomico,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;genero_taxonomico &#x3d; replace&#x28;genero_taxonomico,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;especie_taxonomica&#x3d;replace&#x28;especie_taxonomica,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;especie_taxonomica &#x3d; replace&#x28;especie_taxonomica,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;especie_taxonomica &#x3d; replace&#x28;especie_taxonomica,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;especie_taxonomica &#x3d; replace&#x28;especie_taxonomica,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;no_familia_en_lista&#x3d;accentsTidy&#x28;no_familia_en_lista&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;desconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;desaconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;desconocida&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;muerto en pie&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;nn&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;na&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_familia_en_lista&#x3d;replace&#x28;no_familia_en_lista,&#x27;tocon&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;no_genero_en_lista&#x3d;accentsTidy&#x28;no_genero_en_lista&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;desconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;desaconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;desconocida&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;muerto en pie&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;nn&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;na&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_genero_en_lista&#x3d;replace&#x28;no_genero_en_lista,&#x27;tocon&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;no_especie_en_lista&#x3d;accentsTidy&#x28;no_especie_en_lista&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;desconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;desaconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;desconocida&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;muerto en pie&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;nn&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;na&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;no_especie_en_lista&#x3d;replace&#x28;no_especie_en_lista,&#x27;tocon&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;function accentsTidy&#x28;s&#x29;&#x7b;&#xd;&#xa;        var r&#x3d;lower&#x28;s&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5c;&#x5c;s&#x22;, &#x27;g&#x27;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;a&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xe6;&#x22;, &#x27;g&#x27;&#x29;,&#x22;ae&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xe7;&#x22;, &#x27;g&#x27;&#x29;,&#x22;c&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xe8;&#xe9;&#xea;&#xeb;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;e&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xec;&#xed;&#xee;&#xef;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;i&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xf1;&#x22;, &#x27;g&#x27;&#x29;,&#x22;n&#x22;&#x29;&#x3b;                            &#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;o&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x153;&#x22;, &#x27;g&#x27;&#x29;,&#x22;oe&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xf9;&#xfa;&#xfb;&#xfc;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;u&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xfd;&#xff;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;y&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5c;&#x5c;W&#x22;, &#x27;g&#x27;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;    return r&#x3b;&#xd;&#xa;&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var codigo_muestra&#x3d;f5_coleccion_botanica_numero_colector&#x2b;tipo_individuo&#x3b;&#xd;&#xa;</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>      <field>        <name>no_familia_en_lista</name>
-        <rename>no_familia_en_lista</rename>
+        <jsScript_script>&#xd;&#xa;var familia_taxo&#x3d;escapingAndOneRemove&#x28;familia_taxonomica&#x29;&#x3b;&#xd;&#xa;var genero_taxo&#x3d;escapingAndOneRemove&#x28;genero_taxonomico&#x29;&#x3b;&#xd;&#xa;var especie_taxo&#x3d;escapingAndOneRemove&#x28;especie_taxonomica&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var no_fml_en_lista&#x3d;commonRemoves&#x28;accentsTidy&#x28;no_familia_en_lista&#x29;&#x29;&#x3b;&#xd;&#xa;var no_gen_en_lista&#x3d;commonRemoves&#x28;accentsTidy&#x28;no_genero_en_lista&#x29;&#x29;&#x3b;&#xd;&#xa;var no_esp_en_lista&#x3d;commonRemoves&#x28;accentsTidy&#x28;no_especie_en_lista&#x29;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;function accentsTidy&#x28;s&#x29;&#x7b;&#xd;&#xa;        var r&#x3d;lower&#x28;s&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5c;&#x5c;s&#x22;, &#x27;g&#x27;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;a&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xe6;&#x22;, &#x27;g&#x27;&#x29;,&#x22;ae&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xe7;&#x22;, &#x27;g&#x27;&#x29;,&#x22;c&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xe8;&#xe9;&#xea;&#xeb;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;e&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xec;&#xed;&#xee;&#xef;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;i&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xf1;&#x22;, &#x27;g&#x27;&#x29;,&#x22;n&#x22;&#x29;&#x3b;                            &#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;o&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x153;&#x22;, &#x27;g&#x27;&#x29;,&#x22;oe&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xf9;&#xfa;&#xfb;&#xfc;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;u&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xfd;&#xff;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;y&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5c;&#x5c;W&#x22;, &#x27;g&#x27;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;    return r&#x3b;&#xd;&#xa;&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;function commonRemoves&#x28;r&#x29;&#x7b;&#xd;&#xa;        var s&#x3d;lower&#x28;trim&#x28;r&#x29;&#x29;&#x3b;&#xd;&#xa;        s&#x3d;replace&#x28;s,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;desconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;desaconocido&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;desconocida&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;muerto en pie&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		if&#x28;s&#x3d;&#x3d;&#x27;nn&#x27;&#x29;&#x7b;	&#xd;&#xa;			s&#x3d;replace&#x28;s,&#x27;nn&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;		if&#x28;s&#x3d;&#x3d;&#x27;na&#x27;&#x29;&#x7b;	&#xd;&#xa;			s&#x3d;replace&#x28;s,&#x27;na&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;		if&#x28;s&#x3d;&#x3d;&#x27;nd&#x27;&#x29;&#x7b;	&#xd;&#xa;			s&#x3d;replace&#x28;s,&#x27;nd&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;&#xd;&#xa;		if&#x28;indexOf&#x28;s,&#x22;sp&#x22;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;			var temp&#x3d;s&#x3b;&#xd;&#xa;			if&#x28;temp.length&#x3d;&#x3d;3 &#x7c;&#x7c; temp.length&#x3d;&#x3d;4&#x29;&#x7b;&#xd;&#xa;				temp&#x3d;replace&#x28;s,&#x27;sp&#x27;, &#x27;sp &#x27;&#x29;&#x3b;&#xd;&#xa;				var values&#x3d;temp.split&#x28;&#x22; &#x22;&#x29;&#x3b;&#xd;&#xa;				if&#x28;values&#x5b;0&#x5d;&#x3d;&#x3d;&#x22;sp&#x22; &#x26;&#x26; isNum&#x28;values&#x5b;1&#x5d;&#x29;&#x29;&#x7b;&#xd;&#xa;					s&#x3d;values&#x5b;0&#x5d;&#x3b;&#xd;&#xa;				&#x7d;&#xd;&#xa;			&#x7d;&#xd;&#xa;		&#x7d;&#xd;&#xa;		&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;tocon&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;		s&#x3d;replace&#x28;s,&#x27;undef&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;    return s&#x3b;&#xd;&#xa;&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;function escapingAndOneRemove&#x28;r&#x29;&#x7b;&#xd;&#xa;	var s&#x3d;replace&#x28;r,&#x27;-1&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;	s&#x3d;replace&#x28;s,&#x27;-&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x27;&#x5c;&#x5c;&#x2a;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x27;&#x5c;&#x5c;.&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x27;&#x5c;&#x5c;&#x3f;&#x27;, &#x27;&#x27;&#x29;&#x3b;&#xd;&#xa;	return s&#x3b;	&#xd;&#xa;&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var codigo_muestra&#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>no_fml_en_lista</name>
+        <rename>no_fml_en_lista</rename>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <replace>Y</replace>
-      </field>      <field>        <name>no_genero_en_lista</name>
-        <rename>no_genero_en_lista</rename>
+        <replace>N</replace>
+      </field>      <field>        <name>no_gen_en_lista</name>
+        <rename>no_gen_en_lista</rename>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <replace>Y</replace>
-      </field>      <field>        <name>no_especie_en_lista</name>
-        <rename>no_especie_en_lista</rename>
+        <replace>N</replace>
+      </field>      <field>        <name>no_esp_en_lista</name>
+        <rename>no_esp_en_lista</rename>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <replace>Y</replace>
+        <replace>N</replace>
       </field>      <field>        <name>codigo_muestra</name>
         <rename>codigo_muestra</rename>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
         <replace>N</replace>
+      </field>      <field>        <name>familia_taxo</name>
+        <rename>familia_taxo</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>genero_taxo</name>
+        <rename>genero_taxo</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>especie_taxo</name>
+        <rename>especie_taxo</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>592</xloc>
-      <yloc>336</yloc>
+      <xloc>448</xloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -428,8 +718,292 @@
         <replace>N</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>432</xloc>
-      <yloc>480</yloc>
+      <xloc>288</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>MAXID_F5_COL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>conglomerado_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_subparcela</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo_individuo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f5_coleccion_botanica_no_id</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nombre_comun</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>familia_taxonomica</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_familia_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>genero_taxonomico</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_genero_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>especie_taxonomica</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_especie_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>observaciones_individuo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f5_coleccion_botanica_numero_colector</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>colectada</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_conglomerado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anio_ejecucion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anioVigencia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_CONGLOMERADO_SEQ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_BRIG_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_SUBPARCELA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_muestra</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>seq_f5_colbot</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_F5_COL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>USUARIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1056</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>MAXID_F5_COL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>conglomerado_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_subparcela</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo_individuo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f5_coleccion_botanica_no_id</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nombre_comun</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>familia_taxonomica</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_familia_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>genero_taxonomico</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_genero_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>especie_taxonomica</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_especie_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>observaciones_individuo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f5_coleccion_botanica_numero_colector</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>colectada</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_conglomerado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anio_ejecucion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anioVigencia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_CONGLOMERADO_SEQ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_BRIG_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_SUBPARCELA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_muestra</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>seq_f5_colbot</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_F5_COL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>seq_f5_labo_herbario_cong</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MAXID_F5_LAB_HERBARIO_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_F5_LAB_HERBARIO_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>USUARIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>familia_taxo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>genero_taxo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>especie_taxo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_fml_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_gen_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_esp_en_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1168</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -446,7 +1020,7 @@
            <schema_name/>
            </partitioning>
     <connection>PGSQL_IFN_CALC_LOCAL</connection>
-    <sql>select &#xd;&#xa;col.f5_coleccion_botanica_id_&#xd;&#xa;,col.conglomerado_id_&#xd;&#xa;,rmed.no_spf codigo_subparcela&#xd;&#xa;,col.tipo_individuo&#xd;&#xa;,col.f5_coleccion_botanica_no_id&#xd;&#xa;,col.nombre_comun&#xd;&#xa;,col.familia_taxonomica&#xd;&#xa;,col.no_familia_en_lista&#xd;&#xa;,col.genero_taxonomico&#xd;&#xa;,col.no_genero_en_lista&#xd;&#xa;,col.especie_taxonomica&#xd;&#xa;,col.no_especie_en_lista&#xd;&#xa;,col.observaciones_individuo&#xd;&#xa;,col.f5_coleccion_botanica_numero_colector &#xd;&#xa;,col.colectada&#xd;&#xa;,cong.id codigo_conglomerado&#xd;&#xa;FROM conglomerados.f5_coleccion_botanica col,&#xd;&#xa;conglomerados.conglomerado cong, conglomerados.f4_registro_medicion rmed&#xd;&#xa;where col.conglomerado_id_&#x3d;cong.conglomerado_id_&#xd;&#xa;and rmed.conglomerado_id_&#x3d;col.conglomerado_id_&#xd;&#xa;and col.f5_coleccion_botanica_no_id&#x3d;rmed.no_id&#xd;&#xa;order by col.conglomerado_id_, rmed.no_spf</sql>
+    <sql>select &#xd;&#xa;DISTINCT&#xd;&#xa;cong.id codigo_conglomerado&#xd;&#xa;,rmed.no_spf codigo_subparcela&#xd;&#xa;,col.f5_coleccion_botanica_no_id&#xd;&#xa;,col.tipo_individuo&#xd;&#xa;,col.nombre_comun&#xd;&#xa;,col.familia_taxonomica&#xd;&#xa;,col.no_familia_en_lista&#xd;&#xa;,col.genero_taxonomico&#xd;&#xa;,col.no_genero_en_lista&#xd;&#xa;,col.especie_taxonomica&#xd;&#xa;,col.no_especie_en_lista&#xd;&#xa;,col.observaciones_individuo&#xd;&#xa;,col.f5_coleccion_botanica_numero_colector &#xd;&#xa;,col.colectada&#xd;&#xa;,col.conglomerado_id_&#xd;&#xa;FROM conglomerados.f5_coleccion_botanica col,&#xd;&#xa;conglomerados.conglomerado cong, conglomerados.f4_registro_medicion rmed&#xd;&#xa;where col.conglomerado_id_&#x3d;cong.conglomerado_id_&#xd;&#xa;and rmed.conglomerado_id_&#x3d;col.conglomerado_id_&#xd;&#xa;and col.f5_coleccion_botanica_no_id&#x3d;rmed.no_id&#xd;&#xa;order by cong.id, rmed.no_spf, col.f5_coleccion_botanica_no_id</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -454,8 +1028,8 @@
     <lazy_conversion_active>N</lazy_conversion_active>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>240</xloc>
-      <yloc>480</yloc>
+      <xloc>96</xloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -480,15 +1054,15 @@
     <lazy_conversion_active>N</lazy_conversion_active>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>816</xloc>
-      <yloc>176</yloc>
+      <xloc>672</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>Table output</name>
-    <type>TableOutput</type>
+    <name>Table input 2 2</name>
+    <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -498,64 +1072,16 @@
            <schema_name/>
            </partitioning>
     <connection>IFNLOCAL</connection>
-    <schema>IFN</schema>
-    <table>IFN_COLECCION_BOTANICA</table>
-    <commit>1000</commit>
-    <truncate>N</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>N</use_batch>
-    <specify_fields>Y</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-        <field>
-          <column_name>SUBP_ID_SUBPARCELA</column_name>
-          <stream_name>ID_SUBPARCELA</stream_name>
-        </field>
-        <field>
-          <column_name>ID_COLECCION</column_name>
-          <stream_name>SEQ_F5_COL</stream_name>
-        </field>
-        <field>
-          <column_name>NUMERO_ID</column_name>
-          <stream_name>f5_coleccion_botanica_no_id</stream_name>
-        </field>
-        <field>
-          <column_name>TIPO</column_name>
-          <stream_name>tipo_individuo</stream_name>
-        </field>
-        <field>
-          <column_name>NOMBRE_COMUN</column_name>
-          <stream_name>nombre_comun</stream_name>
-        </field>
-        <field>
-          <column_name>OBSERVACION</column_name>
-          <stream_name>observaciones_individuo</stream_name>
-        </field>
-        <field>
-          <column_name>NUMERO_COLECTOR</column_name>
-          <stream_name>f5_coleccion_botanica_numero_colector</stream_name>
-        </field>
-        <field>
-          <column_name>COLECTADA</column_name>
-          <stream_name>colectada</stream_name>
-        </field>
-        <field>
-          <column_name>IFN_ID_BRIGADA_CONG</column_name>
-          <stream_name>ID_BRIG_CONG</stream_name>
-        </field>
-    </fields>
+    <sql>SELECT NVL&#x28;max&#x28;ID_LABORATORIO_HERBARIO&#x29;,0&#x29; MAXID_F5_LAB_HERBARIO_CONG FROM IFN_LABORATORIO_HERBARIO&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1120</xloc>
-      <yloc>384</yloc>
+      <xloc>688</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -585,7 +1111,7 @@
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;logEjecucion&#x2f;colbotanica_subp_filter</name>
+      <name>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x2f;logEjecucion&#x2f;cong_filter_colbotanica_idsubp_null</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -604,21 +1130,9 @@
     </file>
     <fields>
       <field>
-        <name>f5_coleccion_botanica_id_</name>
-        <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
-        <currency/>
-        <decimal>,</decimal>
-        <group>.</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>conglomerado_id_</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -630,7 +1144,7 @@
       <field>
         <name>codigo_subparcela</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -654,7 +1168,7 @@
       <field>
         <name>f5_coleccion_botanica_no_id</name>
         <type>Number</type>
-        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -810,7 +1324,7 @@
       <field>
         <name>anioVigencia</name>
         <type>Integer</type>
-        <format>&#x23;&#x3b;-&#x23;</format>
+        <format/>
         <currency/>
         <decimal>,</decimal>
         <group>.</group>
@@ -855,11 +1369,856 @@
         <length>-1</length>
         <precision>-1</precision>
       </field>
+      <field>
+        <name>codigo_muestra</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>704</xloc>
-      <yloc>160</yloc>
+      <xloc>560</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Text file output 3 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>G&#x3a;&#x5c;Collect&#x5c;RepoIFN&#x5c;posgresToOracle&#x5c;logEjecucion&#x5c;uerror_herbcolbot_ref_ind</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>MAXID_F5_COL</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>conglomerado_id_</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>codigo_subparcela</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>8</precision>
+      </field>
+      <field>
+        <name>tipo_individuo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>f5_coleccion_botanica_no_id</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>8</precision>
+      </field>
+      <field>
+        <name>nombre_comun</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>familia_taxonomica</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>no_familia_en_lista</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_taxonomico</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>no_genero_en_lista</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>especie_taxonomica</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>no_especie_en_lista</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>observaciones_individuo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>f5_coleccion_botanica_numero_colector</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>colectada</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>codigo_conglomerado</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>anio_ejecucion</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>anioVigencia</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>ID_CONGLOMERADO_SEQ</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_BRIG_CONG</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_SUBPARCELA</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>codigo_muestra</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>seq_f5_colbot</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>SEQ_F5_COL</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>USUARIO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SYSDATE</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1216</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Text file output 3 2 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>G&#x3a;&#x5c;Collect&#x5c;RepoIFN&#x5c;posgresToOracle&#x5c;logEjecucion&#x5c;uerror_herbcolbot_ref_ind</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>MAXID_F5_COL</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>conglomerado_id_</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>codigo_subparcela</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>8</precision>
+      </field>
+      <field>
+        <name>tipo_individuo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>f5_coleccion_botanica_no_id</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>8</precision>
+      </field>
+      <field>
+        <name>nombre_comun</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>familia_taxonomica</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>no_familia_en_lista</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_taxonomico</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>no_genero_en_lista</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>especie_taxonomica</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>no_especie_en_lista</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>observaciones_individuo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>f5_coleccion_botanica_numero_colector</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>colectada</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>codigo_conglomerado</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>anio_ejecucion</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>anioVigencia</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>ID_CONGLOMERADO_SEQ</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_BRIG_CONG</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_SUBPARCELA</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>codigo_muestra</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>seq_f5_colbot</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>SEQ_F5_COL</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>USUARIO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SYSDATE</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>928</xloc>
+      <yloc>848</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Unique rows</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>N</count_rows>
+      <count_field/>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>368</xloc>
+      <yloc>544</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>coleccion botanica</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IFNLOCAL</connection>
+    <schema>IFN</schema>
+    <table>IFN_COLECCION_BOTANICA</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>SUBP_ID_SUBPARCELA</column_name>
+          <stream_name>ID_SUBPARCELA</stream_name>
+        </field>
+        <field>
+          <column_name>ID_COLECCION</column_name>
+          <stream_name>SEQ_F5_COL</stream_name>
+        </field>
+        <field>
+          <column_name>NUMERO_ID</column_name>
+          <stream_name>f5_coleccion_botanica_no_id</stream_name>
+        </field>
+        <field>
+          <column_name>TIPO</column_name>
+          <stream_name>tipo_individuo</stream_name>
+        </field>
+        <field>
+          <column_name>NOMBRE_COMUN</column_name>
+          <stream_name>nombre_comun</stream_name>
+        </field>
+        <field>
+          <column_name>OBSERVACION</column_name>
+          <stream_name>observaciones_individuo</stream_name>
+        </field>
+        <field>
+          <column_name>NUMERO_COLECTOR</column_name>
+          <stream_name>f5_coleccion_botanica_numero_colector</stream_name>
+        </field>
+        <field>
+          <column_name>COLECTADA</column_name>
+          <stream_name>colectada</stream_name>
+        </field>
+        <field>
+          <column_name>IFN_ID_BRIGADA_CONG</column_name>
+          <stream_name>ID_BRIG_CONG</stream_name>
+        </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1056</xloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -895,7 +2254,7 @@
     <fields>
         <field>
           <column_name>ID_LABORATORIO_HERBARIO</column_name>
-          <stream_name>SEQ_F5_COL</stream_name>
+          <stream_name>SEQ_F5_LAB_HERBARIO_CONG</stream_name>
         </field>
         <field>
           <column_name>SUPB_ID_SUBPARCELA</column_name>
@@ -907,41 +2266,49 @@
         </field>
         <field>
           <column_name>FAMILIA</column_name>
-          <stream_name>familia_taxonomica</stream_name>
+          <stream_name>familia_taxo</stream_name>
         </field>
         <field>
           <column_name>GENERO</column_name>
-          <stream_name>genero_taxonomico</stream_name>
+          <stream_name>genero_taxo</stream_name>
         </field>
         <field>
           <column_name>ESPECIE</column_name>
-          <stream_name>especie_taxonomica</stream_name>
+          <stream_name>especie_taxo</stream_name>
         </field>
         <field>
           <column_name>FAMILIA_NOLISTA</column_name>
-          <stream_name>no_familia_en_lista</stream_name>
+          <stream_name>no_fml_en_lista</stream_name>
         </field>
         <field>
           <column_name>GENERO_NOLISTA</column_name>
-          <stream_name>no_genero_en_lista</stream_name>
+          <stream_name>no_gen_en_lista</stream_name>
         </field>
         <field>
           <column_name>ESPECIE_NOLISTA</column_name>
-          <stream_name>no_especie_en_lista</stream_name>
-        </field>
-        <field>
-          <column_name>MUESTRAID</column_name>
-          <stream_name>codigo_muestra</stream_name>
+          <stream_name>no_esp_en_lista</stream_name>
         </field>
         <field>
           <column_name>IFN_ID_BRIGADA_CONG</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
         </field>
+        <field>
+          <column_name>IFN_COLECCION_BOTANICA_ID</column_name>
+          <stream_name>SEQ_F5_COL</stream_name>
+        </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>976</xloc>
-      <yloc>384</yloc>
+      <xloc>672</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

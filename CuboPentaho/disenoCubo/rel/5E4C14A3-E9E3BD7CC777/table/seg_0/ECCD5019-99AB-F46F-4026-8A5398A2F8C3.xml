@@ -17,7 +17,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-03 21:48:48 UTC</createdTime>
 <ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -70,4 +69,17 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D8BC67A-0C87-17A2-F71F-03B6116AA8D6" name="IFN_TAXONOMIA_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 19:56:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6139640-7A4C-B48F-63BF-94B80BB9D7C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

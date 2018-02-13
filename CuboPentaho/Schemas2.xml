@@ -17,7 +17,7 @@
       </Table>
       <Level name="Pais" visible="true" column="PAIS" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
       </Level>
-      <Level name="Region" visible="true" column="REGION" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      <Level name="Region" visible="true" column="REGION" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
         <Annotations>
           <Annotation name="Data.Role">
             <![CDATA[Geography]]>
@@ -67,6 +67,16 @@
         </Annotations>
       </Level>
     </Hierarchy>
+    <Hierarchy name="Departamental" visible="true" hasAll="true" primaryKey="ID_DIVIPOLA">
+      <Table name="DIM_DIVISION_POLITICA" schema="IFN">
+      </Table>
+      <Level name="Departamento" visible="true" column="DEPARTAMENTO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Municipio" visible="true" column="MUNICIPIO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Car" visible="true" column="CAR" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
   </Dimension>
   <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Conglomerado">
     <Hierarchy name="default" visible="true" hasAll="true" primaryKey="ID_CONGLOMERADO">
@@ -93,6 +103,28 @@
     </Hierarchy>
   </Dimension>
   <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Bridaga">
+    <Hierarchy name="default" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Cantidad" visible="true" column="CANTIDAD_PERSONAS" type="Integer" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Jefe" visible="true" column="JEFE" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Tecnico" visible="true" column="TENICO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Botanico" visible="true" column="BOTANICO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Gestor 1" visible="true" column="GESTOR1" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Gestor 2" visible="true" column="GESTOR2" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Gestor 3" visible="true" column="GESTOR3" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Gestor 4" visible="true" column="GESTOR4" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Brigada completa" visible="true" column="BRIGADA_COMPLETA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
     <Hierarchy name="Jefe" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
       <Table name="DIM_BRIGADA" schema="IFN">
       </Table>
@@ -102,7 +134,7 @@
     <Hierarchy name="Tecnico" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
       <Table name="DIM_BRIGADA" schema="IFN">
       </Table>
-      <Level name="Tecnico" visible="true" column="TENICO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      <Level name="Tecnico" visible="true" column="TENICO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
       </Level>
     </Hierarchy>
     <Hierarchy name="Botanico" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
@@ -114,7 +146,7 @@
     <Hierarchy name="Gestor 1" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
       <Table name="DIM_BRIGADA" schema="IFN">
       </Table>
-      <Level name="Gestor 1" visible="true" column="GESTOR1" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      <Level name="Gestor 1" visible="true" column="GESTOR1" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
       </Level>
     </Hierarchy>
     <Hierarchy name="Gestor 2" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
@@ -139,6 +171,12 @@
       <Table name="DIM_BRIGADA" schema="IFN">
       </Table>
       <Level name="Brigada Completa" visible="true" column="BRIGADA_COMPLETA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Cantidad" visible="true" hasAll="true" primaryKey="ID_BRIGADA">
+      <Table name="DIM_BRIGADA" schema="IFN">
+      </Table>
+      <Level name="Cantidad Personas" visible="true" column="CANTIDAD_PERSONAS" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
       </Level>
     </Hierarchy>
   </Dimension>
@@ -210,6 +248,18 @@
       </Level>
     </Hierarchy>
   </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Parcela Permanente">
+    <Hierarchy name="default" visible="true" hasAll="true" primaryKey="ID_PARCELA">
+      <Table name="DIM_PARCELA_PERMANENTE" schema="IFN">
+      </Table>
+      <Level name="Id parcela permanente" visible="true" column="ID_PARCELA" nameColumn="CODIGO_PARCELA" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" captionColumn="CODIGO_PARCELA">
+      </Level>
+      <Level name="Intituto" visible="true" column="INSTITUTO" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Car" visible="true" column="CAR" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
   <Cube name="Suelos" caption="Suelos" visible="true" cache="true" enabled="true">
     <Table name="FACT_SUELOS" schema="IFN">
     </Table>
@@ -239,7 +289,7 @@
     </Measure>
     <Measure name="Avg - Peso fresco" column="PESO_FRESCO" datatype="Numeric" formatString="#.##" aggregator="avg" visible="true">
     </Measure>
-    <Measure name="Count - Divipola" column="DIM_DIVISION_POLITICA_ID" datatype="String" aggregator="distinct-count" visible="true">
+    <Measure name="Count - Divipola" column="DIM_DIVISION_POLITICA_ID" aggregator="distinct-count" visible="true">
     </Measure>
     <Measure name="Count - ConglomeradoConMuestra" column="DIM_CONGLOMERADO_ID" aggregator="distinct-count" visible="true">
     </Measure>
@@ -310,6 +360,8 @@
       </Hierarchy>
     </Dimension>
     <DimensionUsage source="Coleccion" name="Coleccion" visible="true" foreignKey="ID_INDIVIDUOS" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Parcela Permanente" name="Parcela permanente" visible="true" foreignKey="DIM_PARCELA_PERMANENTE" highCardinality="false">
     </DimensionUsage>
     <Measure name="Avg - Altura fuste" column="ALTURA_FUSTE" aggregator="avg" visible="true">
     </Measure>
@@ -524,6 +576,14 @@
     <Measure name="Count - equipos" column="ID_EQUIPO" aggregator="distinct-count" visible="true">
     </Measure>
     <Measure name="Cantidad" column="CANTIDAD" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Conglomerados" visible="true" cache="true" enabled="true">
+    <Table name="DIM_CONGLOMERADO" schema="IFN">
+    </Table>
+    <DimensionUsage source="Division Politica" name="Division Politica" visible="true" foreignKey="DIM_DIVISION_POLITICA_ID">
+    </DimensionUsage>
+    <Measure name="Count - Conglomerados" column="ID_CONGLOMERADO" aggregator="distinct-count" visible="true">
     </Measure>
   </Cube>
 </Schema>

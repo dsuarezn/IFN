@@ -125,7 +125,6 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Calculator</from><to>Table output 3</to><enabled>Y</enabled> </hop>
   <hop> <from>Table output 3</from><to>Copy rows to result</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input 2</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
@@ -139,6 +138,8 @@
   <hop> <from>Get rows from result</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Sort rows 2</from><to>Merge Join</to><enabled>Y</enabled> </hop>
   <hop> <from>Merge Join</from><to>Get Variables 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Datos Usuario Migracion 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion 2</from><to>Table output 3</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -216,7 +217,7 @@
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>992</xloc>
-      <yloc>384</yloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -251,6 +252,42 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>368</xloc>
       <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>992</xloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -587,11 +624,19 @@
           <column_name>IFN_BRIGADA_CONG_ID</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
         </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>992</xloc>
-      <yloc>256</yloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

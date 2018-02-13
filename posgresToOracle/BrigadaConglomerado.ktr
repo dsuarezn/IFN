@@ -127,7 +127,6 @@
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input 2</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Join Rows &#x28;cartesian product&#x29;</from><to>Calculator</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value 2 2</from><to>Database join</to><enabled>Y</enabled> </hop>
   <hop> <from>Database join</from><to>Filter rows</to><enabled>Y</enabled> </hop>
   <hop> <from>Filter rows</from><to>Add sequence</to><enabled>Y</enabled> </hop>
@@ -137,6 +136,8 @@
   <hop> <from>Modified Java Script Value 2 2 2</from><to>Database join 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input</from><to>Get Variables</to><enabled>Y</enabled> </hop>
   <hop> <from>Get Variables</from><to>Modified Java Script Value 2 2 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Datos Usuario Migracion</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion</from><to>Table output</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -161,7 +162,7 @@
       <max_value>999999999</max_value>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>496</xloc>
+      <xloc>640</xloc>
       <yloc>160</yloc>
       <draw>Y</draw>
       </GUI>
@@ -194,7 +195,7 @@
 </calculation>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>496</xloc>
+      <xloc>640</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
       </GUI>
@@ -213,7 +214,7 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>624</xloc>
+      <xloc>944</xloc>
       <yloc>480</yloc>
       <draw>Y</draw>
       </GUI>
@@ -232,7 +233,7 @@
            </partitioning>
     <connection>IFNLOCAL</connection>
     <rowlimit>0</rowlimit>
-    <sql>select&#xd;&#xa;ID_BRIGADA ID_BRIGADA_SEARCH&#xd;&#xa;from &#xd;&#xa;IFN.IFN_BRIGADA&#xd;&#xa;WHERE NVL&#x28;LOWER&#x28;TRIM&#x28;JEFE&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;&#xd;&#xa;AND NVL&#x28;LOWER&#x28;TRIM&#x28;TENICO&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;&#xd;&#xa;AND NVL&#x28;LOWER&#x28;TRIM&#x28;BOTANICO&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;&#xd;&#xa;AND NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR1&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;&#xd;&#xa;AND NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR2&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;&#xd;&#xa;AND NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR3&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29; &#xd;&#xa;AND NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR4&#x29;&#x29;,&#x27;null&#x27;&#x29;&#x3d;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;</sql>
+    <sql>select&#xd;&#xa;ID_BRIGADA ID_BRIGADA_SEARCH&#xd;&#xa;from &#xd;&#xa;IFN.IFN_BRIGADA&#xd;&#xa;WHERE utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;JEFE&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#xd;&#xa;AND utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;TENICO&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#xd;&#xa;AND utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;BOTANICO&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#xd;&#xa;AND utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR1&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#xd;&#xa;AND utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR2&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#xd;&#xa;AND utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR3&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#xd;&#xa;AND utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;GESTOR4&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;&#x3d;utl_raw.cast_to_varchar2&#x28;&#x28;nlssort&#x28;NVL&#x28;LOWER&#x28;TRIM&#x28;&#x3f;&#x29;&#x29;,&#x27;null&#x27;&#x29;, &#x27;nls_sort&#x3d;binary_ai&#x27;&#x29;&#x29;&#x29;  </sql>
     <outer_join>Y</outer_join>
     <replace_vars>N</replace_vars>
     <parameter>
@@ -304,6 +305,42 @@
     </step>
 
   <step>
+    <name>Datos Usuario Migracion</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>784</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Filter rows</name>
     <type>FilterRows</type>
     <description/>
@@ -326,7 +363,7 @@
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>400</xloc>
+      <xloc>464</xloc>
       <yloc>160</yloc>
       <draw>Y</draw>
       </GUI>
@@ -390,7 +427,7 @@
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>496</xloc>
+      <xloc>640</xloc>
       <yloc>272</yloc>
       <draw>Y</draw>
       </GUI>
@@ -447,7 +484,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;var gestor1&#x3d;null&#x3b;&#xd;&#xa;var gestor2&#x3d;null&#x3b;&#xd;&#xa;var gestor3&#x3d;null&#x3b;&#xd;&#xa;var gestor4&#x3d;null&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var gfields&#x3d;replace&#x28;gestores_campo,&#x22;,&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;gfields &#x3d; replace&#x28;gfields,&#x22;-&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;gfields &#x3d; replace&#x28;gfields,&#x22; y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;gfields &#x3d; replace&#x28;gfields,&#x22; Y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;gfields &#x3d; replace&#x28;gfields,&#x22;&#x2f;&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;gfields &#x3d; replace&#x28;gfields,&#x22;&#x5c;&#x5c;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;gfields &#x3d; replace&#x28;gfields,&#x22;&#x2f;0&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;gestores_campo&#x3d;gfields&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;gestores_campo&#x21;&#x3d;null&#x29;&#x7b;&#xd;&#xa;	if&#x28;indexOf&#x28;gestores_campo,&#x22;&#x3b;&#x22;&#x29;&#x3e;0&#x29;&#x7b;&#xd;&#xa;		var gestores &#x3d; gestores_campo.split&#x28;&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;		if &#x28;gestores&#x5b;0&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor1&#x3d;trim&#x28;gestores&#x5b;0&#x5d;&#x29;&#x3b;	&#xd;&#xa;		&#x7d;&#xd;&#xa;		if &#x28;gestores&#x5b;1&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor2&#x3d;trim&#x28;gestores&#x5b;1&#x5d;&#x29;&#x3b;	&#xd;&#xa;			gestor2&#x3d;replace&#x28;gestor2,&#x22;Ernerto&#x22;,&#x22;Ernesto&#x22;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;		if &#x28;gestores&#x5b;2&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor3&#x3d;trim&#x28;gestores&#x5b;2&#x5d;&#x29;&#x3b;	&#xd;&#xa;			gestor3&#x3d;replace&#x28;gestor3,&#x22;Alviro&#x22;,&#x22;Alveiro&#x22;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;		if &#x28;gestores&#x5b;4&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor4&#x3d;trim&#x28;gestores&#x5b;3&#x5d;&#x29;&#x3b;	&#xd;&#xa;		&#x7d;&#xd;&#xa;	&#x7d;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var botanicoTemp&#x3d;replace&#x28;trim&#x28;botanico&#x29;,&#x22;,&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;botanicoTemp &#x3d; replace&#x28;botanicoTemp,&#x22;-&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;botanicoTemp &#x3d; replace&#x28;botanicoTemp,&#x22; y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;botanicoTemp &#x3d; replace&#x28;botanicoTemp,&#x22; Y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;botanicoTemp &#x3d; replace&#x28;botanicoTemp,&#x22;&#x2f;&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;botanicoTemp &#x3d; replace&#x28;botanicoTemp,&#x22;&#x5c;&#x5c;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;botanicoTemp &#x3d; replace&#x28;botanicoTemp,&#x22;&#x2f;0&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var jefeTemp&#x3d;replace&#x28;trim&#x28;jefe&#x29;,&#x22;,&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;jefeTemp &#x3d; replace&#x28;jefeTemp,&#x22;-&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;jefeTemp &#x3d; replace&#x28;jefeTemp,&#x22; y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;jefeTemp &#x3d; replace&#x28;jefeTemp,&#x22; Y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;jefeTemp &#x3d; replace&#x28;jefeTemp,&#x22;&#x2f;&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;jefeTemp &#x3d; replace&#x28;jefeTemp,&#x22;&#x5c;&#x5c;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;jefeTemp &#x3d; replace&#x28;jefeTemp,&#x22;&#x2f;0&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var tecnicosTemp&#x3d;replace&#x28;trim&#x28;tecnicos&#x29;,&#x22;,&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;tecnicosTemp &#x3d; replace&#x28;tecnicosTemp,&#x22;-&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;tecnicosTemp &#x3d; replace&#x28;tecnicosTemp,&#x22; y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;tecnicosTemp &#x3d; replace&#x28;tecnicosTemp,&#x22; Y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;tecnicosTemp &#x3d; replace&#x28;tecnicosTemp,&#x22;&#x2f;&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;tecnicosTemp &#x3d; replace&#x28;tecnicosTemp,&#x22;&#x5c;&#x5c;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;tecnicosTemp &#x3d; replace&#x28;tecnicosTemp,&#x22;&#x2f;0&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;var gestor1&#x3d;null&#x3b;&#xd;&#xa;var gestor2&#x3d;null&#x3b;&#xd;&#xa;var gestor3&#x3d;null&#x3b;&#xd;&#xa;var gestor4&#x3d;null&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var gfields&#x3d;escaping&#x28;gestores_campo&#x29;&#x3b; &#xd;&#xa;&#xd;&#xa;gestores_campo&#x3d;gfields&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;gestores_campo&#x21;&#x3d;null&#x29;&#x7b;&#xd;&#xa;	if&#x28;indexOf&#x28;gestores_campo,&#x22;&#x3b;&#x22;&#x29;&#x3e;0&#x29;&#x7b;&#xd;&#xa;		var gestores &#x3d; gestores_campo.split&#x28;&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;		if &#x28;gestores&#x5b;0&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor1&#x3d;trim&#x28;gestores&#x5b;0&#x5d;&#x29;&#x3b;	&#xd;&#xa;		&#x7d;&#xd;&#xa;		if &#x28;gestores&#x5b;1&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor2&#x3d;trim&#x28;gestores&#x5b;1&#x5d;&#x29;&#x3b;	&#xd;&#xa;			gestor2&#x3d;replace&#x28;gestor2,&#x22;Ernerto&#x22;,&#x22;Ernesto&#x22;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;		if &#x28;gestores&#x5b;2&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor3&#x3d;trim&#x28;gestores&#x5b;2&#x5d;&#x29;&#x3b;	&#xd;&#xa;			gestor3&#x3d;replace&#x28;gestor3,&#x22;Alviro&#x22;,&#x22;Alveiro&#x22;&#x29;&#x3b;&#xd;&#xa;		&#x7d;&#xd;&#xa;		if &#x28;gestores&#x5b;4&#x5d;&#x21;&#x3d;null&#x29; &#x7b;&#xd;&#xa;			gestor4&#x3d;trim&#x28;gestores&#x5b;3&#x5d;&#x29;&#x3b;	&#xd;&#xa;		&#x7d;&#xd;&#xa;	&#x7d;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var botanicoTemp&#x3d;escaping&#x28;botanico&#x29;&#x3b;&#xd;&#xa;var jefeTemp&#x3d;escaping&#x28;jefe&#x29;&#x3b;&#xd;&#xa;var tecnicosTemp&#x3d;escaping&#x28;tecnicos&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;function escaping&#x28;r&#x29;&#x7b;&#xd;&#xa;	var s&#x3d;replace&#x28;trim&#x28;r&#x29;,&#x22;,&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x22;-&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x22; y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x22; Y &#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x22;&#x2f;&#x22;,&#x22;&#x3b;&#x22;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x22;&#x5c;&#x5c;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	s &#x3d; replace&#x28;s,&#x22;&#x2f;0&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	return s&#x3b;&#xd;&#xa;&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;function accentsTidy&#x28;s&#x29;&#x7b;&#xd;&#xa;        var r&#x3d;lower&#x28;s&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5c;&#x5c;s&#x22;, &#x27;g&#x27;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;a&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xe6;&#x22;, &#x27;g&#x27;&#x29;,&#x22;ae&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xe7;&#x22;, &#x27;g&#x27;&#x29;,&#x22;c&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xe8;&#xe9;&#xea;&#xeb;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;e&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xec;&#xed;&#xee;&#xef;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;i&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#xf1;&#x22;, &#x27;g&#x27;&#x29;,&#x22;n&#x22;&#x29;&#x3b;                            &#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;o&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x153;&#x22;, &#x27;g&#x27;&#x29;,&#x22;oe&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xf9;&#xfa;&#xfb;&#xfc;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;u&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5b;&#xfd;&#xff;&#x5d;&#x22;, &#x27;g&#x27;&#x29;,&#x22;y&#x22;&#x29;&#x3b;&#xd;&#xa;        r &#x3d; replace&#x28;r,new RegExp&#x28;&#x22;&#x5c;&#x5c;W&#x22;, &#x27;g&#x27;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;    return r&#x3b;&#xd;&#xa;&#x7d;&#x3b;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>gestor1</name>
         <rename>gestor1</rename>
         <type>String</type>
@@ -544,7 +581,7 @@
     <lazy_conversion_active>N</lazy_conversion_active>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>624</xloc>
+      <xloc>768</xloc>
       <yloc>272</yloc>
       <draw>Y</draw>
       </GUI>
@@ -607,10 +644,18 @@
           <column_name>TIPO_BRIGADA</column_name>
           <stream_name>tipoBrigada</stream_name>
         </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>624</xloc>
+      <xloc>944</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
       </GUI>
@@ -641,7 +686,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x2f;logEjecucion&#x2f;cargaBrigadaConglomerado</name>
+      <name>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x2f;logEjecucion&#x2f;cong_filter_brigcong_idbrigada_null</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -662,14 +707,14 @@
       <field>
         <name>conglomerado_id_</name>
         <type>Integer</type>
-        <format/>
+        <format>&#x23;&#x3b;-&#x23;</format>
         <currency/>
-        <decimal/>
+        <decimal>,</decimal>
         <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
-        <precision>-1</precision>
+        <precision>0</precision>
       </field>
       <field>
         <name>id</name>
@@ -684,7 +729,43 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>diligenciado_por</name>
+        <name>gestores_campo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>jefe</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tecnicos</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>botanico</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -720,7 +801,7 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>gestores_campo</name>
+        <name>anio_ejecucion</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -732,56 +813,8 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>SEQ_BRIGADA</name>
-        <type>Number</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>SEQ_CONGLOMERADO</name>
-        <type>Number</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>botanicoTemp</name>
-        <type>None</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>tecnicosTemp</name>
-        <type>None</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>gestor1</name>
-        <type>None</type>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -793,7 +826,7 @@
       </field>
       <field>
         <name>gestor2</name>
-        <type>None</type>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -805,7 +838,7 @@
       </field>
       <field>
         <name>gestor3</name>
-        <type>None</type>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -817,7 +850,19 @@
       </field>
       <field>
         <name>gestor4</name>
-        <type>None</type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tecnicosTemp</name>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -829,10 +874,34 @@
       </field>
       <field>
         <name>jefeTemp</name>
-        <type>None</type>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>botanicoTemp</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_CONGLOMERADO_SEQ</name>
+        <type>BigNumber</type>
+        <format/>
+        <currency/>
+        <decimal>.</decimal>
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
@@ -854,21 +923,21 @@
       <field>
         <name>anioVigencia</name>
         <type>Integer</type>
-        <format/>
+        <format>&#x23;&#x3b;-&#x23;</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>,</decimal>
+        <group>.</group>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
-        <precision>-1</precision>
+        <precision>0</precision>
       </field>
       <field>
         <name>ID_BRIGADA_SEARCH</name>
         <type>BigNumber</type>
         <format/>
         <currency/>
-        <decimal/>
+        <decimal>.</decimal>
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
@@ -878,7 +947,7 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>400</xloc>
+      <xloc>464</xloc>
       <yloc>32</yloc>
       <draw>Y</draw>
       </GUI>

@@ -19,7 +19,6 @@
 <createdTime>2017-04-03 21:48:47 UTC</createdTime>
 <commentInRDBMS>identificador unico del registro</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -72,8 +71,33 @@
 <colAssociation fkAssociation="DDCA8972-3936-0399-67CD-9F9CF0D3E4E5" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
 </associations>
 </Column>
+<Column name="IFN_DETRITOS_ID" id="9EEC7071-B5FB-A898-B9BD-999A0EFCC931">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 20:43:25 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AF6E379-B8D2-3F02-04B0-E9CD60905508" referredColumn="1348F20A-6894-5D33-6C1A-3C55B86D989F"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BC6FA94-B55F-C635-5356-FB34824905FF" name="IFN_LABORATORIO_DETRITOS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 19:57:14 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C67325D5-F0D0-6410-5ABE-AC380CDD9FAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="AF8422C1-68C2-0160-A07C-0021A8025BB4" name="IFN_LAB_DET_BRIG_CONG_FK">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-28 05:00:47 UTC</createdTime>
@@ -82,6 +106,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B17C7989-2A56-E876-2AE3-97F62965CDE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36BC3ED0-D875-125A-DECD-BD1CCF4390E6" name="IFN_LAB_DETRITOS_IFN_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 20:43:25 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EEC7071-B5FB-A898-B9BD-999A0EFCC931"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

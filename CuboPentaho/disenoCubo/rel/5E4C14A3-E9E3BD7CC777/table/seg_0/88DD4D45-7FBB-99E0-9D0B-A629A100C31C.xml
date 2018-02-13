@@ -100,5 +100,40 @@
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_DIVISION_POLITICA" id="9EF1906F-A6BB-5476-7344-FF65FD32164A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 20:09:51 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_REGION" id="9AD46E7B-9908-E36F-C7A4-E653F177C468">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-08 20:19:32 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2919221-D313-EEDB-2777-6D1C5E0C89B2" name="IFN_DIVISION_POLITICA_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 20:09:51 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EF1906F-A6BB-5476-7344-FF65FD32164A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

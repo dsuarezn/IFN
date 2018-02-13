@@ -1,0 +1,10 @@
+# exclude everything
+posgresToOracle/logEjecucion/*
+posgresToOracle/ppermanentes/logEjecucion/*
+posgresToOracle/calidad/logEjecucion/*
+CuboPentaho/disenoCubo/rel/*
+
+# exception to the rule
+!posgresToOracle/logEjecucion/.gitkeep 
+!posgresToOracle/ppermanentes/logEjecucion/.gitkeep
+!posgresToOracle/calidad/logEjecucion/.gitkeep

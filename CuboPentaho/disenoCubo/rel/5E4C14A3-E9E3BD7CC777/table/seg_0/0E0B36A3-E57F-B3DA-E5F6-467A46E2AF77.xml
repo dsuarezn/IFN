@@ -311,6 +311,20 @@
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="IFN_DIVISION_POLITICA_ID" id="2F34818B-C4BF-281C-5CDC-BF3FED128799">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-11 19:17:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAC93843-B7E3-EE42-D9B4-09995D0DDBD5" referredColumn="9EF1906F-A6BB-5476-7344-FF65FD32164A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="15A04EFA-4183-18FF-EE65-6AE4D9748CB5" name="IFN_CONGLOMERADO_PK">
@@ -364,6 +378,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5A8E2732-24D3-75CC-3628-37362E679D6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E2695CC-7C16-41D3-8573-F1560D762FB7" name="IFN_CONG_DIVPOLA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-11 19:17:45 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F34818B-C4BF-281C-5CDC-BF3FED128799"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

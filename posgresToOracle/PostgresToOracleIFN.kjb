@@ -942,7 +942,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>1344</xloc>
-      <yloc>624</yloc>
+      <yloc>640</yloc>
       </entry>
     <entry>
       <name>EnvioMuestrasMaderas</name>
@@ -1535,7 +1535,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>272</xloc>
+      <xloc>368</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
@@ -1635,7 +1635,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>1744</xloc>
-      <yloc>624</yloc>
+      <yloc>640</yloc>
       </entry>
     <entry>
       <name>Post-EnvMstMadera &#x28;Actualiza fecha recibido&#x29;</name>
@@ -1676,7 +1676,7 @@
       <type>JOB</type>
       <specification_method>filename</specification_method>
       <job_object_id/>
-      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;PostgresToOracleI_ppermanentes.kjb</filename>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;ppermanentes&#x2f;PostgresToOracleI_ppermanentes.kjb</filename>
       <jobname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -1698,7 +1698,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>624</xloc>
+      <xloc>640</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
@@ -1749,7 +1749,7 @@
         </field>
         <field>
           <variable_name>update_taxo</variable_name>
-          <variable_value>false</variable_value>
+          <variable_value>true</variable_value>
           <variable_type>CURRENT_JOB</variable_type>
         </field>
         <field>
@@ -1803,7 +1803,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>432</xloc>
+      <xloc>480</xloc>
       <yloc>320</yloc>
       </entry>
     <entry>
@@ -1836,7 +1836,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>432</xloc>
+      <xloc>480</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
@@ -1858,7 +1858,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>800</xloc>
+      <xloc>816</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
@@ -1903,7 +1903,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>1504</xloc>
-      <yloc>624</yloc>
+      <yloc>640</yloc>
       </entry>
     <entry>
       <name>labo3&#x3f;</name>
@@ -2023,7 +2023,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>960</xloc>
+      <xloc>944</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
@@ -2032,7 +2032,7 @@
       <type>JOB</type>
       <specification_method>filename</specification_method>
       <job_object_id/>
-      <filename>C&#x3a;&#x5c;Users&#x5c;Usuario&#x5c;Desktop&#x5c;Collect&#x5c;RepoIFN&#x5c;posgresToOracle&#x5c;calidad.kjb</filename>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;calidad&#x2f;calidad.kjb</filename>
       <jobname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -2054,8 +2054,107 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1136</xloc>
+      <xloc>1168</xloc>
       <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>Post-EnvMstDetritos Actualiza valores no incluidos</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;Post-Detritos-Labo-2.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>1744</xloc>
+      <yloc>560</yloc>
+      </entry>
+    <entry>
+      <name>Post-Post-Suelos-Laboratorios</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;Post-Post-Suelos-Laboratorios.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>2688</xloc>
+      <yloc>1056</yloc>
+      </entry>
+    <entry>
+      <name>Post-herbarios 2</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;Post-post-herbarios.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>2688</xloc>
+      <yloc>720</yloc>
       </entry>
   </entries>
   <hops>
@@ -2611,6 +2710,33 @@
     <hop>
       <from>Conglomerados</from>
       <to>Simple evaluation 2 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Post-EnvMstDetritos &#x28;Actualiza peso seco y pieza&#x29;</from>
+      <to>Post-EnvMstDetritos Actualiza valores no incluidos</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Post_Suelos_Laboratorios</from>
+      <to>Post-Post-Suelos-Laboratorios</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Post-herbarios</from>
+      <to>Post-herbarios 2</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>

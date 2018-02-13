@@ -128,13 +128,15 @@
   <hop> <from>Table input 2</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Join Rows &#x28;cartesian product&#x29;</from><to>Calculator</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value</from><to>Add sequence</to><enabled>Y</enabled> </hop>
   <hop> <from>Table output</from><to>Copy rows to result</to><enabled>Y</enabled> </hop>
   <hop> <from>Get Variables</from><to>Modified Java Script Value 2 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value 2 2</from><to>Database join 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input</from><to>Get Variables</to><enabled>Y</enabled> </hop>
   <hop> <from>Database join 2</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Datos Usuario Migracion</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Table output</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -212,7 +214,7 @@
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>896</xloc>
-      <yloc>368</yloc>
+      <yloc>608</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -247,6 +249,42 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>304</xloc>
       <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>288</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -370,6 +408,154 @@
     </step>
 
   <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>MAXID_F9_DETRITO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f9_muestreo_detritos_madera_transectos_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>conglomerado_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>transecto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>transecto_code_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>seccion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>seccion_code_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>no_pieza</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo_detrito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo_detrito_code_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>distancia_seccion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>diam_1_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>diam_2_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>f9_muestreo_detritos_madera_transectos_azimut</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>inclinacion_pieza</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f9_muestreo_detritos_madera_transectos_penetracion_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>f9_muestreo_detritos_madera_transectos_penetracion_golpes</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>peso_rodaja_gr</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>espesor_1_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>espesor_2_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>espesor_3_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>espesor_4_cm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>peso_fresco_muestra_gr</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>codigo_conglomerado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anio_ejecucion</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anioVigencia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_CONGLOMERADO_SEQ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_BRIG_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sq_f9_detrito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_F9_DETRITOS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>USUARIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Table input</name>
     <type>TableInput</type>
     <description/>
@@ -390,7 +576,7 @@
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>304</xloc>
-      <yloc>512</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -526,11 +712,19 @@
           <column_name>IFN_ID_BRIGADA_CONG</column_name>
           <stream_name>ID_BRIG_CONG</stream_name>
         </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>896</xloc>
-      <yloc>256</yloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

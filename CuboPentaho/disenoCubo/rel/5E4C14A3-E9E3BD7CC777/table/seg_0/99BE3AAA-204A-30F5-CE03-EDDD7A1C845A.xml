@@ -441,6 +441,36 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="IFN_COLECCION_BOTANICA_ID" id="61580F63-00FA-A07F-37B9-5D3B36F1D313">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 21:01:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7C498AB-F826-ED21-6A38-33887F283BED" referredColumn="A24B8893-97BA-B6D4-C439-737CA5E1B3B3"/>
+</associations>
+</Column>
+<Column name="IFN_COLECCION_PAPE_ID" id="72BED2DF-604D-9C23-24EA-D82978765976">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 21:03:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="539736A2-829F-5BA0-636F-2563394646CA" referredColumn="6EBA99DF-6B5E-7230-A36C-996781F63A66"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B3775EED-7AF0-D263-4445-646E54723C0B" name="IFN_LABORATORIO_HERBARIO_PK">
@@ -482,6 +512,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2E319279-C7AE-C4F6-A888-D10471EC6CD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7972166F-1D5D-01AE-2E95-099008D89C23" name="IFN_LAB_HERBARIO_IFN_COLBOT_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 21:01:59 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61580F63-00FA-A07F-37B9-5D3B36F1D313"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="247C005E-4375-F722-72D7-FEBBEF21A5F2" name="IFN_LAB_HER_COL_PAPE_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 21:03:50 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72BED2DF-604D-9C23-24EA-D82978765976"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

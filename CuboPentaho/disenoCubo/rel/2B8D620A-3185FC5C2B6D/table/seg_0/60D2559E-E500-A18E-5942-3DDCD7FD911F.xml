@@ -150,6 +150,20 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DIM_DIVISION_POLITICA_ID" id="6B529665-7303-7A6B-6CFB-1FF5E1106423">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-11 17:00:11 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6874A1C-417A-9D17-455E-C6E973941E27" referredColumn="B7179F60-E9A9-0CB6-EFDF-A39D1C3E2F19"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B69BC989-8C92-D5C5-FDD5-75E0D27A3405" schemaObject="E7E47D68-C6A0-9904-E18A-D1B6D65006C4" name="DIM_CONGLOMERADO_PK">
@@ -161,6 +175,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3E365C8B-956B-5B34-5087-4B09C1ED0984"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="597EC830-32F6-EC93-4E29-107E17DEC184" name="DIM_CONGLOMERADO_DIVIPOL_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-11 17:00:11 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B529665-7303-7A6B-6CFB-1FF5E1106423"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

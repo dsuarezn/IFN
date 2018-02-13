@@ -19,7 +19,6 @@
 <createdTime>2017-04-03 21:48:47 UTC</createdTime>
 <commentInRDBMS>identificador unico del registro</commentInRDBMS>
 <ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -263,8 +262,33 @@
 <colAssociation fkAssociation="ED49B517-5B01-C7A3-CF6F-0FA8DAD2A4EB" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
 </associations>
 </Column>
+<Column name="IFN_SUELOS_ID" id="EC408802-BBE3-5379-4DD1-E0BC23C0158F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 20:42:30 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8573BC0-0416-095B-FA9F-67DA2FF2AF86" referredColumn="D632F8C6-11C7-A742-0C52-F7A7B0D4AB33"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="099584C1-D54E-798F-B213-EC9DB4F05A83" name="IFN_LABORATORIO_SUELOS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 19:57:23 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3B3C70B-E33F-53BB-7938-0D915277DCAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="7AA6B1A1-0147-BB93-15AF-5633386B7AB1" name="IFN_LAB_SUELOS_IFN_SUBP_FK">
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-28 04:38:15 UTC</createdTime>
@@ -283,6 +307,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="739C03AC-5B73-ECC4-F69B-3204A2508ACC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC703EAC-7AB1-B2A0-59A6-ADCD941CECCE" name="IFN_LAB_SUELOS_ID_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 20:42:30 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC408802-BBE3-5379-4DD1-E0BC23C0158F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

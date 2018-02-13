@@ -57,6 +57,46 @@
 <ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DIA_RENDIMIENTO" id="72A5D1EE-8B5B-7C22-0796-91FCBC8DD412">
+<sourceConnName>IFN_DESA</sourceConnName>
+<sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
+<sourceObjName>DIA_RENDIMIENTO</sourceObjName>
+<createdBy>Usuario</createdBy>
+<createdTime>2017-04-03 21:48:47 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IFN_BRIG_CONG_ID" id="C2F146F9-D302-6A6D-0618-D92FB97DCCE5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-05-18 17:15:31 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="867DF01D-F126-1698-5C17-FE2827D4AA78" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
+</associations>
+</Column>
+<Column name="FECHA_RENDIMIENTO" id="62BC4718-59F8-A746-8B26-6145317BA7F4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-02 04:25:33 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_CREACION" id="4F3EED7E-2186-358B-0516-B9BFF89E963A">
 <sourceConnName>IFN_DESA</sourceConnName>
 <sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
@@ -85,8 +125,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="USUARIO_MODIFICACION" id="5094D20B-93BE-1251-8383-5D28A070512C">
@@ -117,38 +156,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DIA_RENDIMIENTO" id="72A5D1EE-8B5B-7C22-0796-91FCBC8DD412">
-<sourceConnName>IFN_DESA</sourceConnName>
-<sourceObjSchema>IFN_RENDIMIENTO</sourceObjSchema>
-<sourceObjName>DIA_RENDIMIENTO</sourceObjName>
-<createdBy>Usuario</createdBy>
-<createdTime>2017-04-03 21:48:47 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>5 BYTE</dataTypeSize>
-<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="IFN_BRIG_CONG_ID" id="C2F146F9-D302-6A6D-0618-D92FB97DCCE5">
-<createdBy>Usuario</createdBy>
-<createdTime>2017-05-18 17:15:31 UTC</createdTime>
-<ownerDesignName>disenoCubo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="867DF01D-F126-1698-5C17-FE2827D4AA78" referredColumn="5495AAFA-CF5A-9819-118C-03C1C2F6B3A7"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

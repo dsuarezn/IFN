@@ -126,8 +126,6 @@
   </connection>
   <order>
   <hop> <from>Filter rows</from><to>Add sequence</to><enabled>Y</enabled> </hop>
-  <hop> <from>Database join 2</from><to>Filter rows</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
   <hop> <from>Row Normaliser</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Get Variables</from><to>Modified Java Script Value 2 2</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value 2 2</from><to>Database join 2</to><enabled>Y</enabled> </hop>
@@ -136,6 +134,10 @@
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Join Rows &#x28;cartesian product&#x29;</from><to>Calculator</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input</from><to>Row Normaliser</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database join 2</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Datos Usuario Migracion</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion</from><to>Table output</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -227,8 +229,44 @@
     </parameter>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>432</xloc>
+      <xloc>384</xloc>
       <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1104</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -256,13 +294,6 @@
    <function>IS NOT NULL</function>
    <rightvalue/>
    </condition>
-  <condition>
-   <negated>N</negated>
-   <operator>AND</operator>
-   <leftvalue>valores</leftvalue>
-   <function>&#x3e;</function>
-   <rightvalue/>
-   <value><name>constant</name><type>Number</type><text>0.0</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</mask></value>   </condition>
   <condition>
    <negated>N</negated>
    <operator>AND</operator>
@@ -322,6 +353,37 @@
     </step>
 
   <step>
+    <name>Join Rows &#x28;cartesian product&#x29;</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>960</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Modified Java Script Value 2 2</name>
     <type>ScriptValueMod</type>
     <description/>
@@ -336,7 +398,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var eshoras&#x3d;0&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;HORA_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	eshoras&#x3d;1&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var escant&#x3d;0&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;CANT_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	escant&#x3d;1&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var valores&#x3d;valores&#x3b;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;parseInt&#x28;anio_ejecucion&#x29;&#x3b;&#xd;&#xa;if &#x28;&#x21;trim&#x28;anioVigencia&#x29; &#x7c;&#x7c; isNaN&#x28;anioVigencia&#x29;&#x29; &#x7b;&#xd;&#xa;	anioVigencia&#x3d;null&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var eshoras&#x3d;0&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;HORA_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	eshoras&#x3d;1&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var escant&#x3d;0&#x3b;&#xd;&#xa;if&#x28;indexOf&#x28;typefield,&#x27;CANT_&#x27;&#x29;&#x3e;-1&#x29;&#x7b;&#xd;&#xa;	escant&#x3d;1&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var valores&#x3d;valores&#x3b;&#xd;&#xa;&#xd;&#xa;var anioVigencia&#x3d;2016&#x3b;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>anioVigencia</name>
         <rename>anioVigencia</rename>
         <type>Integer</type>
@@ -462,7 +524,51 @@
         </field>      </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>608</xloc>
-      <yloc>496</yloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>SEQ_F12_REND_D1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>typefield</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>valores</name>
+        <rename/>
+        <length>-2</length>
+        <precision>3</precision>
+      </field>      <field>        <name>dia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>fecha</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_BRIG_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1104</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -606,42 +712,19 @@
           <column_name>FECHA_RENDIMIENTO</column_name>
           <stream_name>fecha</stream_name>
         </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1104</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Join Rows &#x28;cartesian product&#x29;</name>
-    <type>JoinRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
-      <prefix>out</prefix>
-      <cache_size>500</cache_size>
-      <main/>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue/>
- <function>&#x3d;</function>
- <rightvalue/>
- </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>960</xloc>
-      <yloc>176</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

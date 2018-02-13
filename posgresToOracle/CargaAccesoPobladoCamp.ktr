@@ -130,10 +130,12 @@
   <hop> <from>Add sequence</from><to>Join Rows &#x28;cartesian product&#x29;</to><enabled>Y</enabled> </hop>
   <hop> <from>Get rows from result</from><to>Sort rows</to><enabled>Y</enabled> </hop>
   <hop> <from>Table input</from><to>Merge Join</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator</from><to>Table output</to><enabled>Y</enabled> </hop>
   <hop> <from>Merge Join</from><to>Add sequence</to><enabled>Y</enabled> </hop>
   <hop> <from>Sort rows</from><to>Unique rows</to><enabled>Y</enabled> </hop>
   <hop> <from>Unique rows</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Table output</to><enabled>Y</enabled> </hop>
+  <hop> <from>Datos Usuario Migracion 2</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Datos Usuario Migracion 2</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -193,6 +195,48 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>768</xloc>
       <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Datos Usuario Migracion 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;	&#x28;tiempo_acceso_hh_mm.indexOf&#x28;&#x27;min&#x27;&#x29; &#x7c;&#x7c; tiempo_acceso_hh_mm.indexOf&#x28;&#x27;m&#x27;&#x29; &#x7c;&#x7c; tiempo_acceso_hh_mm.indexOf&#x28;&#x27;minutos&#x27;&#x29;&#x29; &#x7c;&#x7c; &#xd;&#xa;&#x2f;&#x2f;	&#x28;tiempo_acceso_hh_mm.indexOf&#x28;&#x27;h&#x27;&#x29; &#x7c;&#x7c; tiempo_acceso_hh_mm.indexOf&#x28;&#x27;horas&#x27;&#x29; &#x7c;&#x7c; tiempo_acceso_hh_mm.indexOf&#x28;&#x27;horas&#x27;&#x29;&#x29; &#x26;&#x26;&#xd;&#xa;&#x2f;&#x2f;	tiempo_acceso_hh_mm.indexOf&#x28;&#x27;&#x2f;&#x27;&#x29;&#xd;&#xa;&#xd;&#xa;var USUARIO&#x3d;&#x27;IFN_MIG&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;var SYSDATE&#x3d;new Date&#x28;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var tiempo&#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var tiempo_acceso&#x3d;lower&#x28;tiempo_acceso_hh_mm&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;tiempo_acceso&#x3d;replace&#x28;tiempo_acceso,&#x22;&#x5c;&#x5c;&#x3a;&#x22;,&#x22;&#x2f;&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;&#xd;&#xa;	&#x28;&#x28;indexOf&#x28;tiempo_acceso,&#x22;minutos&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo_acceso,&#x22;min&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo_acceso,&#x22;m&#x22;&#x29;&#x29; &#x7c;&#x7c;&#xd;&#xa;	&#x28;indexOf&#x28;tiempo_acceso,&#x22;horas&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo_acceso,&#x22;hora&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo_acceso,&#x22;h&#x22;&#x29;&#x29;&#x29; &#x26;&#x26;&#xd;&#xa;	indexOf&#x28;tiempo_acceso,&#x27;&#x2f;&#x27;&#x29;&#x3e;0&#xd;&#xa;&#x29;&#x7b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo_acceso,&#x22;horas&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22;hora&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22;h&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22;min&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22;m&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else&#x7b;&#xd;&#xa;	tiempo&#x3d;tiempo_acceso&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if&#x28;&#xd;&#xa;	indexOf&#x28;tiempo,&#x22; y &#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22; Y &#x22;&#x29;  &#xd;&#xa;&#x29;&#x7b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22; y &#x22;,&#x22;&#x2f;&#x22;&#x29;&#x3b;&#xd;&#xa;	tiempo&#x3d;replace&#x28;tiempo,&#x22; Y &#x22;,&#x22;&#x2f;&#x22;&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;	if&#x28;indexOf&#x28;tiempo,&#x22; &#x22;&#x29; &#x26;&#x26; indexOf&#x28;tiempo,&#x22;&#x2f;&#x22;&#x29;&#x3c;0 &#x26;&#x26; getOcuranceString&#x28;tiempo,&#x22; &#x22;&#x29;&#x3d;&#x3d;1&#x29;&#x7b;&#xd;&#xa;		var composicion&#x3d;tiempo.split&#x28;&#x22; &#x22;&#x29;&#x3b;&#xd;&#xa;		if&#x28;isNum&#x28;composicion&#x5b;0&#x5d;&#x29; &#x26;&#x26; isNum&#x28;composicion&#x5b;1&#x5d;&#x29;&#x29;&#x7b;&#xd;&#xa;			tiempo&#x3d;replace&#x28;tiempo,&#x22; &#x22;,&#x22;&#x2f;&#x22;&#x29;&#x3b;&#xd;&#xa;		&#x7d;		&#xd;&#xa;	&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;tiempo&#x3d;replace&#x28;tiempo,&#x22;aproximadamente&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;tiempo&#x3d;replace&#x28;tiempo,&#x22;aprox&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;tiempo&#x3d;trim&#x28;tiempo&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;&#xd;&#xa;	&#x28;&#x28;indexOf&#x28;tiempo,&#x22;minutos&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;min&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;m&#x22;&#x29;&#x29; &#x7c;&#x7c;&#xd;&#xa;	&#x28;indexOf&#x28;tiempo,&#x22;horas&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;hora&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;h&#x22;&#x29;&#x29;&#x29; &#x26;&#x26;&#xd;&#xa;	indexOf&#x28;tiempo,&#x27; &#x27;&#x29;&#x3d;&#x3d;0&#xd;&#xa;&#x29;&#x7b;&#xd;&#xa;	if&#x28;indexOf&#x28;tiempo,&#x22;minutos&#x22;&#x29;&#x29;&#x7b;&#xd;&#xa;		tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22; minutos&#x22;&#x29;&#x3b;&#xd;&#xa;	&#x7d;&#xd;&#xa;	else if&#x28;indexOf&#x28;tiempo,&#x22;min&#x22;&#x29;&#x29;&#x7b;&#xd;&#xa;		tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22; min&#x22;&#x29;&#x3b;&#xd;&#xa;	&#x7d;&#xd;&#xa;	else if&#x28;indexOf&#x28;tiempo,&#x22;m&#x22;&#x29;&#x29;&#x7b;&#xd;&#xa;		tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22; m&#x22;&#x29;&#x3b;&#xd;&#xa;	&#x7d;&#xd;&#xa;&#xd;&#xa;	if&#x28;indexOf&#x28;tiempo,&#x22;horas&#x22;&#x29;&#x29;&#x7b;&#xd;&#xa;		tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22; horas&#x22;&#x29;&#x3b;&#xd;&#xa;	&#x7d;&#xd;&#xa;	else if&#x28;indexOf&#x28;tiempo,&#x22;hora&#x22;&#x29;&#x29;&#x7b;&#xd;&#xa;		tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22; hora&#x22;&#x29;&#x3b;&#xd;&#xa;	&#x7d;&#xd;&#xa;	else if&#x28;indexOf&#x28;tiempo,&#x22;h&#x22;&#x29;&#x29;&#x7b;&#xd;&#xa;		tiempo&#x3d;replace&#x28;tiempo,&#x22;minutos&#x22;,&#x22; h&#x22;&#x29;&#x3b;&#xd;&#xa;	&#x7d;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if&#x28;&#xd;&#xa;	&#x28;&#x28;indexOf&#x28;tiempo,&#x22;minutos&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;min&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;m&#x22;&#x29;&#x29; &#x7c;&#x7c;&#xd;&#xa;	&#x28;indexOf&#x28;tiempo,&#x22;horas&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;hora&#x22;&#x29; &#x7c;&#x7c; indexOf&#x28;tiempo,&#x22;h&#x22;&#x29;&#x29;&#x29; &#x26;&#x26;&#xd;&#xa;	indexOf&#x28;tiempo,&#x27; &#x27;&#x29;&#x3e;0&#xd;&#xa;&#x29;&#x7b;&#xd;&#xa;	var composicion&#x3d;tiempo.split&#x28;&#x22; &#x22;&#x29;&#x3b;&#xd;&#xa;		if&#x28;isNum&#x28;composicion&#x5b;0&#x5d;&#x29;&#x29;&#x7b;&#xd;&#xa;			if&#x28;composicion&#x5b;1&#x5d;&#x3d;&#x3d;&#x27;horas&#x27; &#x7c;&#x7c; composicion&#x5b;1&#x5d;&#x3d;&#x3d;&#x27;hora&#x27; &#x7c;&#x7c; composicion&#x5b;1&#x5d;&#x3d;&#x3d;&#x27;h&#x27;&#x29;&#x7b;&#xd;&#xa;				tiempo&#x3d;composicion&#x5b;0&#x5d;&#x2b;&#x27;&#x2f;&#x27;&#x2b;&#x27;00&#x27;&#x3b;&#xd;&#xa;			&#x7d;&#xd;&#xa;			else if&#x28;composicion&#x5b;1&#x5d;&#x3d;&#x3d;&#x27;minutos&#x27; &#x7c;&#x7c; composicion&#x5b;1&#x5d;&#x3d;&#x3d;&#x27;min&#x27; &#x7c;&#x7c; composicion&#x5b;1&#x5d;&#x3d;&#x3d;&#x27;m&#x27;&#x29;&#x7b;&#xd;&#xa;				tiempo&#x3d;&#x27;00&#x27;&#x2b;&#x27;&#x2f;&#x27;&#x2b;composicion&#x5b;0&#x5d;&#x3b;&#xd;&#xa;			&#x7d;			&#xd;&#xa;		&#x7d;	&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>USUARIO</name>
+        <rename>USUARIO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>tiempo</name>
+        <rename>tiempo</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>768</xloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -283,6 +327,90 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>176</xloc>
       <yloc>336</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>MAXID_MEDIO_POBL_CAMP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>f1_ubicacion_acs_pob_campamento_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>conglomerado_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codigo_conglomerado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>acceso</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>acceso_code_id_</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tiempo_acceso_hh_mm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>distancia_km</name>
+        <rename/>
+        <length>-2</length>
+        <precision>2</precision>
+      </field>      <field>        <name>conglomerado_id__1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>id</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_POBL_CAMP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sec_acs_camp_congl</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEQ_ACS_CAMP_CONG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>USUARIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tiempo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>768</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -416,17 +544,25 @@
         </field>
         <field>
           <column_name>TIEMPO_ACCESO</column_name>
-          <stream_name>tiempo_acceso_hh_mm</stream_name>
+          <stream_name>tiempo</stream_name>
         </field>
         <field>
           <column_name>DISTANCIA</column_name>
           <stream_name>distancia_km</stream_name>
         </field>
+        <field>
+          <column_name>USUARIO_CREACION</column_name>
+          <stream_name>USUARIO</stream_name>
+        </field>
+        <field>
+          <column_name>FECHA_CREACION</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>768</xloc>
-      <yloc>352</yloc>
+      <yloc>704</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

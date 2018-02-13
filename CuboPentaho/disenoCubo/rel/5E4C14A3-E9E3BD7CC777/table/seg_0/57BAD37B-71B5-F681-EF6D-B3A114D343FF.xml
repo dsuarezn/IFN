@@ -17,7 +17,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2017-04-03 21:48:47 UTC</createdTime>
 <ownerDesignName>disenoCubo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -54,4 +53,17 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57E8D154-7513-B8F0-ED73-D266E446B53B" name="IFN_FACTOR_EXPANSION_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-08-01 19:56:56 UTC</createdTime>
+<ownerDesignName>disenoCubo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0309E665-A343-3825-DAFC-581898561DBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>
