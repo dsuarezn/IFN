@@ -1,0 +1,77 @@
+
+function accentsTidy(s){
+        var r=lower(s);
+        r = replace(r,new RegExp("\\s", 'g'),"");
+        r = replace(r,new RegExp("[àáâãäå]", 'g'),"a");
+        r = replace(r,new RegExp("æ", 'g'),"ae");
+        r = replace(r,new RegExp("ç", 'g'),"c");
+        r = replace(r,new RegExp("[èéêë]", 'g'),"e");
+        r = replace(r,new RegExp("[ìíîï]", 'g'),"i");
+        r = replace(r,new RegExp("ñ", 'g'),"n");                            
+        r = replace(r,new RegExp("[òóôõö]", 'g'),"o");
+        r = replace(r,new RegExp("œ", 'g'),"oe");
+        r = replace(r,new RegExp("[ùúûü]", 'g'),"u");
+        r = replace(r,new RegExp("[ýÿ]", 'g'),"y");
+        r = replace(r,new RegExp("\\W", 'g'),"");
+    return r;
+};
+
+function commonRemoves(r){
+        var s=lower(trim(r));
+        s=replace(s,'-', '');
+		s=replace(s,'\\*', '');
+		s=replace(s,'\\.', '');
+		s=replace(s,'\\?', '');
+		s=replace(s,'desconocido', '');
+		s=replace(s,'desaconocido', '');
+		s=replace(s,'desconocida', '');
+		s=replace(s,'muerto en pie', '');
+		if(s=='nn'){	
+			s=replace(s,'nn', '');
+		}
+		if(s=='na'){	
+			s=replace(s,'na', '');
+		}
+		if(s=='nd'){	
+			s=replace(s,'nd', '');
+		}
+
+		if(indexOf(s,"sp")>-1){
+			var temp=s;
+			if(temp.length==3 || temp.length==4){
+				temp=replace(s,'sp', 'sp ');
+				var values=temp.split(" ");
+				if(values[0]=="sp" && isNum(values[1])){
+					s=values[0];
+				}
+			}
+		}
+		
+		s=replace(s,'tocon', '');
+		s=replace(s,'undef', '');
+    return s;
+};
+
+function escapingAndOneRemove(r){
+	var s=replace(r,'-1', '');
+	s=replace(s,'-', '');
+	s = replace(s,'\\*', '');
+	s = replace(s,'\\.', '');
+	s = replace(s,'\\?', '');
+	return s;	
+};
+
+
+function escaping(r){
+	var s=replace(trim(r),",",";");
+	s = replace(s,"-",";");
+	s = replace(s," y ",";");
+	s = replace(s," Y ",";");
+	s = replace(s,"/",";");
+	s = replace(s,"\\.","");
+	s = replace(s,"/0","");
+	return s;
+}
+
+QUITAR ACENTOS ORACLE
+utl_raw.cast_to_varchar2((nlssort(str, 'nls_sort=binary_ai')))
